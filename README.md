@@ -12,45 +12,45 @@ The hardware design was implemented using Verilog HDL language with synthesis an
 The project requires also writing complex scripts in Python and Perl
 In order to put the entire system into operation.
 
-Repository Structure:
-* [00_Guide_Docs](./00_Guide_Docs)
-	1.1 Scripts_Guide.docx
-	1.2 REDME_content.txt
-	
-* [Block_diagram](./Block_diagram)	
-	2.1 Pic Folder
-	2.2 salsa_blocks_diagram_final.drawio
+### Repository Structure:
 
-* [Common_Files](./Common_Files)
-	3.1 Define_Files Folder
-	3.2 TestBench Folder
-	3.3 Verilog_HDL Folder
+* **[00_Guide_Docs](./00_Guide_Docs)**
+    * 1.1 Scripts_Guide.docx
+    * 1.2 REDME_content.txt
 
-* [Docs](./Docs)
-	4.1 nisan_final_project_report.docx
+* **[Block_diagram](./Block_diagram)**
+    * 2.1 Pic Folder
+    * 2.2 salsa_blocks_diagram_final.drawio
 
-* [Final_Scripts](./Final_Scripts)
-	5.1 Python_Scripts Folder
-	5.2 Perl_Scripts Folder
+* **[Common_Files](./Common_Files)**
+    * 3.1 Define_Files Folder
+    * 3.2 TestBench Folder
+    * 3.3 Verilog_HDL Folder
 
-* [Intel_FPGA_unit](./Intel_FPGA_unit)
-	6.1 Intel_Constraints Folder
-	6.2 Intel_Verilog_HDL Folder
-	6.3 Quartus_Implementation Folder
-	6.4 Scripts_Outputs Folder
-	6.5 FTDI_connected_to_DE10-Lite.png
-	6.6 pninah_halacha.txt - The text file for implementation in Intel_FPGA.
+* **[Docs](./Docs)**
+    * 4.1 nisan_final_project_report.docx
 
-* [Xilinx_FPGA_unit](./Xilinx_FPGA_unit)
-	7.1 Scripts_Outputs Folder
-	7.2 Vivado_Implementation Folder
-	7.3 Xilinix_IP Folder
-	7.4 Xilinx_Constraints Folder
-	7.5 Xilinx_Verilog_HDL Folder
-	7.6 harry_potter_text2.txt - The text file for implementation in Xilinx_FPGA
+* **[Final_Scripts](./Final_Scripts)**
+    * 5.1 Python_Scripts Folder
+    * 5.2 Perl_Scripts Folder
 
+* **[Intel_FPGA_unit](./Intel_FPGA_unit)**
+    * 6.1 Intel_Constraints Folder
+    * 6.2 Intel_Verilog_HDL Folder
+    * 6.3 Quartus_Implementation Folder
+    * 6.4 Scripts_Outputs Folder
+    * 6.5 FTDI_connected_to_DE10-Lite.png
+    * 6.6 pninah_halacha.txt - *The text file for implementation in Intel_FPGA.*
 
-General explanation:
+* **[Xilinx_FPGA_unit](./Xilinx_FPGA_unit)**
+    * 7.1 Scripts_Outputs Folder
+    * 7.2 Vivado_Implementation Folder
+    * 7.3 Xilinx_IP Folder
+    * 7.4 Xilinx_Constraints Folder
+    * 7.5 Xilinx_Verilog_HDL Folder
+    * 7.6 harry_potter_text2.txt - *The text file for implementation in Xilinx_FPGA.*
+
+# General explanation:
 The algorithm is implemented in two different FPGAs.
 There are several hdl files that are completely identical between the implementations and therefore
 they are located in the "common files" folder.
@@ -85,5 +85,6 @@ communication between the computer and the FPGA.
 To better understand the flow of the scripts and what each one does,
 you can look at the "Scripts_Guide.docx" file in the "00_Guide_Docs" Folder.
 
+# Video Link
 The implementation video on Xilinx is available on Google Drive at the following link:
 https://drive.google.com/file/d/1u9qBgY37mgmlgSJcKttMFOYEu06ENfQ1/view?usp=sharing
