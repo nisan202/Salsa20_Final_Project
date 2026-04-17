@@ -3,8 +3,8 @@
 Name: Nisan Moshe Shlomov
 I.D Number: 207957499
 
-## Overview:
-*(Video Link to Xilinx Implemenetation at the end of the page).
+## Overview
+(Video Link to Xilinx Implemenetation at the end of the page).
 Electrical and Electronics Engineering Final Project,
 Hardware implementation of the SALSA20 encryption algorithm.
 The implementation was done on a number of FPGAs.
@@ -12,7 +12,7 @@ The hardware design was implemented using Verilog HDL language with synthesis an
 The project requires also writing complex scripts in Python and Perl
 In order to put the entire system into operation.
 
-## Repository Structure:
+## Repository Structure
 
 * **[00_Guide_Docs](./00_Guide_Docs)**
     * 1.1 Scripts_Guide.docx
@@ -50,7 +50,7 @@ In order to put the entire system into operation.
     * 7.5 Xilinx_Verilog_HDL Folder
     * 7.6 harry_potter_text2.txt - *The text file for implementation in Xilinx_FPGA.*
 
-## General explanation:
+## General explanation
 The algorithm is implemented in two different FPGAs.
 There are several hdl files that are completely identical between the implementations and therefore
 they are located in the "common files" folder.
