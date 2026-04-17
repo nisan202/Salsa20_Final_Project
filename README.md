@@ -60,21 +60,21 @@ so I used the same one, simply in each implementation I activated the correct de
 The special files for each implementation are under the folder of the same FPGA, that is:
 
 For Xilinx we have the files:
-	1. in Xilinx_Verilog_HDL Folder
-		1. hex_to_SSD.sv
-		2. top_salsa_xilinx.sv
+	1. in **Xilinx_Verilog_HDL** Folder
+		1. `hex_to_SSD.sv`
+		2. `top_salsa_xilinx.sv`
 		
-	2. in Xilinx_constraints Folder
-		1. basys3_salsa_top.xdc
+	2. in **Xilinx_constraints** Folder
+		1. `basys3_salsa_top.xdc`
 		
 And for Intel we have the files:
-	1. in Intel_Verilog_HDL Folder
-		1. hex_to_SSD_Intel.sv
-		2. top_salsa_intel.sv
+	1. in **Intel_Verilog_HDL** Folder
+		1. `hex_to_SSD_Intel.sv`
+		2. `top_salsa_intel.sv`
 		
-	2. in Intel_constraints Folder
-		1. DE10Lite_salsa_top.sdc
-		2. top_salsa_intel_00.qsf
+	2. in **Intel_constraints** Folder
+		1. `DE10Lite_salsa_top.sdc`
+		2. `top_salsa_intel_00.qsf`
 
 
 For each implementation there is a "scripts outputs" folder.
