@@ -1,0 +1,238 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
+| Date         : Thu Oct  9 23:50:24 2025
+| Host         : NIisan running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file top_salsa_xilinx_control_sets_placed.rpt
+| Design       : top_salsa_xilinx
+| Device       : xc7a35t
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |   160 |
+|    Minimum number of control sets                        |   160 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |    30 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |   160 |
+| >= 0 to < 4        |     0 |
+| >= 4 to < 6        |     6 |
+| >= 6 to < 8        |     0 |
+| >= 8 to < 10       |   118 |
+| >= 10 to < 12      |     0 |
+| >= 12 to < 14      |     0 |
+| >= 14 to < 16      |     1 |
+| >= 16              |    35 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |               0 |            0 |
+| No           | No                    | Yes                    |              86 |           35 |
+| No           | Yes                   | No                     |               0 |            0 |
+| Yes          | No                    | No                     |               8 |            3 |
+| Yes          | No                    | Yes                    |            7124 |         1539 |
+| Yes          | Yes                   | No                     |               0 |            0 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++-----------------------------------------+--------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------+------------------+----------------+--------------+
+|               Clock Signal              |                                                       Enable Signal                                                      |                 Set/Reset Signal                | Slice Load Count | Bel Load Count | Bels / Slice |
++-----------------------------------------+--------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------+------------------+----------------+--------------+
+|  salsa_top_xilinix_ip_pll/inst/clk_out1 | u_salsa_registers/E[0]                                                                                                   | u_salsa_hash_interative_wrapper/salsa_top_rst_n |                1 |              4 |         4.00 |
+|  salsa_top_xilinix_ip_pll/inst/clk_out1 | u_salsa_fsm/ben_sample                                                                                                   | u_salsa_hash_interative_wrapper/salsa_top_rst_n |                1 |              4 |         4.00 |
+|  salsa_top_xilinix_ip_pll/inst/clk_out1 | u_salsa_fsm/fsm_prev_state0                                                                                              | u_salsa_hash_interative_wrapper/salsa_top_rst_n |                1 |              4 |         4.00 |
+|  salsa_top_xilinix_ip_pll/inst/clk_out1 | u_salsa_hash_interative_wrapper/u_hash_interative_with_d_r_c/round_cntr[3]_i_1_n_0                                       | u_salsa_hash_interative_wrapper/salsa_top_rst_n |                1 |              4 |         4.00 |
+|  salsa_top_xilinix_ip_pll/inst/clk_out1 | u_salsa_rx/bit_cnt[3]_i_1_n_0                                                                                            | u_salsa_hash_interative_wrapper/salsa_top_rst_n |                1 |              5 |         5.00 |
+|  salsa_top_xilinix_ip_pll/inst/clk_out1 | u_salsa_uart_tx/bit_cnt[3]_i_1__0_n_0                                                                                    | u_salsa_hash_interative_wrapper/salsa_top_rst_n |                1 |              5 |         5.00 |
+|  salsa_top_xilinix_ip_pll/inst/clk_out1 | u_salsa_fsm/tx_start_sample                                                                                              | u_salsa_hash_interative_wrapper/salsa_top_rst_n |                2 |              8 |         4.00 |
+|  salsa_top_xilinix_ip_pll/inst/clk_out1 | u_salsa_fsm/salsa_fsm2reg_wdata[23]_i_1_n_0                                                                              | u_salsa_hash_interative_wrapper/salsa_top_rst_n |                1 |              8 |         8.00 |
+|  salsa_top_xilinix_ip_pll/inst/clk_out1 | u_salsa_fsm/salsa_fsm2reg_wdata[15]_i_1_n_0                                                                              | u_salsa_hash_interative_wrapper/salsa_top_rst_n |                2 |              8 |         4.00 |
+|  salsa_top_xilinix_ip_pll/inst/clk_out1 | u_salsa_fsm/salsa_fsm2reg_wdata[7]_i_1_n_0                                                                               | u_salsa_hash_interative_wrapper/salsa_top_rst_n |                2 |              8 |         4.00 |
+|  salsa_top_xilinix_ip_pll/inst/clk_out1 | u_salsa_fsm/E[0]                                                                                                         |                                                 |                3 |              8 |         2.67 |
+|  salsa_top_xilinix_ip_pll/inst/clk_out1 | u_salsa_fsm/salsa_fsm2reg_addr_reg[0]_rep__0_1[2]                                                                        | u_salsa_hash_interative_wrapper/salsa_top_rst_n |                2 |              8 |         4.00 |
+|  salsa_top_xilinix_ip_pll/inst/clk_out1 | u_salsa_fsm/salsa_fsm2reg_addr_reg[2]_rep_1[0]                                                                           | u_salsa_hash_interative_wrapper/salsa_top_rst_n |                5 |              8 |         1.60 |
+|  salsa_top_xilinix_ip_pll/inst/clk_out1 | u_salsa_fsm/salsa_fsm2reg_addr_reg[2]_rep_1[2]                                                                           | u_salsa_hash_interative_wrapper/salsa_top_rst_n |                4 |              8 |         2.00 |
+|  salsa_top_xilinix_ip_pll/inst/clk_out1 | u_salsa_fsm/salsa_fsm2reg_addr_reg[2]_rep_1[3]                                                                           | u_salsa_hash_interative_wrapper/salsa_top_rst_n |                4 |              8 |         2.00 |
+|  salsa_top_xilinix_ip_pll/inst/clk_out1 | u_salsa_fsm/salsa_fsm2reg_addr_reg[0]_rep__0_1[3]                                                                        | u_salsa_hash_interative_wrapper/salsa_top_rst_n |                2 |              8 |         4.00 |
+|  salsa_top_xilinix_ip_pll/inst/clk_out1 | u_salsa_fsm/salsa_fsm2reg_addr_reg[2]_rep_2[0]                                                                           | u_salsa_hash_interative_wrapper/salsa_top_rst_n |                2 |              8 |         4.00 |
+|  salsa_top_xilinix_ip_pll/inst/clk_out1 | u_salsa_fsm/salsa_fsm2reg_addr_reg[2]_rep_2[1]                                                                           | u_salsa_hash_interative_wrapper/salsa_top_rst_n |                2 |              8 |         4.00 |
+|  salsa_top_xilinix_ip_pll/inst/clk_out1 | u_salsa_fsm/salsa_fsm2reg_addr_reg[2]_rep_2[2]                                                                           | u_salsa_hash_interative_wrapper/salsa_top_rst_n |                2 |              8 |         4.00 |
+|  salsa_top_xilinix_ip_pll/inst/clk_out1 | u_salsa_fsm/salsa_fsm2reg_addr_reg[2]_rep_2[3]                                                                           | u_salsa_hash_interative_wrapper/salsa_top_rst_n |                1 |              8 |         8.00 |
+|  salsa_top_xilinix_ip_pll/inst/clk_out1 | u_salsa_fsm/salsa_fsm2reg_addr_reg[0]_rep__0_1[1]                                                                        | u_salsa_hash_interative_wrapper/salsa_top_rst_n |                2 |              8 |         4.00 |
+|  salsa_top_xilinix_ip_pll/inst/clk_out1 | u_salsa_fsm/salsa_fsm2reg_byte_en_reg[3]_1[2]                                                                            | u_salsa_hash_interative_wrapper/salsa_top_rst_n |                2 |              8 |         4.00 |
+|  salsa_top_xilinix_ip_pll/inst/clk_out1 | u_salsa_fsm/salsa_fsm2reg_addr_reg[3]_0[1]                                                                               | u_salsa_hash_interative_wrapper/salsa_top_rst_n |                3 |              8 |         2.67 |
+|  salsa_top_xilinix_ip_pll/inst/clk_out1 | u_salsa_fsm/salsa_fsm2reg_addr_reg[3]_0[2]                                                                               | u_salsa_hash_interative_wrapper/salsa_top_rst_n |                1 |              8 |         8.00 |
+|  salsa_top_xilinix_ip_pll/inst/clk_out1 | u_salsa_fsm/salsa_fsm2reg_addr_reg[0]_rep__0_1[0]                                                                        | u_salsa_hash_interative_wrapper/salsa_top_rst_n |                4 |              8 |         2.00 |
+|  salsa_top_xilinix_ip_pll/inst/clk_out1 | u_salsa_fsm/salsa_fsm2reg_addr_reg[3]_0[3]                                                                               | u_salsa_hash_interative_wrapper/salsa_top_rst_n |                2 |              8 |         4.00 |
+|  salsa_top_xilinix_ip_pll/inst/clk_out1 | u_salsa_fsm/salsa_fsm2reg_addr_reg[3]_1[0]                                                                               | u_salsa_hash_interative_wrapper/salsa_top_rst_n |                3 |              8 |         2.67 |
+|  salsa_top_xilinix_ip_pll/inst/clk_out1 | u_salsa_fsm/salsa_fsm2reg_addr_reg[2]_rep_1[1]                                                                           | u_salsa_hash_interative_wrapper/salsa_top_rst_n |                2 |              8 |         4.00 |
+|  salsa_top_xilinix_ip_pll/inst/clk_out1 | u_salsa_fsm/salsa_fsm2reg_addr_reg[3]_1[1]                                                                               | u_salsa_hash_interative_wrapper/salsa_top_rst_n |                1 |              8 |         8.00 |
+|  salsa_top_xilinix_ip_pll/inst/clk_out1 | u_salsa_fsm/salsa_fsm2reg_byte_en_reg[3]_18[1]                                                                           | u_salsa_hash_interative_wrapper/salsa_top_rst_n |                3 |              8 |         2.67 |
+|  salsa_top_xilinix_ip_pll/inst/clk_out1 | u_salsa_fsm/salsa_fsm2reg_byte_en_reg[3]_0[1]                                                                            | u_salsa_hash_interative_wrapper/salsa_top_rst_n |                1 |              8 |         8.00 |
+|  salsa_top_xilinix_ip_pll/inst/clk_out1 | u_salsa_fsm/salsa_fsm2reg_byte_en_reg[3]_13[3]                                                                           | u_salsa_hash_interative_wrapper/salsa_top_rst_n |                6 |              8 |         1.33 |
+|  salsa_top_xilinix_ip_pll/inst/clk_out1 | u_salsa_fsm/salsa_fsm2reg_addr_reg[3]_3[0]                                                                               | u_salsa_hash_interative_wrapper/salsa_top_rst_n |                4 |              8 |         2.00 |
+|  salsa_top_xilinix_ip_pll/inst/clk_out1 | u_salsa_fsm/salsa_fsm2reg_byte_en_reg[3]_18[2]                                                                           | u_salsa_hash_interative_wrapper/salsa_top_rst_n |                1 |              8 |         8.00 |
+|  salsa_top_xilinix_ip_pll/inst/clk_out1 | u_salsa_fsm/salsa_fsm2reg_byte_en_reg[3]_10[2]                                                                           | u_salsa_hash_interative_wrapper/salsa_top_rst_n |                2 |              8 |         4.00 |
+|  salsa_top_xilinix_ip_pll/inst/clk_out1 | u_salsa_fsm/salsa_fsm2reg_byte_en_reg[3]_14[1]                                                                           | u_salsa_hash_interative_wrapper/salsa_top_rst_n |                2 |              8 |         4.00 |
+|  salsa_top_xilinix_ip_pll/inst/clk_out1 | u_salsa_fsm/salsa_fsm2reg_byte_en_reg[3]_1[3]                                                                            | u_salsa_hash_interative_wrapper/salsa_top_rst_n |                1 |              8 |         8.00 |
+|  salsa_top_xilinix_ip_pll/inst/clk_out1 | u_salsa_fsm/salsa_fsm2reg_addr_reg[3]_1[3]                                                                               | u_salsa_hash_interative_wrapper/salsa_top_rst_n |                2 |              8 |         4.00 |
+|  salsa_top_xilinix_ip_pll/inst/clk_out1 | u_salsa_fsm/salsa_fsm2reg_byte_en_reg[3]_14[2]                                                                           | u_salsa_hash_interative_wrapper/salsa_top_rst_n |                1 |              8 |         8.00 |
+|  salsa_top_xilinix_ip_pll/inst/clk_out1 | u_salsa_fsm/salsa_fsm2reg_byte_en_reg[3]_10[3]                                                                           | u_salsa_hash_interative_wrapper/salsa_top_rst_n |                6 |              8 |         1.33 |
+|  salsa_top_xilinix_ip_pll/inst/clk_out1 | u_salsa_fsm/salsa_fsm2reg_byte_en_reg[3]_18[3]                                                                           | u_salsa_hash_interative_wrapper/salsa_top_rst_n |                2 |              8 |         4.00 |
+|  salsa_top_xilinix_ip_pll/inst/clk_out1 | u_salsa_fsm/salsa_fsm2reg_byte_en_reg[3]_11[3]                                                                           | u_salsa_hash_interative_wrapper/salsa_top_rst_n |                3 |              8 |         2.67 |
+|  salsa_top_xilinix_ip_pll/inst/clk_out1 | u_salsa_fsm/salsa_fsm2reg_byte_en_reg[3]_1[1]                                                                            | u_salsa_hash_interative_wrapper/salsa_top_rst_n |                2 |              8 |         4.00 |
+|  salsa_top_xilinix_ip_pll/inst/clk_out1 | u_salsa_fsm/salsa_fsm2reg_byte_en_reg[3]_11[0]                                                                           | u_salsa_hash_interative_wrapper/salsa_top_rst_n |                6 |              8 |         1.33 |
+|  salsa_top_xilinix_ip_pll/inst/clk_out1 | u_salsa_fsm/salsa_fsm2reg_addr_reg[3]_3[1]                                                                               | u_salsa_hash_interative_wrapper/salsa_top_rst_n |                3 |              8 |         2.67 |
+|  salsa_top_xilinix_ip_pll/inst/clk_out1 | u_salsa_fsm/salsa_fsm2reg_byte_en_reg[3]_12[1]                                                                           | u_salsa_hash_interative_wrapper/salsa_top_rst_n |                1 |              8 |         8.00 |
+|  salsa_top_xilinix_ip_pll/inst/clk_out1 | u_salsa_fsm/salsa_fsm2reg_addr_reg[3]_2[1]                                                                               | u_salsa_hash_interative_wrapper/salsa_top_rst_n |                3 |              8 |         2.67 |
+|  salsa_top_xilinix_ip_pll/inst/clk_out1 | u_salsa_fsm/salsa_fsm2reg_byte_en_reg[3]_12[3]                                                                           | u_salsa_hash_interative_wrapper/salsa_top_rst_n |                3 |              8 |         2.67 |
+|  salsa_top_xilinix_ip_pll/inst/clk_out1 | u_salsa_fsm/salsa_fsm2reg_addr_reg[3]_3[2]                                                                               | u_salsa_hash_interative_wrapper/salsa_top_rst_n |                2 |              8 |         4.00 |
+|  salsa_top_xilinix_ip_pll/inst/clk_out1 | u_salsa_fsm/salsa_fsm2reg_addr_reg[5]_0[2]                                                                               | u_salsa_hash_interative_wrapper/salsa_top_rst_n |                3 |              8 |         2.67 |
+|  salsa_top_xilinix_ip_pll/inst/clk_out1 | u_salsa_fsm/salsa_fsm2reg_byte_en_reg[3]_10[0]                                                                           | u_salsa_hash_interative_wrapper/salsa_top_rst_n |                3 |              8 |         2.67 |
+|  salsa_top_xilinix_ip_pll/inst/clk_out1 | u_salsa_fsm/salsa_fsm2reg_byte_en_reg[3]_11[2]                                                                           | u_salsa_hash_interative_wrapper/salsa_top_rst_n |                3 |              8 |         2.67 |
+|  salsa_top_xilinix_ip_pll/inst/clk_out1 | u_salsa_fsm/salsa_fsm2reg_byte_en_reg[3]_13[0]                                                                           | u_salsa_hash_interative_wrapper/salsa_top_rst_n |                4 |              8 |         2.00 |
+|  salsa_top_xilinix_ip_pll/inst/clk_out1 | u_salsa_fsm/salsa_fsm2reg_addr_reg[3]_2[2]                                                                               | u_salsa_hash_interative_wrapper/salsa_top_rst_n |                3 |              8 |         2.67 |
+|  salsa_top_xilinix_ip_pll/inst/clk_out1 | u_salsa_fsm/salsa_fsm2reg_byte_en_reg[3]_14[3]                                                                           | u_salsa_hash_interative_wrapper/salsa_top_rst_n |                2 |              8 |         4.00 |
+|  salsa_top_xilinix_ip_pll/inst/clk_out1 | u_salsa_fsm/salsa_fsm2reg_byte_en_reg[3]_0[0]                                                                            | u_salsa_hash_interative_wrapper/salsa_top_rst_n |                1 |              8 |         8.00 |
+|  salsa_top_xilinix_ip_pll/inst/clk_out1 | u_salsa_fsm/salsa_fsm2reg_byte_en_reg[3]_13[2]                                                                           | u_salsa_hash_interative_wrapper/salsa_top_rst_n |                5 |              8 |         1.60 |
+|  salsa_top_xilinix_ip_pll/inst/clk_out1 | u_salsa_fsm/salsa_fsm2reg_byte_en_reg[3]_15[1]                                                                           | u_salsa_hash_interative_wrapper/salsa_top_rst_n |                2 |              8 |         4.00 |
+|  salsa_top_xilinix_ip_pll/inst/clk_out1 | u_salsa_fsm/salsa_fsm2reg_byte_en_reg[3]_10[1]                                                                           | u_salsa_hash_interative_wrapper/salsa_top_rst_n |                4 |              8 |         2.00 |
+|  salsa_top_xilinix_ip_pll/inst/clk_out1 | u_salsa_fsm/salsa_fsm2reg_byte_en_reg[3]_15[2]                                                                           | u_salsa_hash_interative_wrapper/salsa_top_rst_n |                1 |              8 |         8.00 |
+|  salsa_top_xilinix_ip_pll/inst/clk_out1 | u_salsa_fsm/salsa_fsm2reg_byte_en_reg[3]_15[3]                                                                           | u_salsa_hash_interative_wrapper/salsa_top_rst_n |                1 |              8 |         8.00 |
+|  salsa_top_xilinix_ip_pll/inst/clk_out1 | u_salsa_fsm/salsa_fsm2reg_addr_reg[3]_2[0]                                                                               | u_salsa_hash_interative_wrapper/salsa_top_rst_n |                3 |              8 |         2.67 |
+|  salsa_top_xilinix_ip_pll/inst/clk_out1 | u_salsa_fsm/salsa_fsm2reg_byte_en_reg[3]_1[0]                                                                            | u_salsa_hash_interative_wrapper/salsa_top_rst_n |                2 |              8 |         4.00 |
+|  salsa_top_xilinix_ip_pll/inst/clk_out1 | u_salsa_fsm/salsa_fsm2reg_byte_en_reg[3]_12[0]                                                                           | u_salsa_hash_interative_wrapper/salsa_top_rst_n |                2 |              8 |         4.00 |
+|  salsa_top_xilinix_ip_pll/inst/clk_out1 | u_salsa_fsm/salsa_fsm2reg_byte_en_reg[3]_13[1]                                                                           | u_salsa_hash_interative_wrapper/salsa_top_rst_n |                4 |              8 |         2.00 |
+|  salsa_top_xilinix_ip_pll/inst/clk_out1 | u_salsa_fsm/salsa_fsm2reg_byte_en_reg[3]_16[0]                                                                           | u_salsa_hash_interative_wrapper/salsa_top_rst_n |                4 |              8 |         2.00 |
+|  salsa_top_xilinix_ip_pll/inst/clk_out1 | u_salsa_fsm/salsa_fsm2reg_addr_reg[5]_0[0]                                                                               | u_salsa_hash_interative_wrapper/salsa_top_rst_n |                1 |              8 |         8.00 |
+|  salsa_top_xilinix_ip_pll/inst/clk_out1 | u_salsa_fsm/salsa_fsm2reg_byte_en_reg[3]_15[0]                                                                           | u_salsa_hash_interative_wrapper/salsa_top_rst_n |                3 |              8 |         2.67 |
+|  salsa_top_xilinix_ip_pll/inst/clk_out1 | u_salsa_fsm/salsa_fsm2reg_addr_reg[3]_1[2]                                                                               | u_salsa_hash_interative_wrapper/salsa_top_rst_n |                2 |              8 |         4.00 |
+|  salsa_top_xilinix_ip_pll/inst/clk_out1 | u_salsa_fsm/salsa_fsm2reg_byte_en_reg[3]_14[0]                                                                           | u_salsa_hash_interative_wrapper/salsa_top_rst_n |                2 |              8 |         4.00 |
+|  salsa_top_xilinix_ip_pll/inst/clk_out1 | u_salsa_fsm/salsa_fsm2reg_addr_reg[3]_2[3]                                                                               | u_salsa_hash_interative_wrapper/salsa_top_rst_n |                2 |              8 |         4.00 |
+|  salsa_top_xilinix_ip_pll/inst/clk_out1 | u_salsa_fsm/salsa_fsm2reg_byte_en_reg[3]_11[1]                                                                           | u_salsa_hash_interative_wrapper/salsa_top_rst_n |                5 |              8 |         1.60 |
+|  salsa_top_xilinix_ip_pll/inst/clk_out1 | u_salsa_fsm/salsa_fsm2reg_byte_en_reg[3]_16[1]                                                                           | u_salsa_hash_interative_wrapper/salsa_top_rst_n |                3 |              8 |         2.67 |
+|  salsa_top_xilinix_ip_pll/inst/clk_out1 | u_salsa_fsm/salsa_fsm2reg_addr_reg[3]_3[3]                                                                               | u_salsa_hash_interative_wrapper/salsa_top_rst_n |                3 |              8 |         2.67 |
+|  salsa_top_xilinix_ip_pll/inst/clk_out1 | u_salsa_fsm/salsa_fsm2reg_byte_en_reg[3]_16[2]                                                                           | u_salsa_hash_interative_wrapper/salsa_top_rst_n |                2 |              8 |         4.00 |
+|  salsa_top_xilinix_ip_pll/inst/clk_out1 | u_salsa_fsm/salsa_fsm2reg_byte_en_reg[3]_0[2]                                                                            | u_salsa_hash_interative_wrapper/salsa_top_rst_n |                2 |              8 |         4.00 |
+|  salsa_top_xilinix_ip_pll/inst/clk_out1 | u_salsa_fsm/salsa_fsm2reg_byte_en_reg[3]_16[3]                                                                           | u_salsa_hash_interative_wrapper/salsa_top_rst_n |                3 |              8 |         2.67 |
+|  salsa_top_xilinix_ip_pll/inst/clk_out1 | u_salsa_fsm/salsa_fsm2reg_byte_en_reg[3]_17[0]                                                                           | u_salsa_hash_interative_wrapper/salsa_top_rst_n |                2 |              8 |         4.00 |
+|  salsa_top_xilinix_ip_pll/inst/clk_out1 | u_salsa_fsm/salsa_fsm2reg_addr_reg[5]_0[1]                                                                               | u_salsa_hash_interative_wrapper/salsa_top_rst_n |                2 |              8 |         4.00 |
+|  salsa_top_xilinix_ip_pll/inst/clk_out1 | u_salsa_fsm/salsa_fsm2reg_byte_en_reg[3]_17[1]                                                                           | u_salsa_hash_interative_wrapper/salsa_top_rst_n |                2 |              8 |         4.00 |
+|  salsa_top_xilinix_ip_pll/inst/clk_out1 | u_salsa_fsm/salsa_fsm2reg_byte_en_reg[3]_17[2]                                                                           | u_salsa_hash_interative_wrapper/salsa_top_rst_n |                1 |              8 |         8.00 |
+|  salsa_top_xilinix_ip_pll/inst/clk_out1 | u_salsa_fsm/salsa_fsm2reg_byte_en_reg[3]_17[3]                                                                           | u_salsa_hash_interative_wrapper/salsa_top_rst_n |                2 |              8 |         4.00 |
+|  salsa_top_xilinix_ip_pll/inst/clk_out1 | u_salsa_fsm/salsa_fsm2reg_byte_en_reg[3]_0[3]                                                                            | u_salsa_hash_interative_wrapper/salsa_top_rst_n |                2 |              8 |         4.00 |
+|  salsa_top_xilinix_ip_pll/inst/clk_out1 | u_salsa_fsm/salsa_fsm2reg_byte_en_reg[3]_12[2]                                                                           | u_salsa_hash_interative_wrapper/salsa_top_rst_n |                2 |              8 |         4.00 |
+|  salsa_top_xilinix_ip_pll/inst/clk_out1 | u_salsa_fsm/salsa_fsm2reg_byte_en_reg[3]_18[0]                                                                           | u_salsa_hash_interative_wrapper/salsa_top_rst_n |                2 |              8 |         4.00 |
+|  salsa_top_xilinix_ip_pll/inst/clk_out1 | u_salsa_fsm/salsa_fsm2reg_addr_reg[5]_0[3]                                                                               | u_salsa_hash_interative_wrapper/salsa_top_rst_n |                2 |              8 |         4.00 |
+|  salsa_top_xilinix_ip_pll/inst/clk_out1 | u_salsa_fsm/salsa_fsm2reg_byte_en_reg[3]_4[3]                                                                            | u_salsa_hash_interative_wrapper/salsa_top_rst_n |                1 |              8 |         8.00 |
+|  salsa_top_xilinix_ip_pll/inst/clk_out1 | u_salsa_fsm/salsa_fsm2reg_byte_en_reg[3]_4[0]                                                                            | u_salsa_hash_interative_wrapper/salsa_top_rst_n |                2 |              8 |         4.00 |
+|  salsa_top_xilinix_ip_pll/inst/clk_out1 | u_salsa_fsm/salsa_fsm2reg_byte_en_reg[3]_19[3]                                                                           | u_salsa_hash_interative_wrapper/salsa_top_rst_n |                1 |              8 |         8.00 |
+|  salsa_top_xilinix_ip_pll/inst/clk_out1 | u_salsa_fsm/salsa_fsm2reg_byte_en_reg[3]_2[0]                                                                            | u_salsa_hash_interative_wrapper/salsa_top_rst_n |                2 |              8 |         4.00 |
+|  salsa_top_xilinix_ip_pll/inst/clk_out1 | u_salsa_fsm/salsa_fsm2reg_byte_en_reg[3]_7[1]                                                                            | u_salsa_hash_interative_wrapper/salsa_top_rst_n |                2 |              8 |         4.00 |
+|  salsa_top_xilinix_ip_pll/inst/clk_out1 | u_salsa_fsm/salsa_fsm2reg_byte_en_reg[3]_8[1]                                                                            | u_salsa_hash_interative_wrapper/salsa_top_rst_n |                2 |              8 |         4.00 |
+|  salsa_top_xilinix_ip_pll/inst/clk_out1 | u_salsa_fsm/salsa_fsm2reg_byte_en_reg[3]_9[3]                                                                            | u_salsa_hash_interative_wrapper/salsa_top_rst_n |                3 |              8 |         2.67 |
+|  salsa_top_xilinix_ip_pll/inst/clk_out1 | u_salsa_fsm/salsa_fsm2reg_byte_en_reg[3]_9[2]                                                                            | u_salsa_hash_interative_wrapper/salsa_top_rst_n |                2 |              8 |         4.00 |
+|  salsa_top_xilinix_ip_pll/inst/clk_out1 | u_salsa_fsm/salsa_fsm2reg_byte_en_reg[3]_7[0]                                                                            | u_salsa_hash_interative_wrapper/salsa_top_rst_n |                4 |              8 |         2.00 |
+|  salsa_top_xilinix_ip_pll/inst/clk_out1 | u_salsa_fsm/salsa_fsm2reg_byte_en_reg[3]_4[1]                                                                            | u_salsa_hash_interative_wrapper/salsa_top_rst_n |                1 |              8 |         8.00 |
+|  salsa_top_xilinix_ip_pll/inst/clk_out1 | u_salsa_fsm/salsa_fsm2reg_byte_en_reg[3]_3[2]                                                                            | u_salsa_hash_interative_wrapper/salsa_top_rst_n |                4 |              8 |         2.00 |
+|  salsa_top_xilinix_ip_pll/inst/clk_out1 | u_salsa_fsm/salsa_fsm2reg_byte_en_reg[3]_3[3]                                                                            | u_salsa_hash_interative_wrapper/salsa_top_rst_n |                2 |              8 |         4.00 |
+|  salsa_top_xilinix_ip_pll/inst/clk_out1 | u_salsa_fsm/salsa_fsm2reg_byte_en_reg[3]_4[2]                                                                            | u_salsa_hash_interative_wrapper/salsa_top_rst_n |                2 |              8 |         4.00 |
+|  salsa_top_xilinix_ip_pll/inst/clk_out1 | u_salsa_fsm/salsa_fsm2reg_byte_en_reg[3]_8[2]                                                                            | u_salsa_hash_interative_wrapper/salsa_top_rst_n |                2 |              8 |         4.00 |
+|  salsa_top_xilinix_ip_pll/inst/clk_out1 | u_salsa_fsm/salsa_fsm2reg_byte_en_reg[3]_5[3]                                                                            | u_salsa_hash_interative_wrapper/salsa_top_rst_n |                2 |              8 |         4.00 |
+|  salsa_top_xilinix_ip_pll/inst/clk_out1 | u_salsa_fsm/salsa_fsm2reg_byte_en_reg[3]_9[1]                                                                            | u_salsa_hash_interative_wrapper/salsa_top_rst_n |                4 |              8 |         2.00 |
+|  salsa_top_xilinix_ip_pll/inst/clk_out1 | u_salsa_fsm/salsa_fsm2reg_byte_en_reg[3]_6[2]                                                                            | u_salsa_hash_interative_wrapper/salsa_top_rst_n |                1 |              8 |         8.00 |
+|  salsa_top_xilinix_ip_pll/inst/clk_out1 | u_salsa_fsm/salsa_fsm2reg_byte_en_reg[3]_6[1]                                                                            | u_salsa_hash_interative_wrapper/salsa_top_rst_n |                1 |              8 |         8.00 |
+|  salsa_top_xilinix_ip_pll/inst/clk_out1 | u_salsa_fsm/salsa_fsm2reg_byte_en_reg[3]_3[0]                                                                            | u_salsa_hash_interative_wrapper/salsa_top_rst_n |                1 |              8 |         8.00 |
+|  salsa_top_xilinix_ip_pll/inst/clk_out1 | u_salsa_fsm/salsa_fsm2reg_byte_en_reg[3]_9[0]                                                                            | u_salsa_hash_interative_wrapper/salsa_top_rst_n |                5 |              8 |         1.60 |
+|  salsa_top_xilinix_ip_pll/inst/clk_out1 | u_salsa_fsm/salsa_fsm2reg_byte_en_reg[3]_2[1]                                                                            | u_salsa_hash_interative_wrapper/salsa_top_rst_n |                2 |              8 |         4.00 |
+|  salsa_top_xilinix_ip_pll/inst/clk_out1 | u_salsa_fsm/salsa_fsm2reg_byte_en_reg[3]_5[2]                                                                            | u_salsa_hash_interative_wrapper/salsa_top_rst_n |                1 |              8 |         8.00 |
+|  salsa_top_xilinix_ip_pll/inst/clk_out1 | u_salsa_fsm/salsa_fsm2reg_byte_en_reg[3]_19[1]                                                                           | u_salsa_hash_interative_wrapper/salsa_top_rst_n |                2 |              8 |         4.00 |
+|  salsa_top_xilinix_ip_pll/inst/clk_out1 | u_salsa_fsm/salsa_fsm2reg_byte_en_reg[3]_7[2]                                                                            | u_salsa_hash_interative_wrapper/salsa_top_rst_n |                3 |              8 |         2.67 |
+|  salsa_top_xilinix_ip_pll/inst/clk_out1 | u_salsa_fsm/salsa_fsm2reg_byte_en_reg[3]_7[3]                                                                            | u_salsa_hash_interative_wrapper/salsa_top_rst_n |                2 |              8 |         4.00 |
+|  salsa_top_xilinix_ip_pll/inst/clk_out1 | u_salsa_fsm/salsa_fsm2reg_byte_en_reg[3]_6[3]                                                                            | u_salsa_hash_interative_wrapper/salsa_top_rst_n |                2 |              8 |         4.00 |
+|  salsa_top_xilinix_ip_pll/inst/clk_out1 | u_salsa_fsm/salsa_fsm2reg_byte_en_reg[3]_5[1]                                                                            | u_salsa_hash_interative_wrapper/salsa_top_rst_n |                2 |              8 |         4.00 |
+|  salsa_top_xilinix_ip_pll/inst/clk_out1 | u_salsa_fsm/salsa_fsm2reg_byte_en_reg[3]_3[1]                                                                            | u_salsa_hash_interative_wrapper/salsa_top_rst_n |                2 |              8 |         4.00 |
+|  salsa_top_xilinix_ip_pll/inst/clk_out1 | u_salsa_fsm/salsa_fsm2reg_byte_en_reg[3]_2[3]                                                                            | u_salsa_hash_interative_wrapper/salsa_top_rst_n |                1 |              8 |         8.00 |
+|  salsa_top_xilinix_ip_pll/inst/clk_out1 | u_salsa_fsm/salsa_fsm2reg_byte_en_reg[3]_5[0]                                                                            | u_salsa_hash_interative_wrapper/salsa_top_rst_n |                1 |              8 |         8.00 |
+|  salsa_top_xilinix_ip_pll/inst/clk_out1 | u_salsa_fsm/salsa_fsm2reg_byte_en_reg[3]_8[0]                                                                            | u_salsa_hash_interative_wrapper/salsa_top_rst_n |                2 |              8 |         4.00 |
+|  salsa_top_xilinix_ip_pll/inst/clk_out1 | u_salsa_fsm/salsa_fsm2reg_byte_en_reg[3]_8[3]                                                                            | u_salsa_hash_interative_wrapper/salsa_top_rst_n |                4 |              8 |         2.00 |
+|  salsa_top_xilinix_ip_pll/inst/clk_out1 | u_salsa_fsm/salsa_fsm2reg_byte_en_reg[3]_6[0]                                                                            | u_salsa_hash_interative_wrapper/salsa_top_rst_n |                2 |              8 |         4.00 |
+|  salsa_top_xilinix_ip_pll/inst/clk_out1 | u_salsa_fsm/salsa_fsm2reg_byte_en_reg[3]_19[0]                                                                           | u_salsa_hash_interative_wrapper/salsa_top_rst_n |                2 |              8 |         4.00 |
+|  salsa_top_xilinix_ip_pll/inst/clk_out1 | u_salsa_fsm/salsa_fsm2reg_byte_en_reg[3]_2[2]                                                                            | u_salsa_hash_interative_wrapper/salsa_top_rst_n |                2 |              8 |         4.00 |
+|  salsa_top_xilinix_ip_pll/inst/clk_out1 | u_salsa_fsm/salsa_fsm2reg_byte_en_reg[3]_19[2]                                                                           | u_salsa_hash_interative_wrapper/salsa_top_rst_n |                1 |              8 |         8.00 |
+|  salsa_top_xilinix_ip_pll/inst/clk_out1 | u_salsa_fsm/salsa_fsm2reg_addr_reg[3]_0[0]                                                                               | u_salsa_hash_interative_wrapper/salsa_top_rst_n |                2 |              8 |         4.00 |
+|  salsa_top_xilinix_ip_pll/inst/clk_out1 | u_salsa_fsm/salsa_fsm2reg_wdata[31]_i_1_n_0                                                                              | u_salsa_hash_interative_wrapper/salsa_top_rst_n |                1 |              8 |         8.00 |
+|  salsa_top_xilinix_ip_pll/inst/clk_out1 | u_salsa_fsm/salsa_fsm2reg_addr[5]_i_1_n_0                                                                                | u_salsa_hash_interative_wrapper/salsa_top_rst_n |                3 |             15 |         5.00 |
+|  salsa_top_xilinix_ip_pll/inst/clk_out1 | u_salsa_xor_regs/p_0_in[248]                                                                                             | u_salsa_hash_interative_wrapper/salsa_top_rst_n |               13 |             32 |         2.46 |
+|  salsa_top_xilinix_ip_pll/inst/clk_out1 | u_salsa_xor_regs/p_0_in[184]                                                                                             | u_salsa_hash_interative_wrapper/salsa_top_rst_n |               11 |             32 |         2.91 |
+|  salsa_top_xilinix_ip_pll/inst/clk_out1 | u_salsa_xor_regs/p_0_in[472]                                                                                             | u_salsa_hash_interative_wrapper/salsa_top_rst_n |               10 |             32 |         3.20 |
+|  salsa_top_xilinix_ip_pll/inst/clk_out1 | u_salsa_xor_regs/p_0_in[344]                                                                                             | u_salsa_hash_interative_wrapper/salsa_top_rst_n |               10 |             32 |         3.20 |
+|  salsa_top_xilinix_ip_pll/inst/clk_out1 | u_salsa_xor_regs/p_0_in[152]                                                                                             | u_salsa_hash_interative_wrapper/salsa_top_rst_n |               10 |             32 |         3.20 |
+|  salsa_top_xilinix_ip_pll/inst/clk_out1 | u_salsa_xor_regs/p_0_in[504]                                                                                             | u_salsa_hash_interative_wrapper/salsa_top_rst_n |                9 |             32 |         3.56 |
+|  salsa_top_xilinix_ip_pll/inst/clk_out1 | u_salsa_xor_regs/p_0_in[280]                                                                                             | u_salsa_hash_interative_wrapper/salsa_top_rst_n |               11 |             32 |         2.91 |
+|  salsa_top_xilinix_ip_pll/inst/clk_out1 | u_salsa_xor_regs/p_0_in[120]                                                                                             | u_salsa_hash_interative_wrapper/salsa_top_rst_n |               11 |             32 |         2.91 |
+|  salsa_top_xilinix_ip_pll/inst/clk_out1 | u_salsa_xor_regs/p_0_in[408]                                                                                             | u_salsa_hash_interative_wrapper/salsa_top_rst_n |               13 |             32 |         2.46 |
+|  salsa_top_xilinix_ip_pll/inst/clk_out1 | u_salsa_xor_regs/p_0_in[376]                                                                                             | u_salsa_hash_interative_wrapper/salsa_top_rst_n |                9 |             32 |         3.56 |
+|  salsa_top_xilinix_ip_pll/inst/clk_out1 | u_salsa_xor_regs/p_0_in[440]                                                                                             | u_salsa_hash_interative_wrapper/salsa_top_rst_n |                9 |             32 |         3.56 |
+|  salsa_top_xilinix_ip_pll/inst/clk_out1 | u_salsa_xor_regs/p_0_in[216]                                                                                             | u_salsa_hash_interative_wrapper/salsa_top_rst_n |               10 |             32 |         3.20 |
+|  salsa_top_xilinix_ip_pll/inst/clk_out1 | u_salsa_xor_regs/p_0_in[24]                                                                                              | u_salsa_hash_interative_wrapper/salsa_top_rst_n |               14 |             32 |         2.29 |
+|  salsa_top_xilinix_ip_pll/inst/clk_out1 | u_salsa_xor_regs/p_0_in[56]                                                                                              | u_salsa_hash_interative_wrapper/salsa_top_rst_n |               12 |             32 |         2.67 |
+|  salsa_top_xilinix_ip_pll/inst/clk_out1 | u_salsa_xor_regs/p_0_in[88]                                                                                              | u_salsa_hash_interative_wrapper/salsa_top_rst_n |               11 |             32 |         2.91 |
+|  salsa_top_xilinix_ip_pll/inst/clk_out1 | u_salsa_xor_regs/p_0_in[312]                                                                                             | u_salsa_hash_interative_wrapper/salsa_top_rst_n |               13 |             32 |         2.46 |
+|  salsa_top_xilinix_ip_pll/inst/clk_out1 |                                                                                                                          | u_salsa_hash_interative_wrapper/salsa_top_rst_n |               35 |             86 |         2.46 |
+|  salsa_top_xilinix_ip_pll/inst/clk_out1 | u_salsa_hash_interative_wrapper/u_hash_interative_with_d_r_c/u_d_r_c_round_interative/matrix_after_col                   | u_salsa_hash_interative_wrapper/salsa_top_rst_n |               23 |            128 |         5.57 |
+|  salsa_top_xilinix_ip_pll/inst/clk_out1 | u_salsa_hash_interative_wrapper/u_hash_interative_with_d_r_c/u_d_r_c_round_interative/matrix_after_col[0][3][31]_i_1_n_0 | u_salsa_hash_interative_wrapper/salsa_top_rst_n |               25 |            128 |         5.12 |
+|  salsa_top_xilinix_ip_pll/inst/clk_out1 | u_salsa_hash_interative_wrapper/u_hash_interative_with_d_r_c/u_d_r_c_round_interative/matrix_after_col[2][1][31]_i_1_n_0 | u_salsa_hash_interative_wrapper/salsa_top_rst_n |               24 |            128 |         5.33 |
+|  salsa_top_xilinix_ip_pll/inst/clk_out1 | u_salsa_hash_interative_wrapper/u_hash_interative_with_d_r_c/u_d_r_c_round_interative/matrix_after_row[3][0][31]_i_1_n_0 | u_salsa_hash_interative_wrapper/salsa_top_rst_n |               22 |            128 |         5.82 |
+|  salsa_top_xilinix_ip_pll/inst/clk_out1 | u_salsa_hash_interative_wrapper/u_hash_interative_with_d_r_c/u_d_r_c_round_interative/matrix_after_row[0][0][31]_i_1_n_0 | u_salsa_hash_interative_wrapper/salsa_top_rst_n |               26 |            128 |         4.92 |
+|  salsa_top_xilinix_ip_pll/inst/clk_out1 | u_salsa_hash_interative_wrapper/u_hash_interative_with_d_r_c/u_d_r_c_round_interative/matrix_after_col[3][2][31]_i_1_n_0 | u_salsa_hash_interative_wrapper/salsa_top_rst_n |               25 |            128 |         5.12 |
+|  salsa_top_xilinix_ip_pll/inst/clk_out1 | u_salsa_hash_interative_wrapper/u_hash_interative_with_d_r_c/u_d_r_c_round_interative/matrix_after_row[1][0][31]_i_1_n_0 | u_salsa_hash_interative_wrapper/salsa_top_rst_n |               26 |            128 |         4.92 |
+|  salsa_top_xilinix_ip_pll/inst/clk_out1 | u_salsa_hash_interative_wrapper/u_hash_interative_with_d_r_c/u_d_r_c_round_interative/matrix_after_row[2][0][31]_i_1_n_0 | u_salsa_hash_interative_wrapper/salsa_top_rst_n |               29 |            128 |         4.41 |
+|  salsa_top_xilinix_ip_pll/inst/clk_out1 | u_salsa_hash_interative_wrapper/u_hash_interative_with_d_r_c/u_d_r_c_round_interative/qr_3_in[31]_i_1_n_0                | u_salsa_hash_interative_wrapper/salsa_top_rst_n |               75 |            128 |         1.71 |
+|  salsa_top_xilinix_ip_pll/inst/clk_out1 | u_salsa_hash_interative_wrapper/u_hash_interative_with_d_r_c/sample_initial_mtx                                          | u_salsa_hash_interative_wrapper/salsa_top_rst_n |               62 |            387 |         6.24 |
+|  salsa_top_xilinix_ip_pll/inst/clk_out1 | u_salsa_hash_interative_wrapper/E[0]                                                                                     | u_salsa_hash_interative_wrapper/salsa_top_rst_n |              107 |            512 |         4.79 |
+|  salsa_top_xilinix_ip_pll/inst/clk_out1 | u_salsa_hash_interative_wrapper/u_hash_interative_with_d_r_c/u_d_r_c_round_interative/matrix_in_sample[3][0][31]_i_1_n_0 | u_salsa_hash_interative_wrapper/salsa_top_rst_n |               74 |            512 |         6.92 |
+|  salsa_top_xilinix_ip_pll/inst/clk_out1 | u_salsa_hash_interative_wrapper/u_hash_interative_with_d_r_c/u_d_r_c_round_interative/reset_cntr                         | u_salsa_hash_interative_wrapper/salsa_top_rst_n |               84 |            512 |         6.10 |
+|  salsa_top_xilinix_ip_pll/inst/clk_out1 | u_salsa_xor_regs/valid_reg_n_0                                                                                           | u_salsa_hash_interative_wrapper/salsa_top_rst_n |              113 |            512 |         4.53 |
+|  salsa_top_xilinix_ip_pll/inst/clk_out1 | u_salsa_hash_interative_wrapper/u_hash_interative_with_d_r_c/u_d_r_c_round_interative/E[0]                               | u_salsa_hash_interative_wrapper/salsa_top_rst_n |              129 |            512 |         3.97 |
+|  salsa_top_xilinix_ip_pll/inst/clk_out1 | u_salsa_hash_interative_wrapper/u_hash_interative_with_d_r_c/u_d_r_c_round_interative/FSM_sequential_fsm_ps_reg[0][0]    | u_salsa_hash_interative_wrapper/salsa_top_rst_n |               78 |            512 |         6.56 |
+|  salsa_top_xilinix_ip_pll/inst/clk_out1 | u_salsa_hash_interative_wrapper/u_hash_interative_with_d_r_c/E[0]                                                        | u_salsa_hash_interative_wrapper/salsa_top_rst_n |               84 |            512 |         6.10 |
+|  salsa_top_xilinix_ip_pll/inst/clk_out1 | u_salsa_hash_interative_wrapper/u_hash_interative_with_d_r_c/matrix_in2_duouble[0][0][31]_i_1_n_0                        | u_salsa_hash_interative_wrapper/salsa_top_rst_n |               73 |            512 |         7.01 |
++-----------------------------------------+--------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------+------------------+----------------+--------------+
+
+

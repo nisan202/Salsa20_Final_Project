@@ -1,0 +1,141 @@
+# -------------------------------------------------------------------------- #
+#
+# Copyright (C) 2024  Intel Corporation. All rights reserved.
+# Your use of Intel Corporation's design tools, logic functions 
+# and other software and tools, and any partner logic 
+# functions, and any output files from any of the foregoing 
+# (including device programming or simulation files), and any 
+# associated documentation or information are expressly subject 
+# to the terms and conditions of the Intel Program License 
+# Subscription Agreement, the Intel Quartus Prime License Agreement,
+# the Intel FPGA IP License Agreement, or other applicable license
+# agreement, including, without limitation, that your use is for
+# the sole purpose of programming logic devices manufactured by
+# Intel and sold by Intel or its authorized distributors.  Please
+# refer to the applicable agreement for further details, at
+# https://fpgasoftware.intel.com/eula.
+#
+# -------------------------------------------------------------------------- #
+#
+# Quartus Prime
+# Version 23.1std.1 Build 993 05/14/2024 SC Lite Edition
+# Date created = 22:51:07  November 23, 2025
+#
+# -------------------------------------------------------------------------- #
+#
+# Notes:
+#
+# 1) The default values for assignments are stored in the file:
+#		top_salsa_intel_00_assignment_defaults.qdf
+#    If this file doesn't exist, see file:
+#		assignment_defaults.qdf
+#
+# 2) Intel recommends that you do not modify this file. This
+#    file is updated automatically by the Quartus Prime software
+#    and any changes you make may be lost or overwritten.
+#
+# -------------------------------------------------------------------------- #
+
+
+set_global_assignment -name FAMILY "MAX 10"
+set_global_assignment -name DEVICE 10M50DAF484C7G
+set_global_assignment -name TOP_LEVEL_ENTITY top_salsa_intel
+set_global_assignment -name ORIGINAL_QUARTUS_VERSION 23.1STD.1
+set_global_assignment -name PROJECT_CREATION_TIME_DATE "22:51:07  NOVEMBER 23, 2025"
+set_global_assignment -name LAST_QUARTUS_VERSION "23.1std.1 Lite Edition"
+set_global_assignment -name PROJECT_OUTPUT_DIRECTORY output_files
+set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
+set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
+set_global_assignment -name DEVICE_FILTER_PACKAGE FBGA
+set_global_assignment -name DEVICE_FILTER_PIN_COUNT 484
+set_global_assignment -name DEVICE_FILTER_SPEED_GRADE 7
+set_global_assignment -name ERROR_CHECK_FREQUENCY_DIVISOR 256
+set_global_assignment -name EDA_SIMULATION_TOOL "Questa Intel FPGA (Verilog)"
+set_global_assignment -name EDA_TIME_SCALE "1 ps" -section_id eda_simulation
+set_global_assignment -name EDA_OUTPUT_DATA_FORMAT "VERILOG HDL" -section_id eda_simulation
+set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST OFF -section_id eda_board_design_timing
+set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST OFF -section_id eda_board_design_symbol
+set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST OFF -section_id eda_board_design_signal_integrity
+set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST OFF -section_id eda_board_design_boundary_scan
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "23 MM HEAT SINK WITH 200 LFPM AIRFLOW"
+set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
+
+
+
+# I added that manauly
+##############################
+# Pin Locations and Voltages #
+##############################
+
+# clk -> P11 = max10_clk1_50
+set_location_assignment PIN_P11 -to salsa_top_50mhz_clk
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to salsa_top_50mhz_clk
+
+# rst_n active low rst - switch --> SW9 (F15)
+set_location_assignment PIN_F15 -to salsa_top_rst_n
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to salsa_top_rst_n
+
+# rx - Arduino IO0 PIN_AB5  => connect to tx on FTDI.
+set_location_assignment PIN_AB5 -to rs232_rx_top
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to rs232_rx_top
+
+# tx - Arduino IO1 PIN_AB6  => connect to rx on FTDI.
+set_location_assignment PIN_AB6 -to rs_232_tx_top
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to rs_232_tx_top
+
+# sticky signals - LEDs
+
+# LD0
+set_location_assignment PIN_A8 -to hash_done_sticky_top
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to hash_done_sticky_top
+
+# LD1
+set_location_assignment PIN_A9 -to xor_valid_sticky_top
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to xor_valid_sticky_top
+
+# --------------- SSD ---------------
+# DP
+set_location_assignment PIN_L19 -to dp_set_top
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to dp_set_top
+
+# 7 Segment - HEX5 - the left one on board
+
+set_location_assignment PIN_J20 -to seven_seg_top[0]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to seven_seg_top[0]
+
+set_location_assignment PIN_K20 -to seven_seg_top[1]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to seven_seg_top[1]
+
+set_location_assignment PIN_L18 -to seven_seg_top[2]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to seven_seg_top[2]
+
+set_location_assignment PIN_N18 -to seven_seg_top[3]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to seven_seg_top[3]
+
+set_location_assignment PIN_M20 -to seven_seg_top[4]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to seven_seg_top[4]
+
+set_location_assignment PIN_N19 -to seven_seg_top[5]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to seven_seg_top[5]
+
+set_location_assignment PIN_N20 -to seven_seg_top[6]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to seven_seg_top[6]
+
+set_global_assignment -name SDC_FILE "../Code_files/6. xdc_files/DE10Lite_salsa_top.sdc"
+set_global_assignment -name VERILOG_INCLUDE_FILE ../Code_files/3.Defines_file/salsa_defines.vh
+set_global_assignment -name SYSTEMVERILOG_FILE ../Code_files/1.Verilog_Design_Code/quarter_round.sv
+set_global_assignment -name SYSTEMVERILOG_FILE ../Code_files/1.Verilog_Design_Code/hash_interative_with_d_r_c.sv
+set_global_assignment -name SYSTEMVERILOG_FILE ../Code_files/1.Verilog_Design_Code/d_r_c_round_interative.sv
+set_global_assignment -name SYSTEMVERILOG_FILE ../Code_files/1.Verilog_Design_Code/constant_select.sv
+set_global_assignment -name SYSTEMVERILOG_FILE ../Code_files/1.Verilog_Design_Code/top_salsa_intel.sv
+set_global_assignment -name SYSTEMVERILOG_FILE ../Code_files/1.Verilog_Design_Code/salsa_xor_regs.sv
+set_global_assignment -name SYSTEMVERILOG_FILE ../Code_files/1.Verilog_Design_Code/salsa_uart_tx.sv
+set_global_assignment -name SYSTEMVERILOG_FILE ../Code_files/1.Verilog_Design_Code/salsa_rx.sv
+set_global_assignment -name SYSTEMVERILOG_FILE ../Code_files/1.Verilog_Design_Code/salsa_registers.sv
+set_global_assignment -name SYSTEMVERILOG_FILE ../Code_files/1.Verilog_Design_Code/salsa_hash_interative_wrapper.sv
+set_global_assignment -name SYSTEMVERILOG_FILE ../Code_files/1.Verilog_Design_Code/salsa_fsm.sv
+set_global_assignment -name SYSTEMVERILOG_FILE ../Code_files/1.Verilog_Design_Code/hex_to_SSD_Intel.sv
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

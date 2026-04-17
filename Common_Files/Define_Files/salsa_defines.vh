@@ -1,0 +1,134 @@
+/*
+##################################################################
+Module Number 9					
+Module Name: salsa_defines.vh 				
+Author: Nisan Moshe Shlomov 			
+final project 						
+Date: 23.12.2024 					
+Description:
+	contain the all defines of salsa project
+	control - 1		plain	- 16	key_in	- 8		hashing	- 16
+	status	- ?		cipher	- 16	nonce 	- 2		counter - 2
+	
+	TOTAL: 61 + ? ( 2^6 = 64)
+##################################################################	
+*/
+
+//------------------------------------------------
+// defines of parameters
+
+`define ADDR_WIDTH_REGS		6
+
+`define HEAD_MESSAGE 		 8'hAA
+
+//`define REAL_FREQUENCY	100000000
+//`define REAL_FREQUENCY	50000000	// Intel -  50MHz Clock		
+`define REAL_FREQUENCY	80000000		// xilinx - Basys3 timing issues so pll get 100MHz and give 80MHz		
+
+`define BAUD_RATE		100000		// BIT_RATE need to be a Whole number without fractions
+`define BIT_RATE		(`REAL_FREQUENCY / `BAUD_RATE)
+
+// the rotate parameters:
+// used in the file quarter_round.sv
+`define	ROTATE1				7
+`define	ROTATE2				9	
+`define	ROTATE3				13
+`define	ROTATE4				18
+
+// Read & Write command
+`define WRITE_CMD	2'b01
+`define	READ_CMD	2'b11
+
+//------------------------------------------------
+//------------------------------------------------
+// defines of salsa_control_reg - 1 dw
+
+`define SALSA_CONTROL_REG	6'h0
+
+//------------------------------------------------
+// defines of salsa_status_regs - ? dw
+
+`define SALSA_STATUS_REG	6'h1
+
+//------------------------------------------------
+// defines of salsa_plain_text_regs - 16 dw
+
+`define SALSA_PLAIN_TEXT_REGS_0		6'h2
+`define SALSA_PLAIN_TEXT_REGS_1		6'h3
+`define SALSA_PLAIN_TEXT_REGS_2		6'h4
+`define SALSA_PLAIN_TEXT_REGS_3		6'h5
+`define SALSA_PLAIN_TEXT_REGS_4		6'h6
+`define SALSA_PLAIN_TEXT_REGS_5		6'h7
+`define SALSA_PLAIN_TEXT_REGS_6		6'h8
+`define SALSA_PLAIN_TEXT_REGS_7		6'h9
+`define SALSA_PLAIN_TEXT_REGS_8		6'hA	//10
+`define SALSA_PLAIN_TEXT_REGS_9		6'hB	//11
+`define SALSA_PLAIN_TEXT_REGS_10	6'hC	//12
+`define SALSA_PLAIN_TEXT_REGS_11	6'hD	//13
+`define SALSA_PLAIN_TEXT_REGS_12	6'hE	//14
+`define SALSA_PLAIN_TEXT_REGS_13	6'hF	//15
+`define SALSA_PLAIN_TEXT_REGS_14	6'h10	//16
+`define SALSA_PLAIN_TEXT_REGS_15	6'h11	//17
+
+//------------------------------------------------
+// defines of salsa_key_in - 8 dw
+
+`define SALSA_KEY_IN_0		6'h12	//18
+`define SALSA_KEY_IN_1		6'h13	//19
+`define SALSA_KEY_IN_2		6'h14	//20
+`define SALSA_KEY_IN_3		6'h15	//21
+`define SALSA_KEY_IN_4		6'h16	//22
+`define SALSA_KEY_IN_5		6'h17	//23
+`define SALSA_KEY_IN_6		6'h18	//24
+`define SALSA_KEY_IN_7		6'h19	//25
+
+//------------------------------------------------
+// defines of salsa_nonce - 2 dw
+
+`define SALSA_NONCE_IN_0	6'h1A	//26
+`define SALSA_NONCE_IN_1	6'h1B	//27
+
+//------------------------------------------------
+// defines of salsa_counter - 2 dw
+`define	SALSA_COUNTER_IN_0	6'h1C	//28
+`define SALSA_COUNTER_IN_1	6'h1D	//29
+//------------------------------------------------
+// defines of salsa_hashing_regs - 16 dw
+
+`define SALSA_HASHING_TEXT_0	6'h1E	//30
+`define SALSA_HASHING_TEXT_1	6'h1F	//31
+`define SALSA_HASHING_TEXT_2	6'h20	//32
+`define SALSA_HASHING_TEXT_3	6'h21	//33
+`define SALSA_HASHING_TEXT_4	6'h22	//34
+`define SALSA_HASHING_TEXT_5	6'h23	//35
+`define SALSA_HASHING_TEXT_6	6'h24	//36
+`define SALSA_HASHING_TEXT_7	6'h25	//37
+`define SALSA_HASHING_TEXT_8	6'h26	//38
+`define SALSA_HASHING_TEXT_9	6'h27	//39
+`define SALSA_HASHING_TEXT_10	6'h28	//40
+`define SALSA_HASHING_TEXT_11	6'h29	//41
+`define SALSA_HASHING_TEXT_12	6'h2A	//42
+`define SALSA_HASHING_TEXT_13	6'h2B	//43
+`define SALSA_HASHING_TEXT_14	6'h2C	//44
+`define SALSA_HASHING_TEXT_15	6'h2D	//45
+//------------------------------------------------
+// defines of salsa_cipher_text_regs - 16 dw
+
+`define SALSA_CIPHER_TEXT_0		6'h2E	//46
+`define SALSA_CIPHER_TEXT_1		6'h2F	//47
+`define SALSA_CIPHER_TEXT_2		6'h30	//48
+`define SALSA_CIPHER_TEXT_3		6'h31	//49
+`define SALSA_CIPHER_TEXT_4		6'h32	//50
+`define SALSA_CIPHER_TEXT_5		6'h33	//51
+`define SALSA_CIPHER_TEXT_6		6'h34	//52
+`define SALSA_CIPHER_TEXT_7		6'h35	//53
+`define SALSA_CIPHER_TEXT_8		6'h36	//54
+`define SALSA_CIPHER_TEXT_9		6'h37	//55
+`define SALSA_CIPHER_TEXT_10	6'h38	//56
+`define SALSA_CIPHER_TEXT_11	6'h39	//57
+`define SALSA_CIPHER_TEXT_12	6'h3A	//58
+`define SALSA_CIPHER_TEXT_13	6'h3B	//59
+`define SALSA_CIPHER_TEXT_14	6'h3C	//60
+`define SALSA_CIPHER_TEXT_15	6'h3D	//61
+
+//------------------------------------------------

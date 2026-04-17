@@ -1,0 +1,18 @@
+Fitter Status : Successful - Sat Dec 13 19:53:25 2025
+Quartus Prime Version : 23.1std.1 Build 993 05/14/2024 SC Lite Edition
+Revision Name : top_salsa_intel_00
+Top-level Entity Name : top_salsa_intel
+Family : MAX 10
+Device : 10M50DAF484C7G
+Timing Models : Final
+Total logic elements : 8,111 / 49,760 ( 16 % )
+    Total combinational functions : 4,259 / 49,760 ( 9 % )
+    Dedicated logic registers : 7,202 / 49,760 ( 14 % )
+Total registers : 7202
+Total pins : 14 / 360 ( 4 % )
+Total virtual pins : 0
+Total memory bits : 0 / 1,677,312 ( 0 % )
+Embedded Multiplier 9-bit elements : 0 / 288 ( 0 % )
+Total PLLs : 0 / 4 ( 0 % )
+UFM blocks : 0 / 1 ( 0 % )
+ADC blocks : 0 / 2 ( 0 % )

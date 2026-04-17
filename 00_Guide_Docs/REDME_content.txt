@@ -1,0 +1,84 @@
+# Salsa_Algorithm_Final_Project
+# Salsa20 Encryption Algorithm - FPGAs Implementation
+Name: Nisan Moshe Shlomov
+I.D Number: 207957499
+
+Overview:
+Electrical and Electronics Engineering Final Project,
+Hardware implementation of the SALSA20 encryption algorithm.
+The implementation was done on a number of FPGAs.
+The hardware design was implemented using Verilog HDL language with synthesis and P&R.
+The project requires also writing complex scripts in Python and Perl
+In order to put the entire system into operation.
+
+Repository Structure:
+1. 00_Guide_Docs Folder
+	1.1 Scripts_Guide.docx
+	1.2 REDME_content.txt
+	
+2. Block_diagram Folder
+	2.1 Pic Folder
+	2.2 salsa_blocks_diagram_final.drawio
+
+3. Common_Files Folder
+	3.1 Define_Files Folder
+	3.2 TestBench Folder
+	3.3 Verilog_HDL Folder
+
+4. Docs Folder
+	4.1 nisan_final_project_report.docx
+
+5. Final_Scripts Folder
+	5.1 Python_Scripts Folder
+	5.2 Perl_Scripts Folder
+
+6. Intel_FPGA_unit
+	6.1 Intel_Constraints Folder
+	6.2 Intel_Verilog_HDL Folder
+	6.3 Quartus_Implementation Folder
+	6.4 Scripts_Outputs Folder
+	6.5 FTDI_connected_to_DE10-Lite.png
+	6.6 pninah_halacha.txt - The text file for implementation in Intel_FPGA.
+	
+7. Xilinx_FPGA_unit
+	7.1 Scripts_Outputs Folder
+	7.2 Vivado_Implementation Folder
+	7.3 Xilinix_IP Folder
+	7.4 Xilinx_Constraints Folder
+	7.5 Xilinx_Verilog_HDL Folder
+	7.6 harry_potter_text2.txt - The text file for implementation in Xilinx_FPGA
+
+
+General explanation:
+The algorithm is implemented in two different FPGAs.
+There are several hdl files that are completely identical between the implementations and therefore
+they are located in the "common files" folder.
+Also, the defines file is completely identical except for one define - REAL_FREQUENCY,
+so I used the same one, simply in each implementation I activated the correct define in the file.
+
+The special files for each implementation are under the folder of the same FPGA, that is:
+
+For Xilinx we have the files:
+	1. in Xilinx_Verilog_HDL Folder
+		1. hex_to_SSD.sv
+		2. top_salsa_xilinx.sv
+		
+	2. in Xilinx_constraints Folder
+		1. basys3_salsa_top.xdc
+		
+And for Intel we have the files:
+	1. in Intel_Verilog_HDL Folder
+		1. hex_to_SSD_Intel.sv
+		2. top_salsa_intel.sv
+		
+	2. in Intel_constraints Folder
+		1. DE10Lite_salsa_top.sdc
+		2. top_salsa_intel_00.qsf
+
+
+For each implementation there is a "scripts outputs" folder.
+This folder basically contains all the results and the entire flow of the implementation.
+From the text file to the final comparison including a high-quality log file describing the
+communication between the computer and the FPGA.
+To better understand the flow of the scripts and what each one does,
+you can look at the "Scripts_Guide.docx" file in the "00_Guide_Docs" Folder.

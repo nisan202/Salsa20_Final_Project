@@ -1,0 +1,22 @@
+
+State Machine - |top_salsa_intel|salsa_hash_interative_wrapper:u_salsa_hash_interative_wrapper|hash_interative_with_d_r_c:u_hash_interative_with_d_r_c|fsm_ps
+Name fsm_ps.DONE fsm_ps.ROUND_CNTR fsm_ps.SAMPLE_DOB_OUT fsm_ps.WAIT2DOUBLE_DONE fsm_ps.COMBO_CYCLE fsm_ps.SET_MTX fsm_ps.SAMPLE_INITIAL fsm_ps.IDLE 
+fsm_ps.IDLE 0 0 0 0 0 0 0 0 
+fsm_ps.SAMPLE_INITIAL 0 0 0 0 0 0 1 1 
+fsm_ps.SET_MTX 0 0 0 0 0 1 0 1 
+fsm_ps.COMBO_CYCLE 0 0 0 0 1 0 0 1 
+fsm_ps.WAIT2DOUBLE_DONE 0 0 0 1 0 0 0 1 
+fsm_ps.SAMPLE_DOB_OUT 0 0 1 0 0 0 0 1 
+fsm_ps.ROUND_CNTR 0 1 0 0 0 0 0 1 
+fsm_ps.DONE 1 0 0 0 0 0 0 1 
+
+State Machine - |top_salsa_intel|salsa_hash_interative_wrapper:u_salsa_hash_interative_wrapper|hash_interative_with_d_r_c:u_hash_interative_with_d_r_c|d_r_c_round_interative:u_d_r_c_round_interative|d_r_c_fsm_ps
+Name d_r_c_fsm_ps.DONE d_r_c_fsm_ps.SAMPLE_OUTPUT d_r_c_fsm_ps.QR_COUNTER d_r_c_fsm_ps.DELAY d_r_c_fsm_ps.SET_MTX d_r_c_fsm_ps.QR_SET d_r_c_fsm_ps.SAMPLE_INPUT d_r_c_fsm_ps.IDLE 
+d_r_c_fsm_ps.IDLE 0 0 0 0 0 0 0 0 
+d_r_c_fsm_ps.SAMPLE_INPUT 0 0 0 0 0 0 1 1 
+d_r_c_fsm_ps.QR_SET 0 0 0 0 0 1 0 1 
+d_r_c_fsm_ps.SET_MTX 0 0 0 0 1 0 0 1 
+d_r_c_fsm_ps.DELAY 0 0 0 1 0 0 0 1 
+d_r_c_fsm_ps.QR_COUNTER 0 0 1 0 0 0 0 1 
+d_r_c_fsm_ps.SAMPLE_OUTPUT 0 1 0 0 0 0 0 1 
+d_r_c_fsm_ps.DONE 1 0 0 0 0 0 0 1 

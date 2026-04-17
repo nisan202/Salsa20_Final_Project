@@ -1,0 +1,16 @@
+Analysis & Synthesis Status : Successful - Sat Dec 13 19:50:11 2025
+Quartus Prime Version : 23.1std.1 Build 993 05/14/2024 SC Lite Edition
+Revision Name : top_salsa_intel_00
+Top-level Entity Name : top_salsa_intel
+Family : MAX 10
+Total logic elements : 10,045
+    Total combinational functions : 4,257
+    Dedicated logic registers : 7,202
+Total registers : 7202
+Total pins : 14
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0
+UFM blocks : 0
+ADC blocks : 0

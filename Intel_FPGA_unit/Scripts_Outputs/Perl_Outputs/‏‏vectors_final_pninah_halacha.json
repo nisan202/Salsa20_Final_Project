@@ -1,0 +1,6684 @@
+[
+   {
+      "Test_ID" : "0",
+      "Description" : "Test Number 0",
+      "VECTORS" : {
+         "PLAIN" : [
+            "496e2074",
+            "68652054",
+            "6f726168",
+            "2c205368",
+            "61626261",
+            "74206973",
+            "206f6e65",
+            "206f6620",
+            "74686520",
+            "636f6d6d",
+            "616e646d",
+            "656e7473",
+            "20776974",
+            "68207468",
+            "65206d6f",
+            "73742070"
+         ],
+         "KEY" : [
+            "904b7952",
+            "36e85a62",
+            "919570a4",
+            "00cc8435",
+            "49d5c4ec",
+            "35b6e0b3",
+            "557abdf2",
+            "e691b87e"
+         ],
+         "NONCE" : [
+            "b15d2db2",
+            "7e7f9c81"
+         ],
+         "COUNTER" : [
+            "00000000",
+            "00000000"
+         ],
+         "HASH" : [
+            "d1dfec93",
+            "18ecd088",
+            "f79cecb0",
+            "60ae48f3",
+            "f4a9410c",
+            "ca25a00e",
+            "63f7d781",
+            "e2f7907b",
+            "06425305",
+            "ca23bbdf",
+            "18855265",
+            "4d2c4ab4",
+            "182d5dfd",
+            "142eed44",
+            "85b98df6",
+            "cb86dbfd"
+         ],
+         "CIPHER" : [
+            "98b1cce7",
+            "7089f0dc",
+            "98ee8dd8",
+            "4c8e1b9b",
+            "95cb236d",
+            "be05c97d",
+            "4398b9e4",
+            "c298f65b",
+            "722a3625",
+            "a94cd6b2",
+            "79eb3608",
+            "28423ec7",
+            "385a3489",
+            "7c0e992c",
+            "e099e099",
+            "b8f2fb8d"
+         ],
+         "DECRYPTION" : {
+            "normal" : [
+               "496e2074",
+               "68652054",
+               "6f726168",
+               "2c205368",
+               "61626261",
+               "74206973",
+               "206f6e65",
+               "206f6620",
+               "74686520",
+               "636f6d6d",
+               "616e646d",
+               "656e7473",
+               "20776974",
+               "68207468",
+               "65206d6f",
+               "73742070"
+            ],
+            "reversed" : [
+               "73742070",
+               "65206d6f",
+               "68207468",
+               "20776974",
+               "656e7473",
+               "616e646d",
+               "636f6d6d",
+               "74686520",
+               "206f6620",
+               "206f6e65",
+               "74206973",
+               "61626261",
+               "2c205368",
+               "6f726168",
+               "68652054",
+               "496e2074"
+            ]
+         }
+      },
+      "REGISTERS" : {
+         "PLAIN_TEXT" : {
+            "encrypt_mode" : [
+               {
+                  "address" : "0x02",
+                  "value" : "0x73742070",
+                  "swap_bytes" : "0x70207473"
+               },
+               {
+                  "address" : "0x03",
+                  "value" : "0x65206D6F",
+                  "swap_bytes" : "0x6F6D2065"
+               },
+               {
+                  "address" : "0x04",
+                  "value" : "0x68207468",
+                  "swap_bytes" : "0x68742068"
+               },
+               {
+                  "address" : "0x05",
+                  "value" : "0x20776974",
+                  "swap_bytes" : "0x74697720"
+               },
+               {
+                  "address" : "0x06",
+                  "value" : "0x656E7473",
+                  "swap_bytes" : "0x73746E65"
+               },
+               {
+                  "address" : "0x07",
+                  "value" : "0x616E646D",
+                  "swap_bytes" : "0x6D646E61"
+               },
+               {
+                  "address" : "0x08",
+                  "value" : "0x636F6D6D",
+                  "swap_bytes" : "0x6D6D6F63"
+               },
+               {
+                  "address" : "0x09",
+                  "value" : "0x74686520",
+                  "swap_bytes" : "0x20656874"
+               },
+               {
+                  "address" : "0x0A",
+                  "value" : "0x206F6620",
+                  "swap_bytes" : "0x20666F20"
+               },
+               {
+                  "address" : "0x0B",
+                  "value" : "0x206F6E65",
+                  "swap_bytes" : "0x656E6F20"
+               },
+               {
+                  "address" : "0x0C",
+                  "value" : "0x74206973",
+                  "swap_bytes" : "0x73692074"
+               },
+               {
+                  "address" : "0x0D",
+                  "value" : "0x61626261",
+                  "swap_bytes" : "0x61626261"
+               },
+               {
+                  "address" : "0x0E",
+                  "value" : "0x2C205368",
+                  "swap_bytes" : "0x6853202C"
+               },
+               {
+                  "address" : "0x0F",
+                  "value" : "0x6F726168",
+                  "swap_bytes" : "0x6861726F"
+               },
+               {
+                  "address" : "0x10",
+                  "value" : "0x68652054",
+                  "swap_bytes" : "0x54206568"
+               },
+               {
+                  "address" : "0x11",
+                  "value" : "0x496E2074",
+                  "swap_bytes" : "0x74206E49"
+               }
+            ],
+            "decrypt_mode" : [
+               {
+                  "address" : "0x02",
+                  "value" : "0xB8F2FB8D",
+                  "swap_bytes" : "0x8DFBF2B8"
+               },
+               {
+                  "address" : "0x03",
+                  "value" : "0xE099E099",
+                  "swap_bytes" : "0x99E099E0"
+               },
+               {
+                  "address" : "0x04",
+                  "value" : "0x7C0E992C",
+                  "swap_bytes" : "0x2C990E7C"
+               },
+               {
+                  "address" : "0x05",
+                  "value" : "0x385A3489",
+                  "swap_bytes" : "0x89345A38"
+               },
+               {
+                  "address" : "0x06",
+                  "value" : "0x28423EC7",
+                  "swap_bytes" : "0xC73E4228"
+               },
+               {
+                  "address" : "0x07",
+                  "value" : "0x79EB3608",
+                  "swap_bytes" : "0x0836EB79"
+               },
+               {
+                  "address" : "0x08",
+                  "value" : "0xA94CD6B2",
+                  "swap_bytes" : "0xB2D64CA9"
+               },
+               {
+                  "address" : "0x09",
+                  "value" : "0x722A3625",
+                  "swap_bytes" : "0x25362A72"
+               },
+               {
+                  "address" : "0x0A",
+                  "value" : "0xC298F65B",
+                  "swap_bytes" : "0x5BF698C2"
+               },
+               {
+                  "address" : "0x0B",
+                  "value" : "0x4398B9E4",
+                  "swap_bytes" : "0xE4B99843"
+               },
+               {
+                  "address" : "0x0C",
+                  "value" : "0xBE05C97D",
+                  "swap_bytes" : "0x7DC905BE"
+               },
+               {
+                  "address" : "0x0D",
+                  "value" : "0x95CB236D",
+                  "swap_bytes" : "0x6D23CB95"
+               },
+               {
+                  "address" : "0x0E",
+                  "value" : "0x4C8E1B9B",
+                  "swap_bytes" : "0x9B1B8E4C"
+               },
+               {
+                  "address" : "0x0F",
+                  "value" : "0x98EE8DD8",
+                  "swap_bytes" : "0xD88DEE98"
+               },
+               {
+                  "address" : "0x10",
+                  "value" : "0x7089F0DC",
+                  "swap_bytes" : "0xDCF08970"
+               },
+               {
+                  "address" : "0x11",
+                  "value" : "0x98B1CCE7",
+                  "swap_bytes" : "0xE7CCB198"
+               }
+            ]
+         },
+         "KEY" : [
+            {
+               "address" : "0x12",
+               "value" : "0xE691B87E",
+               "swap_bytes" : "0x7EB891E6"
+            },
+            {
+               "address" : "0x13",
+               "value" : "0x557ABDF2",
+               "swap_bytes" : "0xF2BD7A55"
+            },
+            {
+               "address" : "0x14",
+               "value" : "0x35B6E0B3",
+               "swap_bytes" : "0xB3E0B635"
+            },
+            {
+               "address" : "0x15",
+               "value" : "0x49D5C4EC",
+               "swap_bytes" : "0xECC4D549"
+            },
+            {
+               "address" : "0x16",
+               "value" : "0x00CC8435",
+               "swap_bytes" : "0x3584CC00"
+            },
+            {
+               "address" : "0x17",
+               "value" : "0x919570A4",
+               "swap_bytes" : "0xA4709591"
+            },
+            {
+               "address" : "0x18",
+               "value" : "0x36E85A62",
+               "swap_bytes" : "0x625AE836"
+            },
+            {
+               "address" : "0x19",
+               "value" : "0x904B7952",
+               "swap_bytes" : "0x52794B90"
+            }
+         ],
+         "NONCE" : [
+            {
+               "address" : "0x1A",
+               "value" : "0x7E7F9C81",
+               "swap_bytes" : "0x819C7F7E"
+            },
+            {
+               "address" : "0x1B",
+               "value" : "0xB15D2DB2",
+               "swap_bytes" : "0xB22D5DB1"
+            }
+         ],
+         "COUNTER" : [
+            {
+               "address" : "0x1C",
+               "value" : "0x00000000",
+               "swap_bytes" : "0x00000000"
+            },
+            {
+               "address" : "0x1D",
+               "value" : "0x00000000",
+               "swap_bytes" : "0x00000000"
+            }
+         ],
+         "HASHING" : [
+            {
+               "address" : "0x1E",
+               "value" : "0xCB86DBFD",
+               "swap_bytes" : "0xFDDB86CB"
+            },
+            {
+               "address" : "0x1F",
+               "value" : "0x85B98DF6",
+               "swap_bytes" : "0xF68DB985"
+            },
+            {
+               "address" : "0x20",
+               "value" : "0x142EED44",
+               "swap_bytes" : "0x44ED2E14"
+            },
+            {
+               "address" : "0x21",
+               "value" : "0x182D5DFD",
+               "swap_bytes" : "0xFD5D2D18"
+            },
+            {
+               "address" : "0x22",
+               "value" : "0x4D2C4AB4",
+               "swap_bytes" : "0xB44A2C4D"
+            },
+            {
+               "address" : "0x23",
+               "value" : "0x18855265",
+               "swap_bytes" : "0x65528518"
+            },
+            {
+               "address" : "0x24",
+               "value" : "0xCA23BBDF",
+               "swap_bytes" : "0xDFBB23CA"
+            },
+            {
+               "address" : "0x25",
+               "value" : "0x06425305",
+               "swap_bytes" : "0x05534206"
+            },
+            {
+               "address" : "0x26",
+               "value" : "0xE2F7907B",
+               "swap_bytes" : "0x7B90F7E2"
+            },
+            {
+               "address" : "0x27",
+               "value" : "0x63F7D781",
+               "swap_bytes" : "0x81D7F763"
+            },
+            {
+               "address" : "0x28",
+               "value" : "0xCA25A00E",
+               "swap_bytes" : "0x0EA025CA"
+            },
+            {
+               "address" : "0x29",
+               "value" : "0xF4A9410C",
+               "swap_bytes" : "0x0C41A9F4"
+            },
+            {
+               "address" : "0x2A",
+               "value" : "0x60AE48F3",
+               "swap_bytes" : "0xF348AE60"
+            },
+            {
+               "address" : "0x2B",
+               "value" : "0xF79CECB0",
+               "swap_bytes" : "0xB0EC9CF7"
+            },
+            {
+               "address" : "0x2C",
+               "value" : "0x18ECD088",
+               "swap_bytes" : "0x88D0EC18"
+            },
+            {
+               "address" : "0x2D",
+               "value" : "0xD1DFEC93",
+               "swap_bytes" : "0x93ECDFD1"
+            }
+         ],
+         "CIPHER" : [
+            {
+               "address" : "0x2E",
+               "value" : "0xB8F2FB8D",
+               "swap_bytes" : "0x8DFBF2B8"
+            },
+            {
+               "address" : "0x2F",
+               "value" : "0xE099E099",
+               "swap_bytes" : "0x99E099E0"
+            },
+            {
+               "address" : "0x30",
+               "value" : "0x7C0E992C",
+               "swap_bytes" : "0x2C990E7C"
+            },
+            {
+               "address" : "0x31",
+               "value" : "0x385A3489",
+               "swap_bytes" : "0x89345A38"
+            },
+            {
+               "address" : "0x32",
+               "value" : "0x28423EC7",
+               "swap_bytes" : "0xC73E4228"
+            },
+            {
+               "address" : "0x33",
+               "value" : "0x79EB3608",
+               "swap_bytes" : "0x0836EB79"
+            },
+            {
+               "address" : "0x34",
+               "value" : "0xA94CD6B2",
+               "swap_bytes" : "0xB2D64CA9"
+            },
+            {
+               "address" : "0x35",
+               "value" : "0x722A3625",
+               "swap_bytes" : "0x25362A72"
+            },
+            {
+               "address" : "0x36",
+               "value" : "0xC298F65B",
+               "swap_bytes" : "0x5BF698C2"
+            },
+            {
+               "address" : "0x37",
+               "value" : "0x4398B9E4",
+               "swap_bytes" : "0xE4B99843"
+            },
+            {
+               "address" : "0x38",
+               "value" : "0xBE05C97D",
+               "swap_bytes" : "0x7DC905BE"
+            },
+            {
+               "address" : "0x39",
+               "value" : "0x95CB236D",
+               "swap_bytes" : "0x6D23CB95"
+            },
+            {
+               "address" : "0x3A",
+               "value" : "0x4C8E1B9B",
+               "swap_bytes" : "0x9B1B8E4C"
+            },
+            {
+               "address" : "0x3B",
+               "value" : "0x98EE8DD8",
+               "swap_bytes" : "0xD88DEE98"
+            },
+            {
+               "address" : "0x3C",
+               "value" : "0x7089F0DC",
+               "swap_bytes" : "0xDCF08970"
+            },
+            {
+               "address" : "0x3D",
+               "value" : "0x98B1CCE7",
+               "swap_bytes" : "0xE7CCB198"
+            }
+         ]
+      }
+   },
+   {
+      "Test_ID" : "1",
+      "Description" : "Test Number 1",
+      "VECTORS" : {
+         "PLAIN" : [
+            "72696e63",
+            "69706c65",
+            "732c0a67",
+            "656e6572",
+            "616c6974",
+            "69657320",
+            "616e6420",
+            "64657461",
+            "696c732e",
+            "20546861",
+            "74e28099",
+            "73207768",
+            "79205261",
+            "7620456c",
+            "69657a65",
+            "72204d65"
+         ],
+         "KEY" : [
+            "904b7952",
+            "36e85a62",
+            "919570a4",
+            "00cc8435",
+            "49d5c4ec",
+            "35b6e0b3",
+            "557abdf2",
+            "e691b87e"
+         ],
+         "NONCE" : [
+            "b15d2db2",
+            "7e7f9c81"
+         ],
+         "COUNTER" : [
+            "00000000",
+            "00000001"
+         ],
+         "HASH" : [
+            "ee9bf628",
+            "a345f0b6",
+            "7d760cf0",
+            "c3cc741d",
+            "b73e9d95",
+            "6bd11895",
+            "d5bfa7fd",
+            "3f358b4d",
+            "44358e0c",
+            "9a88e0ee",
+            "5b300c0a",
+            "cbe772e4",
+            "7c31fea9",
+            "eff7fed4",
+            "73575afb",
+            "372d0119"
+         ],
+         "CIPHER" : [
+            "9cf2984b",
+            "ca359cd3",
+            "0e5a0697",
+            "a6a2116f",
+            "d652f4e1",
+            "02b46bb5",
+            "b4d1c3dd",
+            "5b50ff2c",
+            "2d59fd22",
+            "badc888f",
+            "2fd28c93",
+            "b8c7058c",
+            "0511acc8",
+            "99d7bbb8",
+            "1a32209e",
+            "450d4c7c"
+         ],
+         "DECRYPTION" : {
+            "normal" : [
+               "72696e63",
+               "69706c65",
+               "732c0a67",
+               "656e6572",
+               "616c6974",
+               "69657320",
+               "616e6420",
+               "64657461",
+               "696c732e",
+               "20546861",
+               "74e28099",
+               "73207768",
+               "79205261",
+               "7620456c",
+               "69657a65",
+               "72204d65"
+            ],
+            "reversed" : [
+               "72204d65",
+               "69657a65",
+               "7620456c",
+               "79205261",
+               "73207768",
+               "74e28099",
+               "20546861",
+               "696c732e",
+               "64657461",
+               "616e6420",
+               "69657320",
+               "616c6974",
+               "656e6572",
+               "732c0a67",
+               "69706c65",
+               "72696e63"
+            ]
+         }
+      },
+      "REGISTERS" : {
+         "PLAIN_TEXT" : {
+            "encrypt_mode" : [
+               {
+                  "address" : "0x02",
+                  "value" : "0x72204D65",
+                  "swap_bytes" : "0x654D2072"
+               },
+               {
+                  "address" : "0x03",
+                  "value" : "0x69657A65",
+                  "swap_bytes" : "0x657A6569"
+               },
+               {
+                  "address" : "0x04",
+                  "value" : "0x7620456C",
+                  "swap_bytes" : "0x6C452076"
+               },
+               {
+                  "address" : "0x05",
+                  "value" : "0x79205261",
+                  "swap_bytes" : "0x61522079"
+               },
+               {
+                  "address" : "0x06",
+                  "value" : "0x73207768",
+                  "swap_bytes" : "0x68772073"
+               },
+               {
+                  "address" : "0x07",
+                  "value" : "0x74E28099",
+                  "swap_bytes" : "0x9980E274"
+               },
+               {
+                  "address" : "0x08",
+                  "value" : "0x20546861",
+                  "swap_bytes" : "0x61685420"
+               },
+               {
+                  "address" : "0x09",
+                  "value" : "0x696C732E",
+                  "swap_bytes" : "0x2E736C69"
+               },
+               {
+                  "address" : "0x0A",
+                  "value" : "0x64657461",
+                  "swap_bytes" : "0x61746564"
+               },
+               {
+                  "address" : "0x0B",
+                  "value" : "0x616E6420",
+                  "swap_bytes" : "0x20646E61"
+               },
+               {
+                  "address" : "0x0C",
+                  "value" : "0x69657320",
+                  "swap_bytes" : "0x20736569"
+               },
+               {
+                  "address" : "0x0D",
+                  "value" : "0x616C6974",
+                  "swap_bytes" : "0x74696C61"
+               },
+               {
+                  "address" : "0x0E",
+                  "value" : "0x656E6572",
+                  "swap_bytes" : "0x72656E65"
+               },
+               {
+                  "address" : "0x0F",
+                  "value" : "0x732C0A67",
+                  "swap_bytes" : "0x670A2C73"
+               },
+               {
+                  "address" : "0x10",
+                  "value" : "0x69706C65",
+                  "swap_bytes" : "0x656C7069"
+               },
+               {
+                  "address" : "0x11",
+                  "value" : "0x72696E63",
+                  "swap_bytes" : "0x636E6972"
+               }
+            ],
+            "decrypt_mode" : [
+               {
+                  "address" : "0x02",
+                  "value" : "0x450D4C7C",
+                  "swap_bytes" : "0x7C4C0D45"
+               },
+               {
+                  "address" : "0x03",
+                  "value" : "0x1A32209E",
+                  "swap_bytes" : "0x9E20321A"
+               },
+               {
+                  "address" : "0x04",
+                  "value" : "0x99D7BBB8",
+                  "swap_bytes" : "0xB8BBD799"
+               },
+               {
+                  "address" : "0x05",
+                  "value" : "0x0511ACC8",
+                  "swap_bytes" : "0xC8AC1105"
+               },
+               {
+                  "address" : "0x06",
+                  "value" : "0xB8C7058C",
+                  "swap_bytes" : "0x8C05C7B8"
+               },
+               {
+                  "address" : "0x07",
+                  "value" : "0x2FD28C93",
+                  "swap_bytes" : "0x938CD22F"
+               },
+               {
+                  "address" : "0x08",
+                  "value" : "0xBADC888F",
+                  "swap_bytes" : "0x8F88DCBA"
+               },
+               {
+                  "address" : "0x09",
+                  "value" : "0x2D59FD22",
+                  "swap_bytes" : "0x22FD592D"
+               },
+               {
+                  "address" : "0x0A",
+                  "value" : "0x5B50FF2C",
+                  "swap_bytes" : "0x2CFF505B"
+               },
+               {
+                  "address" : "0x0B",
+                  "value" : "0xB4D1C3DD",
+                  "swap_bytes" : "0xDDC3D1B4"
+               },
+               {
+                  "address" : "0x0C",
+                  "value" : "0x02B46BB5",
+                  "swap_bytes" : "0xB56BB402"
+               },
+               {
+                  "address" : "0x0D",
+                  "value" : "0xD652F4E1",
+                  "swap_bytes" : "0xE1F452D6"
+               },
+               {
+                  "address" : "0x0E",
+                  "value" : "0xA6A2116F",
+                  "swap_bytes" : "0x6F11A2A6"
+               },
+               {
+                  "address" : "0x0F",
+                  "value" : "0x0E5A0697",
+                  "swap_bytes" : "0x97065A0E"
+               },
+               {
+                  "address" : "0x10",
+                  "value" : "0xCA359CD3",
+                  "swap_bytes" : "0xD39C35CA"
+               },
+               {
+                  "address" : "0x11",
+                  "value" : "0x9CF2984B",
+                  "swap_bytes" : "0x4B98F29C"
+               }
+            ]
+         },
+         "KEY" : [
+            {
+               "address" : "0x12",
+               "value" : "0xE691B87E",
+               "swap_bytes" : "0x7EB891E6"
+            },
+            {
+               "address" : "0x13",
+               "value" : "0x557ABDF2",
+               "swap_bytes" : "0xF2BD7A55"
+            },
+            {
+               "address" : "0x14",
+               "value" : "0x35B6E0B3",
+               "swap_bytes" : "0xB3E0B635"
+            },
+            {
+               "address" : "0x15",
+               "value" : "0x49D5C4EC",
+               "swap_bytes" : "0xECC4D549"
+            },
+            {
+               "address" : "0x16",
+               "value" : "0x00CC8435",
+               "swap_bytes" : "0x3584CC00"
+            },
+            {
+               "address" : "0x17",
+               "value" : "0x919570A4",
+               "swap_bytes" : "0xA4709591"
+            },
+            {
+               "address" : "0x18",
+               "value" : "0x36E85A62",
+               "swap_bytes" : "0x625AE836"
+            },
+            {
+               "address" : "0x19",
+               "value" : "0x904B7952",
+               "swap_bytes" : "0x52794B90"
+            }
+         ],
+         "NONCE" : [
+            {
+               "address" : "0x1A",
+               "value" : "0x7E7F9C81",
+               "swap_bytes" : "0x819C7F7E"
+            },
+            {
+               "address" : "0x1B",
+               "value" : "0xB15D2DB2",
+               "swap_bytes" : "0xB22D5DB1"
+            }
+         ],
+         "COUNTER" : [
+            {
+               "address" : "0x1C",
+               "value" : "0x00000001",
+               "swap_bytes" : "0x01000000"
+            },
+            {
+               "address" : "0x1D",
+               "value" : "0x00000000",
+               "swap_bytes" : "0x00000000"
+            }
+         ],
+         "HASHING" : [
+            {
+               "address" : "0x1E",
+               "value" : "0x372D0119",
+               "swap_bytes" : "0x19012D37"
+            },
+            {
+               "address" : "0x1F",
+               "value" : "0x73575AFB",
+               "swap_bytes" : "0xFB5A5773"
+            },
+            {
+               "address" : "0x20",
+               "value" : "0xEFF7FED4",
+               "swap_bytes" : "0xD4FEF7EF"
+            },
+            {
+               "address" : "0x21",
+               "value" : "0x7C31FEA9",
+               "swap_bytes" : "0xA9FE317C"
+            },
+            {
+               "address" : "0x22",
+               "value" : "0xCBE772E4",
+               "swap_bytes" : "0xE472E7CB"
+            },
+            {
+               "address" : "0x23",
+               "value" : "0x5B300C0A",
+               "swap_bytes" : "0x0A0C305B"
+            },
+            {
+               "address" : "0x24",
+               "value" : "0x9A88E0EE",
+               "swap_bytes" : "0xEEE0889A"
+            },
+            {
+               "address" : "0x25",
+               "value" : "0x44358E0C",
+               "swap_bytes" : "0x0C8E3544"
+            },
+            {
+               "address" : "0x26",
+               "value" : "0x3F358B4D",
+               "swap_bytes" : "0x4D8B353F"
+            },
+            {
+               "address" : "0x27",
+               "value" : "0xD5BFA7FD",
+               "swap_bytes" : "0xFDA7BFD5"
+            },
+            {
+               "address" : "0x28",
+               "value" : "0x6BD11895",
+               "swap_bytes" : "0x9518D16B"
+            },
+            {
+               "address" : "0x29",
+               "value" : "0xB73E9D95",
+               "swap_bytes" : "0x959D3EB7"
+            },
+            {
+               "address" : "0x2A",
+               "value" : "0xC3CC741D",
+               "swap_bytes" : "0x1D74CCC3"
+            },
+            {
+               "address" : "0x2B",
+               "value" : "0x7D760CF0",
+               "swap_bytes" : "0xF00C767D"
+            },
+            {
+               "address" : "0x2C",
+               "value" : "0xA345F0B6",
+               "swap_bytes" : "0xB6F045A3"
+            },
+            {
+               "address" : "0x2D",
+               "value" : "0xEE9BF628",
+               "swap_bytes" : "0x28F69BEE"
+            }
+         ],
+         "CIPHER" : [
+            {
+               "address" : "0x2E",
+               "value" : "0x450D4C7C",
+               "swap_bytes" : "0x7C4C0D45"
+            },
+            {
+               "address" : "0x2F",
+               "value" : "0x1A32209E",
+               "swap_bytes" : "0x9E20321A"
+            },
+            {
+               "address" : "0x30",
+               "value" : "0x99D7BBB8",
+               "swap_bytes" : "0xB8BBD799"
+            },
+            {
+               "address" : "0x31",
+               "value" : "0x0511ACC8",
+               "swap_bytes" : "0xC8AC1105"
+            },
+            {
+               "address" : "0x32",
+               "value" : "0xB8C7058C",
+               "swap_bytes" : "0x8C05C7B8"
+            },
+            {
+               "address" : "0x33",
+               "value" : "0x2FD28C93",
+               "swap_bytes" : "0x938CD22F"
+            },
+            {
+               "address" : "0x34",
+               "value" : "0xBADC888F",
+               "swap_bytes" : "0x8F88DCBA"
+            },
+            {
+               "address" : "0x35",
+               "value" : "0x2D59FD22",
+               "swap_bytes" : "0x22FD592D"
+            },
+            {
+               "address" : "0x36",
+               "value" : "0x5B50FF2C",
+               "swap_bytes" : "0x2CFF505B"
+            },
+            {
+               "address" : "0x37",
+               "value" : "0xB4D1C3DD",
+               "swap_bytes" : "0xDDC3D1B4"
+            },
+            {
+               "address" : "0x38",
+               "value" : "0x02B46BB5",
+               "swap_bytes" : "0xB56BB402"
+            },
+            {
+               "address" : "0x39",
+               "value" : "0xD652F4E1",
+               "swap_bytes" : "0xE1F452D6"
+            },
+            {
+               "address" : "0x3A",
+               "value" : "0xA6A2116F",
+               "swap_bytes" : "0x6F11A2A6"
+            },
+            {
+               "address" : "0x3B",
+               "value" : "0x0E5A0697",
+               "swap_bytes" : "0x97065A0E"
+            },
+            {
+               "address" : "0x3C",
+               "value" : "0xCA359CD3",
+               "swap_bytes" : "0xD39C35CA"
+            },
+            {
+               "address" : "0x3D",
+               "value" : "0x9CF2984B",
+               "swap_bytes" : "0x4B98F29C"
+            }
+         ]
+      }
+   },
+   {
+      "Test_ID" : "2",
+      "Description" : "Test Number 2",
+      "VECTORS" : {
+         "PLAIN" : [
+            "6c616d65",
+            "64206861",
+            "73206465",
+            "63696465",
+            "6420746f",
+            "20646564",
+            "69636174",
+            "65207477",
+            "6f20766f",
+            "6c756d65",
+            "7320746f",
+            "200a6974",
+            "20696e20",
+            "74686520",
+            "506e696e",
+            "61682048"
+         ],
+         "KEY" : [
+            "904b7952",
+            "36e85a62",
+            "919570a4",
+            "00cc8435",
+            "49d5c4ec",
+            "35b6e0b3",
+            "557abdf2",
+            "e691b87e"
+         ],
+         "NONCE" : [
+            "b15d2db2",
+            "7e7f9c81"
+         ],
+         "COUNTER" : [
+            "00000000",
+            "00000002"
+         ],
+         "HASH" : [
+            "926b4f88",
+            "24994e7e",
+            "737c9846",
+            "ad5102bb",
+            "c10f5417",
+            "492aaf1d",
+            "3f128a5d",
+            "4a29eff0",
+            "c1690b45",
+            "15d4aaf9",
+            "354f1c9f",
+            "215f3fa8",
+            "ccc302c7",
+            "baa0ee4d",
+            "4a74c879",
+            "b5d04ef0"
+         ],
+         "CIPHER" : [
+            "fe0a22ed",
+            "40b9261f",
+            "005cfc23",
+            "ce3866de",
+            "a52f2078",
+            "694eca79",
+            "5671eb29",
+            "2f099b87",
+            "ae497d2a",
+            "79a1c79c",
+            "466f68f0",
+            "015556dc",
+            "ecaa6ce7",
+            "cec88b6d",
+            "1a1aa117",
+            "d4b86eb8"
+         ],
+         "DECRYPTION" : {
+            "normal" : [
+               "6c616d65",
+               "64206861",
+               "73206465",
+               "63696465",
+               "6420746f",
+               "20646564",
+               "69636174",
+               "65207477",
+               "6f20766f",
+               "6c756d65",
+               "7320746f",
+               "200a6974",
+               "20696e20",
+               "74686520",
+               "506e696e",
+               "61682048"
+            ],
+            "reversed" : [
+               "61682048",
+               "506e696e",
+               "74686520",
+               "20696e20",
+               "200a6974",
+               "7320746f",
+               "6c756d65",
+               "6f20766f",
+               "65207477",
+               "69636174",
+               "20646564",
+               "6420746f",
+               "63696465",
+               "73206465",
+               "64206861",
+               "6c616d65"
+            ]
+         }
+      },
+      "REGISTERS" : {
+         "PLAIN_TEXT" : {
+            "encrypt_mode" : [
+               {
+                  "address" : "0x02",
+                  "value" : "0x61682048",
+                  "swap_bytes" : "0x48206861"
+               },
+               {
+                  "address" : "0x03",
+                  "value" : "0x506E696E",
+                  "swap_bytes" : "0x6E696E50"
+               },
+               {
+                  "address" : "0x04",
+                  "value" : "0x74686520",
+                  "swap_bytes" : "0x20656874"
+               },
+               {
+                  "address" : "0x05",
+                  "value" : "0x20696E20",
+                  "swap_bytes" : "0x206E6920"
+               },
+               {
+                  "address" : "0x06",
+                  "value" : "0x200A6974",
+                  "swap_bytes" : "0x74690A20"
+               },
+               {
+                  "address" : "0x07",
+                  "value" : "0x7320746F",
+                  "swap_bytes" : "0x6F742073"
+               },
+               {
+                  "address" : "0x08",
+                  "value" : "0x6C756D65",
+                  "swap_bytes" : "0x656D756C"
+               },
+               {
+                  "address" : "0x09",
+                  "value" : "0x6F20766F",
+                  "swap_bytes" : "0x6F76206F"
+               },
+               {
+                  "address" : "0x0A",
+                  "value" : "0x65207477",
+                  "swap_bytes" : "0x77742065"
+               },
+               {
+                  "address" : "0x0B",
+                  "value" : "0x69636174",
+                  "swap_bytes" : "0x74616369"
+               },
+               {
+                  "address" : "0x0C",
+                  "value" : "0x20646564",
+                  "swap_bytes" : "0x64656420"
+               },
+               {
+                  "address" : "0x0D",
+                  "value" : "0x6420746F",
+                  "swap_bytes" : "0x6F742064"
+               },
+               {
+                  "address" : "0x0E",
+                  "value" : "0x63696465",
+                  "swap_bytes" : "0x65646963"
+               },
+               {
+                  "address" : "0x0F",
+                  "value" : "0x73206465",
+                  "swap_bytes" : "0x65642073"
+               },
+               {
+                  "address" : "0x10",
+                  "value" : "0x64206861",
+                  "swap_bytes" : "0x61682064"
+               },
+               {
+                  "address" : "0x11",
+                  "value" : "0x6C616D65",
+                  "swap_bytes" : "0x656D616C"
+               }
+            ],
+            "decrypt_mode" : [
+               {
+                  "address" : "0x02",
+                  "value" : "0xD4B86EB8",
+                  "swap_bytes" : "0xB86EB8D4"
+               },
+               {
+                  "address" : "0x03",
+                  "value" : "0x1A1AA117",
+                  "swap_bytes" : "0x17A11A1A"
+               },
+               {
+                  "address" : "0x04",
+                  "value" : "0xCEC88B6D",
+                  "swap_bytes" : "0x6D8BC8CE"
+               },
+               {
+                  "address" : "0x05",
+                  "value" : "0xECAA6CE7",
+                  "swap_bytes" : "0xE76CAAEC"
+               },
+               {
+                  "address" : "0x06",
+                  "value" : "0x015556DC",
+                  "swap_bytes" : "0xDC565501"
+               },
+               {
+                  "address" : "0x07",
+                  "value" : "0x466F68F0",
+                  "swap_bytes" : "0xF0686F46"
+               },
+               {
+                  "address" : "0x08",
+                  "value" : "0x79A1C79C",
+                  "swap_bytes" : "0x9CC7A179"
+               },
+               {
+                  "address" : "0x09",
+                  "value" : "0xAE497D2A",
+                  "swap_bytes" : "0x2A7D49AE"
+               },
+               {
+                  "address" : "0x0A",
+                  "value" : "0x2F099B87",
+                  "swap_bytes" : "0x879B092F"
+               },
+               {
+                  "address" : "0x0B",
+                  "value" : "0x5671EB29",
+                  "swap_bytes" : "0x29EB7156"
+               },
+               {
+                  "address" : "0x0C",
+                  "value" : "0x694ECA79",
+                  "swap_bytes" : "0x79CA4E69"
+               },
+               {
+                  "address" : "0x0D",
+                  "value" : "0xA52F2078",
+                  "swap_bytes" : "0x78202FA5"
+               },
+               {
+                  "address" : "0x0E",
+                  "value" : "0xCE3866DE",
+                  "swap_bytes" : "0xDE6638CE"
+               },
+               {
+                  "address" : "0x0F",
+                  "value" : "0x005CFC23",
+                  "swap_bytes" : "0x23FC5C00"
+               },
+               {
+                  "address" : "0x10",
+                  "value" : "0x40B9261F",
+                  "swap_bytes" : "0x1F26B940"
+               },
+               {
+                  "address" : "0x11",
+                  "value" : "0xFE0A22ED",
+                  "swap_bytes" : "0xED220AFE"
+               }
+            ]
+         },
+         "KEY" : [
+            {
+               "address" : "0x12",
+               "value" : "0xE691B87E",
+               "swap_bytes" : "0x7EB891E6"
+            },
+            {
+               "address" : "0x13",
+               "value" : "0x557ABDF2",
+               "swap_bytes" : "0xF2BD7A55"
+            },
+            {
+               "address" : "0x14",
+               "value" : "0x35B6E0B3",
+               "swap_bytes" : "0xB3E0B635"
+            },
+            {
+               "address" : "0x15",
+               "value" : "0x49D5C4EC",
+               "swap_bytes" : "0xECC4D549"
+            },
+            {
+               "address" : "0x16",
+               "value" : "0x00CC8435",
+               "swap_bytes" : "0x3584CC00"
+            },
+            {
+               "address" : "0x17",
+               "value" : "0x919570A4",
+               "swap_bytes" : "0xA4709591"
+            },
+            {
+               "address" : "0x18",
+               "value" : "0x36E85A62",
+               "swap_bytes" : "0x625AE836"
+            },
+            {
+               "address" : "0x19",
+               "value" : "0x904B7952",
+               "swap_bytes" : "0x52794B90"
+            }
+         ],
+         "NONCE" : [
+            {
+               "address" : "0x1A",
+               "value" : "0x7E7F9C81",
+               "swap_bytes" : "0x819C7F7E"
+            },
+            {
+               "address" : "0x1B",
+               "value" : "0xB15D2DB2",
+               "swap_bytes" : "0xB22D5DB1"
+            }
+         ],
+         "COUNTER" : [
+            {
+               "address" : "0x1C",
+               "value" : "0x00000002",
+               "swap_bytes" : "0x02000000"
+            },
+            {
+               "address" : "0x1D",
+               "value" : "0x00000000",
+               "swap_bytes" : "0x00000000"
+            }
+         ],
+         "HASHING" : [
+            {
+               "address" : "0x1E",
+               "value" : "0xB5D04EF0",
+               "swap_bytes" : "0xF04ED0B5"
+            },
+            {
+               "address" : "0x1F",
+               "value" : "0x4A74C879",
+               "swap_bytes" : "0x79C8744A"
+            },
+            {
+               "address" : "0x20",
+               "value" : "0xBAA0EE4D",
+               "swap_bytes" : "0x4DEEA0BA"
+            },
+            {
+               "address" : "0x21",
+               "value" : "0xCCC302C7",
+               "swap_bytes" : "0xC702C3CC"
+            },
+            {
+               "address" : "0x22",
+               "value" : "0x215F3FA8",
+               "swap_bytes" : "0xA83F5F21"
+            },
+            {
+               "address" : "0x23",
+               "value" : "0x354F1C9F",
+               "swap_bytes" : "0x9F1C4F35"
+            },
+            {
+               "address" : "0x24",
+               "value" : "0x15D4AAF9",
+               "swap_bytes" : "0xF9AAD415"
+            },
+            {
+               "address" : "0x25",
+               "value" : "0xC1690B45",
+               "swap_bytes" : "0x450B69C1"
+            },
+            {
+               "address" : "0x26",
+               "value" : "0x4A29EFF0",
+               "swap_bytes" : "0xF0EF294A"
+            },
+            {
+               "address" : "0x27",
+               "value" : "0x3F128A5D",
+               "swap_bytes" : "0x5D8A123F"
+            },
+            {
+               "address" : "0x28",
+               "value" : "0x492AAF1D",
+               "swap_bytes" : "0x1DAF2A49"
+            },
+            {
+               "address" : "0x29",
+               "value" : "0xC10F5417",
+               "swap_bytes" : "0x17540FC1"
+            },
+            {
+               "address" : "0x2A",
+               "value" : "0xAD5102BB",
+               "swap_bytes" : "0xBB0251AD"
+            },
+            {
+               "address" : "0x2B",
+               "value" : "0x737C9846",
+               "swap_bytes" : "0x46987C73"
+            },
+            {
+               "address" : "0x2C",
+               "value" : "0x24994E7E",
+               "swap_bytes" : "0x7E4E9924"
+            },
+            {
+               "address" : "0x2D",
+               "value" : "0x926B4F88",
+               "swap_bytes" : "0x884F6B92"
+            }
+         ],
+         "CIPHER" : [
+            {
+               "address" : "0x2E",
+               "value" : "0xD4B86EB8",
+               "swap_bytes" : "0xB86EB8D4"
+            },
+            {
+               "address" : "0x2F",
+               "value" : "0x1A1AA117",
+               "swap_bytes" : "0x17A11A1A"
+            },
+            {
+               "address" : "0x30",
+               "value" : "0xCEC88B6D",
+               "swap_bytes" : "0x6D8BC8CE"
+            },
+            {
+               "address" : "0x31",
+               "value" : "0xECAA6CE7",
+               "swap_bytes" : "0xE76CAAEC"
+            },
+            {
+               "address" : "0x32",
+               "value" : "0x015556DC",
+               "swap_bytes" : "0xDC565501"
+            },
+            {
+               "address" : "0x33",
+               "value" : "0x466F68F0",
+               "swap_bytes" : "0xF0686F46"
+            },
+            {
+               "address" : "0x34",
+               "value" : "0x79A1C79C",
+               "swap_bytes" : "0x9CC7A179"
+            },
+            {
+               "address" : "0x35",
+               "value" : "0xAE497D2A",
+               "swap_bytes" : "0x2A7D49AE"
+            },
+            {
+               "address" : "0x36",
+               "value" : "0x2F099B87",
+               "swap_bytes" : "0x879B092F"
+            },
+            {
+               "address" : "0x37",
+               "value" : "0x5671EB29",
+               "swap_bytes" : "0x29EB7156"
+            },
+            {
+               "address" : "0x38",
+               "value" : "0x694ECA79",
+               "swap_bytes" : "0x79CA4E69"
+            },
+            {
+               "address" : "0x39",
+               "value" : "0xA52F2078",
+               "swap_bytes" : "0x78202FA5"
+            },
+            {
+               "address" : "0x3A",
+               "value" : "0xCE3866DE",
+               "swap_bytes" : "0xDE6638CE"
+            },
+            {
+               "address" : "0x3B",
+               "value" : "0x005CFC23",
+               "swap_bytes" : "0x23FC5C00"
+            },
+            {
+               "address" : "0x3C",
+               "value" : "0x40B9261F",
+               "swap_bytes" : "0x1F26B940"
+            },
+            {
+               "address" : "0x3D",
+               "value" : "0xFE0A22ED",
+               "swap_bytes" : "0xED220AFE"
+            }
+         ]
+      }
+   },
+   {
+      "Test_ID" : "3",
+      "Description" : "Test Number 3",
+      "VECTORS" : {
+         "PLAIN" : [
+            "616c6163",
+            "68612073",
+            "65726965",
+            "73206f66",
+            "20626f6f",
+            "6b732e0a",
+            "496e2074",
+            "68697320",
+            "66697273",
+            "7420766f",
+            "6c756d65",
+            "2c20796f",
+            "75207769",
+            "6c6c2064",
+            "6973636f",
+            "76657220"
+         ],
+         "KEY" : [
+            "904b7952",
+            "36e85a62",
+            "919570a4",
+            "00cc8435",
+            "49d5c4ec",
+            "35b6e0b3",
+            "557abdf2",
+            "e691b87e"
+         ],
+         "NONCE" : [
+            "b15d2db2",
+            "7e7f9c81"
+         ],
+         "COUNTER" : [
+            "00000000",
+            "00000003"
+         ],
+         "HASH" : [
+            "dd87dbcf",
+            "4205e867",
+            "18dcdbad",
+            "5fafbef5",
+            "1aa6ef60",
+            "ae0bdb4a",
+            "a0c413ce",
+            "461f9b8c",
+            "db10926a",
+            "3e47cc64",
+            "858c57cb",
+            "45423861",
+            "bc88126e",
+            "54326302",
+            "af5acb0b",
+            "86697ae1"
+         ],
+         "CIPHER" : [
+            "bcebbaac",
+            "2a64c814",
+            "7daeb2c8",
+            "2c8fd193",
+            "3ac4800f",
+            "c578f540",
+            "e9aa33ba",
+            "2e76e8ac",
+            "bd79e019",
+            "4a67ba0b",
+            "e9f93aae",
+            "6962410e",
+            "c9a86507",
+            "385e4366",
+            "c629a864",
+            "f00c08c1"
+         ],
+         "DECRYPTION" : {
+            "normal" : [
+               "616c6163",
+               "68612073",
+               "65726965",
+               "73206f66",
+               "20626f6f",
+               "6b732e0a",
+               "496e2074",
+               "68697320",
+               "66697273",
+               "7420766f",
+               "6c756d65",
+               "2c20796f",
+               "75207769",
+               "6c6c2064",
+               "6973636f",
+               "76657220"
+            ],
+            "reversed" : [
+               "76657220",
+               "6973636f",
+               "6c6c2064",
+               "75207769",
+               "2c20796f",
+               "6c756d65",
+               "7420766f",
+               "66697273",
+               "68697320",
+               "496e2074",
+               "6b732e0a",
+               "20626f6f",
+               "73206f66",
+               "65726965",
+               "68612073",
+               "616c6163"
+            ]
+         }
+      },
+      "REGISTERS" : {
+         "PLAIN_TEXT" : {
+            "encrypt_mode" : [
+               {
+                  "address" : "0x02",
+                  "value" : "0x76657220",
+                  "swap_bytes" : "0x20726576"
+               },
+               {
+                  "address" : "0x03",
+                  "value" : "0x6973636F",
+                  "swap_bytes" : "0x6F637369"
+               },
+               {
+                  "address" : "0x04",
+                  "value" : "0x6C6C2064",
+                  "swap_bytes" : "0x64206C6C"
+               },
+               {
+                  "address" : "0x05",
+                  "value" : "0x75207769",
+                  "swap_bytes" : "0x69772075"
+               },
+               {
+                  "address" : "0x06",
+                  "value" : "0x2C20796F",
+                  "swap_bytes" : "0x6F79202C"
+               },
+               {
+                  "address" : "0x07",
+                  "value" : "0x6C756D65",
+                  "swap_bytes" : "0x656D756C"
+               },
+               {
+                  "address" : "0x08",
+                  "value" : "0x7420766F",
+                  "swap_bytes" : "0x6F762074"
+               },
+               {
+                  "address" : "0x09",
+                  "value" : "0x66697273",
+                  "swap_bytes" : "0x73726966"
+               },
+               {
+                  "address" : "0x0A",
+                  "value" : "0x68697320",
+                  "swap_bytes" : "0x20736968"
+               },
+               {
+                  "address" : "0x0B",
+                  "value" : "0x496E2074",
+                  "swap_bytes" : "0x74206E49"
+               },
+               {
+                  "address" : "0x0C",
+                  "value" : "0x6B732E0A",
+                  "swap_bytes" : "0x0A2E736B"
+               },
+               {
+                  "address" : "0x0D",
+                  "value" : "0x20626F6F",
+                  "swap_bytes" : "0x6F6F6220"
+               },
+               {
+                  "address" : "0x0E",
+                  "value" : "0x73206F66",
+                  "swap_bytes" : "0x666F2073"
+               },
+               {
+                  "address" : "0x0F",
+                  "value" : "0x65726965",
+                  "swap_bytes" : "0x65697265"
+               },
+               {
+                  "address" : "0x10",
+                  "value" : "0x68612073",
+                  "swap_bytes" : "0x73206168"
+               },
+               {
+                  "address" : "0x11",
+                  "value" : "0x616C6163",
+                  "swap_bytes" : "0x63616C61"
+               }
+            ],
+            "decrypt_mode" : [
+               {
+                  "address" : "0x02",
+                  "value" : "0xF00C08C1",
+                  "swap_bytes" : "0xC1080CF0"
+               },
+               {
+                  "address" : "0x03",
+                  "value" : "0xC629A864",
+                  "swap_bytes" : "0x64A829C6"
+               },
+               {
+                  "address" : "0x04",
+                  "value" : "0x385E4366",
+                  "swap_bytes" : "0x66435E38"
+               },
+               {
+                  "address" : "0x05",
+                  "value" : "0xC9A86507",
+                  "swap_bytes" : "0x0765A8C9"
+               },
+               {
+                  "address" : "0x06",
+                  "value" : "0x6962410E",
+                  "swap_bytes" : "0x0E416269"
+               },
+               {
+                  "address" : "0x07",
+                  "value" : "0xE9F93AAE",
+                  "swap_bytes" : "0xAE3AF9E9"
+               },
+               {
+                  "address" : "0x08",
+                  "value" : "0x4A67BA0B",
+                  "swap_bytes" : "0x0BBA674A"
+               },
+               {
+                  "address" : "0x09",
+                  "value" : "0xBD79E019",
+                  "swap_bytes" : "0x19E079BD"
+               },
+               {
+                  "address" : "0x0A",
+                  "value" : "0x2E76E8AC",
+                  "swap_bytes" : "0xACE8762E"
+               },
+               {
+                  "address" : "0x0B",
+                  "value" : "0xE9AA33BA",
+                  "swap_bytes" : "0xBA33AAE9"
+               },
+               {
+                  "address" : "0x0C",
+                  "value" : "0xC578F540",
+                  "swap_bytes" : "0x40F578C5"
+               },
+               {
+                  "address" : "0x0D",
+                  "value" : "0x3AC4800F",
+                  "swap_bytes" : "0x0F80C43A"
+               },
+               {
+                  "address" : "0x0E",
+                  "value" : "0x2C8FD193",
+                  "swap_bytes" : "0x93D18F2C"
+               },
+               {
+                  "address" : "0x0F",
+                  "value" : "0x7DAEB2C8",
+                  "swap_bytes" : "0xC8B2AE7D"
+               },
+               {
+                  "address" : "0x10",
+                  "value" : "0x2A64C814",
+                  "swap_bytes" : "0x14C8642A"
+               },
+               {
+                  "address" : "0x11",
+                  "value" : "0xBCEBBAAC",
+                  "swap_bytes" : "0xACBAEBBC"
+               }
+            ]
+         },
+         "KEY" : [
+            {
+               "address" : "0x12",
+               "value" : "0xE691B87E",
+               "swap_bytes" : "0x7EB891E6"
+            },
+            {
+               "address" : "0x13",
+               "value" : "0x557ABDF2",
+               "swap_bytes" : "0xF2BD7A55"
+            },
+            {
+               "address" : "0x14",
+               "value" : "0x35B6E0B3",
+               "swap_bytes" : "0xB3E0B635"
+            },
+            {
+               "address" : "0x15",
+               "value" : "0x49D5C4EC",
+               "swap_bytes" : "0xECC4D549"
+            },
+            {
+               "address" : "0x16",
+               "value" : "0x00CC8435",
+               "swap_bytes" : "0x3584CC00"
+            },
+            {
+               "address" : "0x17",
+               "value" : "0x919570A4",
+               "swap_bytes" : "0xA4709591"
+            },
+            {
+               "address" : "0x18",
+               "value" : "0x36E85A62",
+               "swap_bytes" : "0x625AE836"
+            },
+            {
+               "address" : "0x19",
+               "value" : "0x904B7952",
+               "swap_bytes" : "0x52794B90"
+            }
+         ],
+         "NONCE" : [
+            {
+               "address" : "0x1A",
+               "value" : "0x7E7F9C81",
+               "swap_bytes" : "0x819C7F7E"
+            },
+            {
+               "address" : "0x1B",
+               "value" : "0xB15D2DB2",
+               "swap_bytes" : "0xB22D5DB1"
+            }
+         ],
+         "COUNTER" : [
+            {
+               "address" : "0x1C",
+               "value" : "0x00000003",
+               "swap_bytes" : "0x03000000"
+            },
+            {
+               "address" : "0x1D",
+               "value" : "0x00000000",
+               "swap_bytes" : "0x00000000"
+            }
+         ],
+         "HASHING" : [
+            {
+               "address" : "0x1E",
+               "value" : "0x86697AE1",
+               "swap_bytes" : "0xE17A6986"
+            },
+            {
+               "address" : "0x1F",
+               "value" : "0xAF5ACB0B",
+               "swap_bytes" : "0x0BCB5AAF"
+            },
+            {
+               "address" : "0x20",
+               "value" : "0x54326302",
+               "swap_bytes" : "0x02633254"
+            },
+            {
+               "address" : "0x21",
+               "value" : "0xBC88126E",
+               "swap_bytes" : "0x6E1288BC"
+            },
+            {
+               "address" : "0x22",
+               "value" : "0x45423861",
+               "swap_bytes" : "0x61384245"
+            },
+            {
+               "address" : "0x23",
+               "value" : "0x858C57CB",
+               "swap_bytes" : "0xCB578C85"
+            },
+            {
+               "address" : "0x24",
+               "value" : "0x3E47CC64",
+               "swap_bytes" : "0x64CC473E"
+            },
+            {
+               "address" : "0x25",
+               "value" : "0xDB10926A",
+               "swap_bytes" : "0x6A9210DB"
+            },
+            {
+               "address" : "0x26",
+               "value" : "0x461F9B8C",
+               "swap_bytes" : "0x8C9B1F46"
+            },
+            {
+               "address" : "0x27",
+               "value" : "0xA0C413CE",
+               "swap_bytes" : "0xCE13C4A0"
+            },
+            {
+               "address" : "0x28",
+               "value" : "0xAE0BDB4A",
+               "swap_bytes" : "0x4ADB0BAE"
+            },
+            {
+               "address" : "0x29",
+               "value" : "0x1AA6EF60",
+               "swap_bytes" : "0x60EFA61A"
+            },
+            {
+               "address" : "0x2A",
+               "value" : "0x5FAFBEF5",
+               "swap_bytes" : "0xF5BEAF5F"
+            },
+            {
+               "address" : "0x2B",
+               "value" : "0x18DCDBAD",
+               "swap_bytes" : "0xADDBDC18"
+            },
+            {
+               "address" : "0x2C",
+               "value" : "0x4205E867",
+               "swap_bytes" : "0x67E80542"
+            },
+            {
+               "address" : "0x2D",
+               "value" : "0xDD87DBCF",
+               "swap_bytes" : "0xCFDB87DD"
+            }
+         ],
+         "CIPHER" : [
+            {
+               "address" : "0x2E",
+               "value" : "0xF00C08C1",
+               "swap_bytes" : "0xC1080CF0"
+            },
+            {
+               "address" : "0x2F",
+               "value" : "0xC629A864",
+               "swap_bytes" : "0x64A829C6"
+            },
+            {
+               "address" : "0x30",
+               "value" : "0x385E4366",
+               "swap_bytes" : "0x66435E38"
+            },
+            {
+               "address" : "0x31",
+               "value" : "0xC9A86507",
+               "swap_bytes" : "0x0765A8C9"
+            },
+            {
+               "address" : "0x32",
+               "value" : "0x6962410E",
+               "swap_bytes" : "0x0E416269"
+            },
+            {
+               "address" : "0x33",
+               "value" : "0xE9F93AAE",
+               "swap_bytes" : "0xAE3AF9E9"
+            },
+            {
+               "address" : "0x34",
+               "value" : "0x4A67BA0B",
+               "swap_bytes" : "0x0BBA674A"
+            },
+            {
+               "address" : "0x35",
+               "value" : "0xBD79E019",
+               "swap_bytes" : "0x19E079BD"
+            },
+            {
+               "address" : "0x36",
+               "value" : "0x2E76E8AC",
+               "swap_bytes" : "0xACE8762E"
+            },
+            {
+               "address" : "0x37",
+               "value" : "0xE9AA33BA",
+               "swap_bytes" : "0xBA33AAE9"
+            },
+            {
+               "address" : "0x38",
+               "value" : "0xC578F540",
+               "swap_bytes" : "0x40F578C5"
+            },
+            {
+               "address" : "0x39",
+               "value" : "0x3AC4800F",
+               "swap_bytes" : "0x0F80C43A"
+            },
+            {
+               "address" : "0x3A",
+               "value" : "0x2C8FD193",
+               "swap_bytes" : "0x93D18F2C"
+            },
+            {
+               "address" : "0x3B",
+               "value" : "0x7DAEB2C8",
+               "swap_bytes" : "0xC8B2AE7D"
+            },
+            {
+               "address" : "0x3C",
+               "value" : "0x2A64C814",
+               "swap_bytes" : "0x14C8642A"
+            },
+            {
+               "address" : "0x3D",
+               "value" : "0xBCEBBAAC",
+               "swap_bytes" : "0xACBAEBBC"
+            }
+         ]
+      }
+   },
+   {
+      "Test_ID" : "4",
+      "Description" : "Test Number 4",
+      "VECTORS" : {
+         "PLAIN" : [
+            "74686520",
+            "64656570",
+            "20737069",
+            "72697475",
+            "616c2066",
+            "6f756e64",
+            "6174696f",
+            "6e73206f",
+            "66205368",
+            "61626261",
+            "742c0a62",
+            "75742061",
+            "6c736f20",
+            "74686520",
+            "6c617773",
+            "206f6620"
+         ],
+         "KEY" : [
+            "904b7952",
+            "36e85a62",
+            "919570a4",
+            "00cc8435",
+            "49d5c4ec",
+            "35b6e0b3",
+            "557abdf2",
+            "e691b87e"
+         ],
+         "NONCE" : [
+            "b15d2db2",
+            "7e7f9c81"
+         ],
+         "COUNTER" : [
+            "00000000",
+            "00000004"
+         ],
+         "HASH" : [
+            "42aa02f6",
+            "59c7642f",
+            "7320e9a4",
+            "a2b2f62e",
+            "ff31d841",
+            "0cf6ce51",
+            "d22b0174",
+            "2e203cd7",
+            "fbe1b628",
+            "6433a1cb",
+            "a40b26f4",
+            "57364ddc",
+            "edfb3b3b",
+            "bfb15f9d",
+            "44683f60",
+            "5db206da"
+         ],
+         "CIPHER" : [
+            "36c267d6",
+            "3da2015f",
+            "535399cd",
+            "d0db825b",
+            "9e5df827",
+            "6383a035",
+            "b35f681b",
+            "40531cb8",
+            "9dc1e540",
+            "0551c3aa",
+            "d0272c96",
+            "22426dbd",
+            "8188541b",
+            "cbd93abd",
+            "28094813",
+            "7ddd60fa"
+         ],
+         "DECRYPTION" : {
+            "normal" : [
+               "74686520",
+               "64656570",
+               "20737069",
+               "72697475",
+               "616c2066",
+               "6f756e64",
+               "6174696f",
+               "6e73206f",
+               "66205368",
+               "61626261",
+               "742c0a62",
+               "75742061",
+               "6c736f20",
+               "74686520",
+               "6c617773",
+               "206f6620"
+            ],
+            "reversed" : [
+               "206f6620",
+               "6c617773",
+               "74686520",
+               "6c736f20",
+               "75742061",
+               "742c0a62",
+               "61626261",
+               "66205368",
+               "6e73206f",
+               "6174696f",
+               "6f756e64",
+               "616c2066",
+               "72697475",
+               "20737069",
+               "64656570",
+               "74686520"
+            ]
+         }
+      },
+      "REGISTERS" : {
+         "PLAIN_TEXT" : {
+            "encrypt_mode" : [
+               {
+                  "address" : "0x02",
+                  "value" : "0x206F6620",
+                  "swap_bytes" : "0x20666F20"
+               },
+               {
+                  "address" : "0x03",
+                  "value" : "0x6C617773",
+                  "swap_bytes" : "0x7377616C"
+               },
+               {
+                  "address" : "0x04",
+                  "value" : "0x74686520",
+                  "swap_bytes" : "0x20656874"
+               },
+               {
+                  "address" : "0x05",
+                  "value" : "0x6C736F20",
+                  "swap_bytes" : "0x206F736C"
+               },
+               {
+                  "address" : "0x06",
+                  "value" : "0x75742061",
+                  "swap_bytes" : "0x61207475"
+               },
+               {
+                  "address" : "0x07",
+                  "value" : "0x742C0A62",
+                  "swap_bytes" : "0x620A2C74"
+               },
+               {
+                  "address" : "0x08",
+                  "value" : "0x61626261",
+                  "swap_bytes" : "0x61626261"
+               },
+               {
+                  "address" : "0x09",
+                  "value" : "0x66205368",
+                  "swap_bytes" : "0x68532066"
+               },
+               {
+                  "address" : "0x0A",
+                  "value" : "0x6E73206F",
+                  "swap_bytes" : "0x6F20736E"
+               },
+               {
+                  "address" : "0x0B",
+                  "value" : "0x6174696F",
+                  "swap_bytes" : "0x6F697461"
+               },
+               {
+                  "address" : "0x0C",
+                  "value" : "0x6F756E64",
+                  "swap_bytes" : "0x646E756F"
+               },
+               {
+                  "address" : "0x0D",
+                  "value" : "0x616C2066",
+                  "swap_bytes" : "0x66206C61"
+               },
+               {
+                  "address" : "0x0E",
+                  "value" : "0x72697475",
+                  "swap_bytes" : "0x75746972"
+               },
+               {
+                  "address" : "0x0F",
+                  "value" : "0x20737069",
+                  "swap_bytes" : "0x69707320"
+               },
+               {
+                  "address" : "0x10",
+                  "value" : "0x64656570",
+                  "swap_bytes" : "0x70656564"
+               },
+               {
+                  "address" : "0x11",
+                  "value" : "0x74686520",
+                  "swap_bytes" : "0x20656874"
+               }
+            ],
+            "decrypt_mode" : [
+               {
+                  "address" : "0x02",
+                  "value" : "0x7DDD60FA",
+                  "swap_bytes" : "0xFA60DD7D"
+               },
+               {
+                  "address" : "0x03",
+                  "value" : "0x28094813",
+                  "swap_bytes" : "0x13480928"
+               },
+               {
+                  "address" : "0x04",
+                  "value" : "0xCBD93ABD",
+                  "swap_bytes" : "0xBD3AD9CB"
+               },
+               {
+                  "address" : "0x05",
+                  "value" : "0x8188541B",
+                  "swap_bytes" : "0x1B548881"
+               },
+               {
+                  "address" : "0x06",
+                  "value" : "0x22426DBD",
+                  "swap_bytes" : "0xBD6D4222"
+               },
+               {
+                  "address" : "0x07",
+                  "value" : "0xD0272C96",
+                  "swap_bytes" : "0x962C27D0"
+               },
+               {
+                  "address" : "0x08",
+                  "value" : "0x0551C3AA",
+                  "swap_bytes" : "0xAAC35105"
+               },
+               {
+                  "address" : "0x09",
+                  "value" : "0x9DC1E540",
+                  "swap_bytes" : "0x40E5C19D"
+               },
+               {
+                  "address" : "0x0A",
+                  "value" : "0x40531CB8",
+                  "swap_bytes" : "0xB81C5340"
+               },
+               {
+                  "address" : "0x0B",
+                  "value" : "0xB35F681B",
+                  "swap_bytes" : "0x1B685FB3"
+               },
+               {
+                  "address" : "0x0C",
+                  "value" : "0x6383A035",
+                  "swap_bytes" : "0x35A08363"
+               },
+               {
+                  "address" : "0x0D",
+                  "value" : "0x9E5DF827",
+                  "swap_bytes" : "0x27F85D9E"
+               },
+               {
+                  "address" : "0x0E",
+                  "value" : "0xD0DB825B",
+                  "swap_bytes" : "0x5B82DBD0"
+               },
+               {
+                  "address" : "0x0F",
+                  "value" : "0x535399CD",
+                  "swap_bytes" : "0xCD995353"
+               },
+               {
+                  "address" : "0x10",
+                  "value" : "0x3DA2015F",
+                  "swap_bytes" : "0x5F01A23D"
+               },
+               {
+                  "address" : "0x11",
+                  "value" : "0x36C267D6",
+                  "swap_bytes" : "0xD667C236"
+               }
+            ]
+         },
+         "KEY" : [
+            {
+               "address" : "0x12",
+               "value" : "0xE691B87E",
+               "swap_bytes" : "0x7EB891E6"
+            },
+            {
+               "address" : "0x13",
+               "value" : "0x557ABDF2",
+               "swap_bytes" : "0xF2BD7A55"
+            },
+            {
+               "address" : "0x14",
+               "value" : "0x35B6E0B3",
+               "swap_bytes" : "0xB3E0B635"
+            },
+            {
+               "address" : "0x15",
+               "value" : "0x49D5C4EC",
+               "swap_bytes" : "0xECC4D549"
+            },
+            {
+               "address" : "0x16",
+               "value" : "0x00CC8435",
+               "swap_bytes" : "0x3584CC00"
+            },
+            {
+               "address" : "0x17",
+               "value" : "0x919570A4",
+               "swap_bytes" : "0xA4709591"
+            },
+            {
+               "address" : "0x18",
+               "value" : "0x36E85A62",
+               "swap_bytes" : "0x625AE836"
+            },
+            {
+               "address" : "0x19",
+               "value" : "0x904B7952",
+               "swap_bytes" : "0x52794B90"
+            }
+         ],
+         "NONCE" : [
+            {
+               "address" : "0x1A",
+               "value" : "0x7E7F9C81",
+               "swap_bytes" : "0x819C7F7E"
+            },
+            {
+               "address" : "0x1B",
+               "value" : "0xB15D2DB2",
+               "swap_bytes" : "0xB22D5DB1"
+            }
+         ],
+         "COUNTER" : [
+            {
+               "address" : "0x1C",
+               "value" : "0x00000004",
+               "swap_bytes" : "0x04000000"
+            },
+            {
+               "address" : "0x1D",
+               "value" : "0x00000000",
+               "swap_bytes" : "0x00000000"
+            }
+         ],
+         "HASHING" : [
+            {
+               "address" : "0x1E",
+               "value" : "0x5DB206DA",
+               "swap_bytes" : "0xDA06B25D"
+            },
+            {
+               "address" : "0x1F",
+               "value" : "0x44683F60",
+               "swap_bytes" : "0x603F6844"
+            },
+            {
+               "address" : "0x20",
+               "value" : "0xBFB15F9D",
+               "swap_bytes" : "0x9D5FB1BF"
+            },
+            {
+               "address" : "0x21",
+               "value" : "0xEDFB3B3B",
+               "swap_bytes" : "0x3B3BFBED"
+            },
+            {
+               "address" : "0x22",
+               "value" : "0x57364DDC",
+               "swap_bytes" : "0xDC4D3657"
+            },
+            {
+               "address" : "0x23",
+               "value" : "0xA40B26F4",
+               "swap_bytes" : "0xF4260BA4"
+            },
+            {
+               "address" : "0x24",
+               "value" : "0x6433A1CB",
+               "swap_bytes" : "0xCBA13364"
+            },
+            {
+               "address" : "0x25",
+               "value" : "0xFBE1B628",
+               "swap_bytes" : "0x28B6E1FB"
+            },
+            {
+               "address" : "0x26",
+               "value" : "0x2E203CD7",
+               "swap_bytes" : "0xD73C202E"
+            },
+            {
+               "address" : "0x27",
+               "value" : "0xD22B0174",
+               "swap_bytes" : "0x74012BD2"
+            },
+            {
+               "address" : "0x28",
+               "value" : "0x0CF6CE51",
+               "swap_bytes" : "0x51CEF60C"
+            },
+            {
+               "address" : "0x29",
+               "value" : "0xFF31D841",
+               "swap_bytes" : "0x41D831FF"
+            },
+            {
+               "address" : "0x2A",
+               "value" : "0xA2B2F62E",
+               "swap_bytes" : "0x2EF6B2A2"
+            },
+            {
+               "address" : "0x2B",
+               "value" : "0x7320E9A4",
+               "swap_bytes" : "0xA4E92073"
+            },
+            {
+               "address" : "0x2C",
+               "value" : "0x59C7642F",
+               "swap_bytes" : "0x2F64C759"
+            },
+            {
+               "address" : "0x2D",
+               "value" : "0x42AA02F6",
+               "swap_bytes" : "0xF602AA42"
+            }
+         ],
+         "CIPHER" : [
+            {
+               "address" : "0x2E",
+               "value" : "0x7DDD60FA",
+               "swap_bytes" : "0xFA60DD7D"
+            },
+            {
+               "address" : "0x2F",
+               "value" : "0x28094813",
+               "swap_bytes" : "0x13480928"
+            },
+            {
+               "address" : "0x30",
+               "value" : "0xCBD93ABD",
+               "swap_bytes" : "0xBD3AD9CB"
+            },
+            {
+               "address" : "0x31",
+               "value" : "0x8188541B",
+               "swap_bytes" : "0x1B548881"
+            },
+            {
+               "address" : "0x32",
+               "value" : "0x22426DBD",
+               "swap_bytes" : "0xBD6D4222"
+            },
+            {
+               "address" : "0x33",
+               "value" : "0xD0272C96",
+               "swap_bytes" : "0x962C27D0"
+            },
+            {
+               "address" : "0x34",
+               "value" : "0x0551C3AA",
+               "swap_bytes" : "0xAAC35105"
+            },
+            {
+               "address" : "0x35",
+               "value" : "0x9DC1E540",
+               "swap_bytes" : "0x40E5C19D"
+            },
+            {
+               "address" : "0x36",
+               "value" : "0x40531CB8",
+               "swap_bytes" : "0xB81C5340"
+            },
+            {
+               "address" : "0x37",
+               "value" : "0xB35F681B",
+               "swap_bytes" : "0x1B685FB3"
+            },
+            {
+               "address" : "0x38",
+               "value" : "0x6383A035",
+               "swap_bytes" : "0x35A08363"
+            },
+            {
+               "address" : "0x39",
+               "value" : "0x9E5DF827",
+               "swap_bytes" : "0x27F85D9E"
+            },
+            {
+               "address" : "0x3A",
+               "value" : "0xD0DB825B",
+               "swap_bytes" : "0x5B82DBD0"
+            },
+            {
+               "address" : "0x3B",
+               "value" : "0x535399CD",
+               "swap_bytes" : "0xCD995353"
+            },
+            {
+               "address" : "0x3C",
+               "value" : "0x3DA2015F",
+               "swap_bytes" : "0x5F01A23D"
+            },
+            {
+               "address" : "0x3D",
+               "value" : "0x36C267D6",
+               "swap_bytes" : "0xD667C236"
+            }
+         ]
+      }
+   },
+   {
+      "Test_ID" : "5",
+      "Description" : "Test Number 5",
+      "VECTORS" : {
+         "PLAIN" : [
+            "70726570",
+            "61726174",
+            "696f6e2c",
+            "20707261",
+            "7965722c",
+            "206b6964",
+            "7573682c",
+            "20746865",
+            "20726561",
+            "736f6e73",
+            "20776879",
+            "20746865",
+            "72652061",
+            "72652033",
+            "3920666f",
+            "72626964"
+         ],
+         "KEY" : [
+            "904b7952",
+            "36e85a62",
+            "919570a4",
+            "00cc8435",
+            "49d5c4ec",
+            "35b6e0b3",
+            "557abdf2",
+            "e691b87e"
+         ],
+         "NONCE" : [
+            "b15d2db2",
+            "7e7f9c81"
+         ],
+         "COUNTER" : [
+            "00000000",
+            "00000005"
+         ],
+         "HASH" : [
+            "051b7850",
+            "b7cbcbb8",
+            "b2f388cd",
+            "60e719ce",
+            "64778aaf",
+            "0b3e7300",
+            "341976ed",
+            "d727a770",
+            "59bd9b2b",
+            "9419af52",
+            "4bfb00ff",
+            "b5d33d6c",
+            "12d4e877",
+            "366f11a1",
+            "d63c4967",
+            "0fb794d3"
+         ],
+         "CIPHER" : [
+            "75691d20",
+            "d6b9aacc",
+            "db9ce6e1",
+            "40976baf",
+            "1d12f883",
+            "2b551a64",
+            "416a1ec1",
+            "f753cf15",
+            "79cffe4a",
+            "e776c121",
+            "6b8c6886",
+            "95a75509",
+            "60b1c816",
+            "440a3192",
+            "ef1c2f08",
+            "7dd5fdb7"
+         ],
+         "DECRYPTION" : {
+            "normal" : [
+               "70726570",
+               "61726174",
+               "696f6e2c",
+               "20707261",
+               "7965722c",
+               "206b6964",
+               "7573682c",
+               "20746865",
+               "20726561",
+               "736f6e73",
+               "20776879",
+               "20746865",
+               "72652061",
+               "72652033",
+               "3920666f",
+               "72626964"
+            ],
+            "reversed" : [
+               "72626964",
+               "3920666f",
+               "72652033",
+               "72652061",
+               "20746865",
+               "20776879",
+               "736f6e73",
+               "20726561",
+               "20746865",
+               "7573682c",
+               "206b6964",
+               "7965722c",
+               "20707261",
+               "696f6e2c",
+               "61726174",
+               "70726570"
+            ]
+         }
+      },
+      "REGISTERS" : {
+         "PLAIN_TEXT" : {
+            "encrypt_mode" : [
+               {
+                  "address" : "0x02",
+                  "value" : "0x72626964",
+                  "swap_bytes" : "0x64696272"
+               },
+               {
+                  "address" : "0x03",
+                  "value" : "0x3920666F",
+                  "swap_bytes" : "0x6F662039"
+               },
+               {
+                  "address" : "0x04",
+                  "value" : "0x72652033",
+                  "swap_bytes" : "0x33206572"
+               },
+               {
+                  "address" : "0x05",
+                  "value" : "0x72652061",
+                  "swap_bytes" : "0x61206572"
+               },
+               {
+                  "address" : "0x06",
+                  "value" : "0x20746865",
+                  "swap_bytes" : "0x65687420"
+               },
+               {
+                  "address" : "0x07",
+                  "value" : "0x20776879",
+                  "swap_bytes" : "0x79687720"
+               },
+               {
+                  "address" : "0x08",
+                  "value" : "0x736F6E73",
+                  "swap_bytes" : "0x736E6F73"
+               },
+               {
+                  "address" : "0x09",
+                  "value" : "0x20726561",
+                  "swap_bytes" : "0x61657220"
+               },
+               {
+                  "address" : "0x0A",
+                  "value" : "0x20746865",
+                  "swap_bytes" : "0x65687420"
+               },
+               {
+                  "address" : "0x0B",
+                  "value" : "0x7573682C",
+                  "swap_bytes" : "0x2C687375"
+               },
+               {
+                  "address" : "0x0C",
+                  "value" : "0x206B6964",
+                  "swap_bytes" : "0x64696B20"
+               },
+               {
+                  "address" : "0x0D",
+                  "value" : "0x7965722C",
+                  "swap_bytes" : "0x2C726579"
+               },
+               {
+                  "address" : "0x0E",
+                  "value" : "0x20707261",
+                  "swap_bytes" : "0x61727020"
+               },
+               {
+                  "address" : "0x0F",
+                  "value" : "0x696F6E2C",
+                  "swap_bytes" : "0x2C6E6F69"
+               },
+               {
+                  "address" : "0x10",
+                  "value" : "0x61726174",
+                  "swap_bytes" : "0x74617261"
+               },
+               {
+                  "address" : "0x11",
+                  "value" : "0x70726570",
+                  "swap_bytes" : "0x70657270"
+               }
+            ],
+            "decrypt_mode" : [
+               {
+                  "address" : "0x02",
+                  "value" : "0x7DD5FDB7",
+                  "swap_bytes" : "0xB7FDD57D"
+               },
+               {
+                  "address" : "0x03",
+                  "value" : "0xEF1C2F08",
+                  "swap_bytes" : "0x082F1CEF"
+               },
+               {
+                  "address" : "0x04",
+                  "value" : "0x440A3192",
+                  "swap_bytes" : "0x92310A44"
+               },
+               {
+                  "address" : "0x05",
+                  "value" : "0x60B1C816",
+                  "swap_bytes" : "0x16C8B160"
+               },
+               {
+                  "address" : "0x06",
+                  "value" : "0x95A75509",
+                  "swap_bytes" : "0x0955A795"
+               },
+               {
+                  "address" : "0x07",
+                  "value" : "0x6B8C6886",
+                  "swap_bytes" : "0x86688C6B"
+               },
+               {
+                  "address" : "0x08",
+                  "value" : "0xE776C121",
+                  "swap_bytes" : "0x21C176E7"
+               },
+               {
+                  "address" : "0x09",
+                  "value" : "0x79CFFE4A",
+                  "swap_bytes" : "0x4AFECF79"
+               },
+               {
+                  "address" : "0x0A",
+                  "value" : "0xF753CF15",
+                  "swap_bytes" : "0x15CF53F7"
+               },
+               {
+                  "address" : "0x0B",
+                  "value" : "0x416A1EC1",
+                  "swap_bytes" : "0xC11E6A41"
+               },
+               {
+                  "address" : "0x0C",
+                  "value" : "0x2B551A64",
+                  "swap_bytes" : "0x641A552B"
+               },
+               {
+                  "address" : "0x0D",
+                  "value" : "0x1D12F883",
+                  "swap_bytes" : "0x83F8121D"
+               },
+               {
+                  "address" : "0x0E",
+                  "value" : "0x40976BAF",
+                  "swap_bytes" : "0xAF6B9740"
+               },
+               {
+                  "address" : "0x0F",
+                  "value" : "0xDB9CE6E1",
+                  "swap_bytes" : "0xE1E69CDB"
+               },
+               {
+                  "address" : "0x10",
+                  "value" : "0xD6B9AACC",
+                  "swap_bytes" : "0xCCAAB9D6"
+               },
+               {
+                  "address" : "0x11",
+                  "value" : "0x75691D20",
+                  "swap_bytes" : "0x201D6975"
+               }
+            ]
+         },
+         "KEY" : [
+            {
+               "address" : "0x12",
+               "value" : "0xE691B87E",
+               "swap_bytes" : "0x7EB891E6"
+            },
+            {
+               "address" : "0x13",
+               "value" : "0x557ABDF2",
+               "swap_bytes" : "0xF2BD7A55"
+            },
+            {
+               "address" : "0x14",
+               "value" : "0x35B6E0B3",
+               "swap_bytes" : "0xB3E0B635"
+            },
+            {
+               "address" : "0x15",
+               "value" : "0x49D5C4EC",
+               "swap_bytes" : "0xECC4D549"
+            },
+            {
+               "address" : "0x16",
+               "value" : "0x00CC8435",
+               "swap_bytes" : "0x3584CC00"
+            },
+            {
+               "address" : "0x17",
+               "value" : "0x919570A4",
+               "swap_bytes" : "0xA4709591"
+            },
+            {
+               "address" : "0x18",
+               "value" : "0x36E85A62",
+               "swap_bytes" : "0x625AE836"
+            },
+            {
+               "address" : "0x19",
+               "value" : "0x904B7952",
+               "swap_bytes" : "0x52794B90"
+            }
+         ],
+         "NONCE" : [
+            {
+               "address" : "0x1A",
+               "value" : "0x7E7F9C81",
+               "swap_bytes" : "0x819C7F7E"
+            },
+            {
+               "address" : "0x1B",
+               "value" : "0xB15D2DB2",
+               "swap_bytes" : "0xB22D5DB1"
+            }
+         ],
+         "COUNTER" : [
+            {
+               "address" : "0x1C",
+               "value" : "0x00000005",
+               "swap_bytes" : "0x05000000"
+            },
+            {
+               "address" : "0x1D",
+               "value" : "0x00000000",
+               "swap_bytes" : "0x00000000"
+            }
+         ],
+         "HASHING" : [
+            {
+               "address" : "0x1E",
+               "value" : "0x0FB794D3",
+               "swap_bytes" : "0xD394B70F"
+            },
+            {
+               "address" : "0x1F",
+               "value" : "0xD63C4967",
+               "swap_bytes" : "0x67493CD6"
+            },
+            {
+               "address" : "0x20",
+               "value" : "0x366F11A1",
+               "swap_bytes" : "0xA1116F36"
+            },
+            {
+               "address" : "0x21",
+               "value" : "0x12D4E877",
+               "swap_bytes" : "0x77E8D412"
+            },
+            {
+               "address" : "0x22",
+               "value" : "0xB5D33D6C",
+               "swap_bytes" : "0x6C3DD3B5"
+            },
+            {
+               "address" : "0x23",
+               "value" : "0x4BFB00FF",
+               "swap_bytes" : "0xFF00FB4B"
+            },
+            {
+               "address" : "0x24",
+               "value" : "0x9419AF52",
+               "swap_bytes" : "0x52AF1994"
+            },
+            {
+               "address" : "0x25",
+               "value" : "0x59BD9B2B",
+               "swap_bytes" : "0x2B9BBD59"
+            },
+            {
+               "address" : "0x26",
+               "value" : "0xD727A770",
+               "swap_bytes" : "0x70A727D7"
+            },
+            {
+               "address" : "0x27",
+               "value" : "0x341976ED",
+               "swap_bytes" : "0xED761934"
+            },
+            {
+               "address" : "0x28",
+               "value" : "0x0B3E7300",
+               "swap_bytes" : "0x00733E0B"
+            },
+            {
+               "address" : "0x29",
+               "value" : "0x64778AAF",
+               "swap_bytes" : "0xAF8A7764"
+            },
+            {
+               "address" : "0x2A",
+               "value" : "0x60E719CE",
+               "swap_bytes" : "0xCE19E760"
+            },
+            {
+               "address" : "0x2B",
+               "value" : "0xB2F388CD",
+               "swap_bytes" : "0xCD88F3B2"
+            },
+            {
+               "address" : "0x2C",
+               "value" : "0xB7CBCBB8",
+               "swap_bytes" : "0xB8CBCBB7"
+            },
+            {
+               "address" : "0x2D",
+               "value" : "0x051B7850",
+               "swap_bytes" : "0x50781B05"
+            }
+         ],
+         "CIPHER" : [
+            {
+               "address" : "0x2E",
+               "value" : "0x7DD5FDB7",
+               "swap_bytes" : "0xB7FDD57D"
+            },
+            {
+               "address" : "0x2F",
+               "value" : "0xEF1C2F08",
+               "swap_bytes" : "0x082F1CEF"
+            },
+            {
+               "address" : "0x30",
+               "value" : "0x440A3192",
+               "swap_bytes" : "0x92310A44"
+            },
+            {
+               "address" : "0x31",
+               "value" : "0x60B1C816",
+               "swap_bytes" : "0x16C8B160"
+            },
+            {
+               "address" : "0x32",
+               "value" : "0x95A75509",
+               "swap_bytes" : "0x0955A795"
+            },
+            {
+               "address" : "0x33",
+               "value" : "0x6B8C6886",
+               "swap_bytes" : "0x86688C6B"
+            },
+            {
+               "address" : "0x34",
+               "value" : "0xE776C121",
+               "swap_bytes" : "0x21C176E7"
+            },
+            {
+               "address" : "0x35",
+               "value" : "0x79CFFE4A",
+               "swap_bytes" : "0x4AFECF79"
+            },
+            {
+               "address" : "0x36",
+               "value" : "0xF753CF15",
+               "swap_bytes" : "0x15CF53F7"
+            },
+            {
+               "address" : "0x37",
+               "value" : "0x416A1EC1",
+               "swap_bytes" : "0xC11E6A41"
+            },
+            {
+               "address" : "0x38",
+               "value" : "0x2B551A64",
+               "swap_bytes" : "0x641A552B"
+            },
+            {
+               "address" : "0x39",
+               "value" : "0x1D12F883",
+               "swap_bytes" : "0x83F8121D"
+            },
+            {
+               "address" : "0x3A",
+               "value" : "0x40976BAF",
+               "swap_bytes" : "0xAF6B9740"
+            },
+            {
+               "address" : "0x3B",
+               "value" : "0xDB9CE6E1",
+               "swap_bytes" : "0xE1E69CDB"
+            },
+            {
+               "address" : "0x3C",
+               "value" : "0xD6B9AACC",
+               "swap_bytes" : "0xCCAAB9D6"
+            },
+            {
+               "address" : "0x3D",
+               "value" : "0x75691D20",
+               "swap_bytes" : "0x201D6975"
+            }
+         ]
+      }
+   },
+   {
+      "Test_ID" : "6",
+      "Description" : "Test Number 6",
+      "VECTORS" : {
+         "PLAIN" : [
+            "64656e20",
+            "776f726b",
+            "732c0a61",
+            "6e642074",
+            "68652064",
+            "65746169",
+            "6c656420",
+            "73747564",
+            "79206f66",
+            "20746865",
+            "20666972",
+            "73742066",
+            "6f726269",
+            "6464656e",
+            "20776f72",
+            "6b732e0a"
+         ],
+         "KEY" : [
+            "904b7952",
+            "36e85a62",
+            "919570a4",
+            "00cc8435",
+            "49d5c4ec",
+            "35b6e0b3",
+            "557abdf2",
+            "e691b87e"
+         ],
+         "NONCE" : [
+            "b15d2db2",
+            "7e7f9c81"
+         ],
+         "COUNTER" : [
+            "00000000",
+            "00000006"
+         ],
+         "HASH" : [
+            "47323bab",
+            "b975999e",
+            "8b6b5bec",
+            "3a4eb2ca",
+            "8fda42e4",
+            "06989955",
+            "a96f2fac",
+            "174f0ff9",
+            "db4c53e6",
+            "b201af11",
+            "dd1afff3",
+            "861f99e8",
+            "ecdbfadb",
+            "9f025de1",
+            "7e6065bb",
+            "bdf36001"
+         ],
+         "CIPHER" : [
+            "2357558b",
+            "ce1aebf5",
+            "f847518d",
+            "542a92be",
+            "e7bf6280",
+            "63ecf83c",
+            "c50a4b8c",
+            "643b7a9d",
+            "a26c3c80",
+            "9275c774",
+            "fd7c9681",
+            "f56bb98e",
+            "83a998b2",
+            "fb66388f",
+            "5e170ac9",
+            "d6804e0b"
+         ],
+         "DECRYPTION" : {
+            "normal" : [
+               "64656e20",
+               "776f726b",
+               "732c0a61",
+               "6e642074",
+               "68652064",
+               "65746169",
+               "6c656420",
+               "73747564",
+               "79206f66",
+               "20746865",
+               "20666972",
+               "73742066",
+               "6f726269",
+               "6464656e",
+               "20776f72",
+               "6b732e0a"
+            ],
+            "reversed" : [
+               "6b732e0a",
+               "20776f72",
+               "6464656e",
+               "6f726269",
+               "73742066",
+               "20666972",
+               "20746865",
+               "79206f66",
+               "73747564",
+               "6c656420",
+               "65746169",
+               "68652064",
+               "6e642074",
+               "732c0a61",
+               "776f726b",
+               "64656e20"
+            ]
+         }
+      },
+      "REGISTERS" : {
+         "PLAIN_TEXT" : {
+            "encrypt_mode" : [
+               {
+                  "address" : "0x02",
+                  "value" : "0x6B732E0A",
+                  "swap_bytes" : "0x0A2E736B"
+               },
+               {
+                  "address" : "0x03",
+                  "value" : "0x20776F72",
+                  "swap_bytes" : "0x726F7720"
+               },
+               {
+                  "address" : "0x04",
+                  "value" : "0x6464656E",
+                  "swap_bytes" : "0x6E656464"
+               },
+               {
+                  "address" : "0x05",
+                  "value" : "0x6F726269",
+                  "swap_bytes" : "0x6962726F"
+               },
+               {
+                  "address" : "0x06",
+                  "value" : "0x73742066",
+                  "swap_bytes" : "0x66207473"
+               },
+               {
+                  "address" : "0x07",
+                  "value" : "0x20666972",
+                  "swap_bytes" : "0x72696620"
+               },
+               {
+                  "address" : "0x08",
+                  "value" : "0x20746865",
+                  "swap_bytes" : "0x65687420"
+               },
+               {
+                  "address" : "0x09",
+                  "value" : "0x79206F66",
+                  "swap_bytes" : "0x666F2079"
+               },
+               {
+                  "address" : "0x0A",
+                  "value" : "0x73747564",
+                  "swap_bytes" : "0x64757473"
+               },
+               {
+                  "address" : "0x0B",
+                  "value" : "0x6C656420",
+                  "swap_bytes" : "0x2064656C"
+               },
+               {
+                  "address" : "0x0C",
+                  "value" : "0x65746169",
+                  "swap_bytes" : "0x69617465"
+               },
+               {
+                  "address" : "0x0D",
+                  "value" : "0x68652064",
+                  "swap_bytes" : "0x64206568"
+               },
+               {
+                  "address" : "0x0E",
+                  "value" : "0x6E642074",
+                  "swap_bytes" : "0x7420646E"
+               },
+               {
+                  "address" : "0x0F",
+                  "value" : "0x732C0A61",
+                  "swap_bytes" : "0x610A2C73"
+               },
+               {
+                  "address" : "0x10",
+                  "value" : "0x776F726B",
+                  "swap_bytes" : "0x6B726F77"
+               },
+               {
+                  "address" : "0x11",
+                  "value" : "0x64656E20",
+                  "swap_bytes" : "0x206E6564"
+               }
+            ],
+            "decrypt_mode" : [
+               {
+                  "address" : "0x02",
+                  "value" : "0xD6804E0B",
+                  "swap_bytes" : "0x0B4E80D6"
+               },
+               {
+                  "address" : "0x03",
+                  "value" : "0x5E170AC9",
+                  "swap_bytes" : "0xC90A175E"
+               },
+               {
+                  "address" : "0x04",
+                  "value" : "0xFB66388F",
+                  "swap_bytes" : "0x8F3866FB"
+               },
+               {
+                  "address" : "0x05",
+                  "value" : "0x83A998B2",
+                  "swap_bytes" : "0xB298A983"
+               },
+               {
+                  "address" : "0x06",
+                  "value" : "0xF56BB98E",
+                  "swap_bytes" : "0x8EB96BF5"
+               },
+               {
+                  "address" : "0x07",
+                  "value" : "0xFD7C9681",
+                  "swap_bytes" : "0x81967CFD"
+               },
+               {
+                  "address" : "0x08",
+                  "value" : "0x9275C774",
+                  "swap_bytes" : "0x74C77592"
+               },
+               {
+                  "address" : "0x09",
+                  "value" : "0xA26C3C80",
+                  "swap_bytes" : "0x803C6CA2"
+               },
+               {
+                  "address" : "0x0A",
+                  "value" : "0x643B7A9D",
+                  "swap_bytes" : "0x9D7A3B64"
+               },
+               {
+                  "address" : "0x0B",
+                  "value" : "0xC50A4B8C",
+                  "swap_bytes" : "0x8C4B0AC5"
+               },
+               {
+                  "address" : "0x0C",
+                  "value" : "0x63ECF83C",
+                  "swap_bytes" : "0x3CF8EC63"
+               },
+               {
+                  "address" : "0x0D",
+                  "value" : "0xE7BF6280",
+                  "swap_bytes" : "0x8062BFE7"
+               },
+               {
+                  "address" : "0x0E",
+                  "value" : "0x542A92BE",
+                  "swap_bytes" : "0xBE922A54"
+               },
+               {
+                  "address" : "0x0F",
+                  "value" : "0xF847518D",
+                  "swap_bytes" : "0x8D5147F8"
+               },
+               {
+                  "address" : "0x10",
+                  "value" : "0xCE1AEBF5",
+                  "swap_bytes" : "0xF5EB1ACE"
+               },
+               {
+                  "address" : "0x11",
+                  "value" : "0x2357558B",
+                  "swap_bytes" : "0x8B555723"
+               }
+            ]
+         },
+         "KEY" : [
+            {
+               "address" : "0x12",
+               "value" : "0xE691B87E",
+               "swap_bytes" : "0x7EB891E6"
+            },
+            {
+               "address" : "0x13",
+               "value" : "0x557ABDF2",
+               "swap_bytes" : "0xF2BD7A55"
+            },
+            {
+               "address" : "0x14",
+               "value" : "0x35B6E0B3",
+               "swap_bytes" : "0xB3E0B635"
+            },
+            {
+               "address" : "0x15",
+               "value" : "0x49D5C4EC",
+               "swap_bytes" : "0xECC4D549"
+            },
+            {
+               "address" : "0x16",
+               "value" : "0x00CC8435",
+               "swap_bytes" : "0x3584CC00"
+            },
+            {
+               "address" : "0x17",
+               "value" : "0x919570A4",
+               "swap_bytes" : "0xA4709591"
+            },
+            {
+               "address" : "0x18",
+               "value" : "0x36E85A62",
+               "swap_bytes" : "0x625AE836"
+            },
+            {
+               "address" : "0x19",
+               "value" : "0x904B7952",
+               "swap_bytes" : "0x52794B90"
+            }
+         ],
+         "NONCE" : [
+            {
+               "address" : "0x1A",
+               "value" : "0x7E7F9C81",
+               "swap_bytes" : "0x819C7F7E"
+            },
+            {
+               "address" : "0x1B",
+               "value" : "0xB15D2DB2",
+               "swap_bytes" : "0xB22D5DB1"
+            }
+         ],
+         "COUNTER" : [
+            {
+               "address" : "0x1C",
+               "value" : "0x00000006",
+               "swap_bytes" : "0x06000000"
+            },
+            {
+               "address" : "0x1D",
+               "value" : "0x00000000",
+               "swap_bytes" : "0x00000000"
+            }
+         ],
+         "HASHING" : [
+            {
+               "address" : "0x1E",
+               "value" : "0xBDF36001",
+               "swap_bytes" : "0x0160F3BD"
+            },
+            {
+               "address" : "0x1F",
+               "value" : "0x7E6065BB",
+               "swap_bytes" : "0xBB65607E"
+            },
+            {
+               "address" : "0x20",
+               "value" : "0x9F025DE1",
+               "swap_bytes" : "0xE15D029F"
+            },
+            {
+               "address" : "0x21",
+               "value" : "0xECDBFADB",
+               "swap_bytes" : "0xDBFADBEC"
+            },
+            {
+               "address" : "0x22",
+               "value" : "0x861F99E8",
+               "swap_bytes" : "0xE8991F86"
+            },
+            {
+               "address" : "0x23",
+               "value" : "0xDD1AFFF3",
+               "swap_bytes" : "0xF3FF1ADD"
+            },
+            {
+               "address" : "0x24",
+               "value" : "0xB201AF11",
+               "swap_bytes" : "0x11AF01B2"
+            },
+            {
+               "address" : "0x25",
+               "value" : "0xDB4C53E6",
+               "swap_bytes" : "0xE6534CDB"
+            },
+            {
+               "address" : "0x26",
+               "value" : "0x174F0FF9",
+               "swap_bytes" : "0xF90F4F17"
+            },
+            {
+               "address" : "0x27",
+               "value" : "0xA96F2FAC",
+               "swap_bytes" : "0xAC2F6FA9"
+            },
+            {
+               "address" : "0x28",
+               "value" : "0x06989955",
+               "swap_bytes" : "0x55999806"
+            },
+            {
+               "address" : "0x29",
+               "value" : "0x8FDA42E4",
+               "swap_bytes" : "0xE442DA8F"
+            },
+            {
+               "address" : "0x2A",
+               "value" : "0x3A4EB2CA",
+               "swap_bytes" : "0xCAB24E3A"
+            },
+            {
+               "address" : "0x2B",
+               "value" : "0x8B6B5BEC",
+               "swap_bytes" : "0xEC5B6B8B"
+            },
+            {
+               "address" : "0x2C",
+               "value" : "0xB975999E",
+               "swap_bytes" : "0x9E9975B9"
+            },
+            {
+               "address" : "0x2D",
+               "value" : "0x47323BAB",
+               "swap_bytes" : "0xAB3B3247"
+            }
+         ],
+         "CIPHER" : [
+            {
+               "address" : "0x2E",
+               "value" : "0xD6804E0B",
+               "swap_bytes" : "0x0B4E80D6"
+            },
+            {
+               "address" : "0x2F",
+               "value" : "0x5E170AC9",
+               "swap_bytes" : "0xC90A175E"
+            },
+            {
+               "address" : "0x30",
+               "value" : "0xFB66388F",
+               "swap_bytes" : "0x8F3866FB"
+            },
+            {
+               "address" : "0x31",
+               "value" : "0x83A998B2",
+               "swap_bytes" : "0xB298A983"
+            },
+            {
+               "address" : "0x32",
+               "value" : "0xF56BB98E",
+               "swap_bytes" : "0x8EB96BF5"
+            },
+            {
+               "address" : "0x33",
+               "value" : "0xFD7C9681",
+               "swap_bytes" : "0x81967CFD"
+            },
+            {
+               "address" : "0x34",
+               "value" : "0x9275C774",
+               "swap_bytes" : "0x74C77592"
+            },
+            {
+               "address" : "0x35",
+               "value" : "0xA26C3C80",
+               "swap_bytes" : "0x803C6CA2"
+            },
+            {
+               "address" : "0x36",
+               "value" : "0x643B7A9D",
+               "swap_bytes" : "0x9D7A3B64"
+            },
+            {
+               "address" : "0x37",
+               "value" : "0xC50A4B8C",
+               "swap_bytes" : "0x8C4B0AC5"
+            },
+            {
+               "address" : "0x38",
+               "value" : "0x63ECF83C",
+               "swap_bytes" : "0x3CF8EC63"
+            },
+            {
+               "address" : "0x39",
+               "value" : "0xE7BF6280",
+               "swap_bytes" : "0x8062BFE7"
+            },
+            {
+               "address" : "0x3A",
+               "value" : "0x542A92BE",
+               "swap_bytes" : "0xBE922A54"
+            },
+            {
+               "address" : "0x3B",
+               "value" : "0xF847518D",
+               "swap_bytes" : "0x8D5147F8"
+            },
+            {
+               "address" : "0x3C",
+               "value" : "0xCE1AEBF5",
+               "swap_bytes" : "0xF5EB1ACE"
+            },
+            {
+               "address" : "0x3D",
+               "value" : "0x2357558B",
+               "swap_bytes" : "0x8B555723"
+            }
+         ]
+      }
+   },
+   {
+      "Test_ID" : "7",
+      "Description" : "Test Number 7",
+      "VECTORS" : {
+         "PLAIN" : [
+            "0a496e20",
+            "6120636c",
+            "6561722c",
+            "20636f6e",
+            "63697365",
+            "20616e64",
+            "206d6574",
+            "686f6469",
+            "63616c20",
+            "7374796c",
+            "652c2074",
+            "68697320",
+            "626f6f6b",
+            "2077696c",
+            "6c20656e",
+            "6c696768"
+         ],
+         "KEY" : [
+            "904b7952",
+            "36e85a62",
+            "919570a4",
+            "00cc8435",
+            "49d5c4ec",
+            "35b6e0b3",
+            "557abdf2",
+            "e691b87e"
+         ],
+         "NONCE" : [
+            "b15d2db2",
+            "7e7f9c81"
+         ],
+         "COUNTER" : [
+            "00000000",
+            "00000007"
+         ],
+         "HASH" : [
+            "05b6ab0e",
+            "746c8eef",
+            "6f04c447",
+            "409b2565",
+            "edcf4eef",
+            "fcfa3434",
+            "9c4fd9d3",
+            "8138c4aa",
+            "84a4c291",
+            "ff2ad994",
+            "324e3445",
+            "7b136671",
+            "6e8d9b8c",
+            "13c2249f",
+            "936f91a3",
+            "ed8e474f"
+         ],
+         "CIPHER" : [
+            "0fffc52e",
+            "154ced83",
+            "0a65b66b",
+            "60f84a0b",
+            "8ea63d8a",
+            "dc9b5a50",
+            "bc22bca7",
+            "e957a0c3",
+            "e7c5aeb1",
+            "8c5ea0f8",
+            "57621431",
+            "137a1551",
+            "0ce2f4e7",
+            "33b54df3",
+            "ff4ff4cd",
+            "81e72027"
+         ],
+         "DECRYPTION" : {
+            "normal" : [
+               "0a496e20",
+               "6120636c",
+               "6561722c",
+               "20636f6e",
+               "63697365",
+               "20616e64",
+               "206d6574",
+               "686f6469",
+               "63616c20",
+               "7374796c",
+               "652c2074",
+               "68697320",
+               "626f6f6b",
+               "2077696c",
+               "6c20656e",
+               "6c696768"
+            ],
+            "reversed" : [
+               "6c696768",
+               "6c20656e",
+               "2077696c",
+               "626f6f6b",
+               "68697320",
+               "652c2074",
+               "7374796c",
+               "63616c20",
+               "686f6469",
+               "206d6574",
+               "20616e64",
+               "63697365",
+               "20636f6e",
+               "6561722c",
+               "6120636c",
+               "0a496e20"
+            ]
+         }
+      },
+      "REGISTERS" : {
+         "PLAIN_TEXT" : {
+            "encrypt_mode" : [
+               {
+                  "address" : "0x02",
+                  "value" : "0x6C696768",
+                  "swap_bytes" : "0x6867696C"
+               },
+               {
+                  "address" : "0x03",
+                  "value" : "0x6C20656E",
+                  "swap_bytes" : "0x6E65206C"
+               },
+               {
+                  "address" : "0x04",
+                  "value" : "0x2077696C",
+                  "swap_bytes" : "0x6C697720"
+               },
+               {
+                  "address" : "0x05",
+                  "value" : "0x626F6F6B",
+                  "swap_bytes" : "0x6B6F6F62"
+               },
+               {
+                  "address" : "0x06",
+                  "value" : "0x68697320",
+                  "swap_bytes" : "0x20736968"
+               },
+               {
+                  "address" : "0x07",
+                  "value" : "0x652C2074",
+                  "swap_bytes" : "0x74202C65"
+               },
+               {
+                  "address" : "0x08",
+                  "value" : "0x7374796C",
+                  "swap_bytes" : "0x6C797473"
+               },
+               {
+                  "address" : "0x09",
+                  "value" : "0x63616C20",
+                  "swap_bytes" : "0x206C6163"
+               },
+               {
+                  "address" : "0x0A",
+                  "value" : "0x686F6469",
+                  "swap_bytes" : "0x69646F68"
+               },
+               {
+                  "address" : "0x0B",
+                  "value" : "0x206D6574",
+                  "swap_bytes" : "0x74656D20"
+               },
+               {
+                  "address" : "0x0C",
+                  "value" : "0x20616E64",
+                  "swap_bytes" : "0x646E6120"
+               },
+               {
+                  "address" : "0x0D",
+                  "value" : "0x63697365",
+                  "swap_bytes" : "0x65736963"
+               },
+               {
+                  "address" : "0x0E",
+                  "value" : "0x20636F6E",
+                  "swap_bytes" : "0x6E6F6320"
+               },
+               {
+                  "address" : "0x0F",
+                  "value" : "0x6561722C",
+                  "swap_bytes" : "0x2C726165"
+               },
+               {
+                  "address" : "0x10",
+                  "value" : "0x6120636C",
+                  "swap_bytes" : "0x6C632061"
+               },
+               {
+                  "address" : "0x11",
+                  "value" : "0x0A496E20",
+                  "swap_bytes" : "0x206E490A"
+               }
+            ],
+            "decrypt_mode" : [
+               {
+                  "address" : "0x02",
+                  "value" : "0x81E72027",
+                  "swap_bytes" : "0x2720E781"
+               },
+               {
+                  "address" : "0x03",
+                  "value" : "0xFF4FF4CD",
+                  "swap_bytes" : "0xCDF44FFF"
+               },
+               {
+                  "address" : "0x04",
+                  "value" : "0x33B54DF3",
+                  "swap_bytes" : "0xF34DB533"
+               },
+               {
+                  "address" : "0x05",
+                  "value" : "0x0CE2F4E7",
+                  "swap_bytes" : "0xE7F4E20C"
+               },
+               {
+                  "address" : "0x06",
+                  "value" : "0x137A1551",
+                  "swap_bytes" : "0x51157A13"
+               },
+               {
+                  "address" : "0x07",
+                  "value" : "0x57621431",
+                  "swap_bytes" : "0x31146257"
+               },
+               {
+                  "address" : "0x08",
+                  "value" : "0x8C5EA0F8",
+                  "swap_bytes" : "0xF8A05E8C"
+               },
+               {
+                  "address" : "0x09",
+                  "value" : "0xE7C5AEB1",
+                  "swap_bytes" : "0xB1AEC5E7"
+               },
+               {
+                  "address" : "0x0A",
+                  "value" : "0xE957A0C3",
+                  "swap_bytes" : "0xC3A057E9"
+               },
+               {
+                  "address" : "0x0B",
+                  "value" : "0xBC22BCA7",
+                  "swap_bytes" : "0xA7BC22BC"
+               },
+               {
+                  "address" : "0x0C",
+                  "value" : "0xDC9B5A50",
+                  "swap_bytes" : "0x505A9BDC"
+               },
+               {
+                  "address" : "0x0D",
+                  "value" : "0x8EA63D8A",
+                  "swap_bytes" : "0x8A3DA68E"
+               },
+               {
+                  "address" : "0x0E",
+                  "value" : "0x60F84A0B",
+                  "swap_bytes" : "0x0B4AF860"
+               },
+               {
+                  "address" : "0x0F",
+                  "value" : "0x0A65B66B",
+                  "swap_bytes" : "0x6BB6650A"
+               },
+               {
+                  "address" : "0x10",
+                  "value" : "0x154CED83",
+                  "swap_bytes" : "0x83ED4C15"
+               },
+               {
+                  "address" : "0x11",
+                  "value" : "0x0FFFC52E",
+                  "swap_bytes" : "0x2EC5FF0F"
+               }
+            ]
+         },
+         "KEY" : [
+            {
+               "address" : "0x12",
+               "value" : "0xE691B87E",
+               "swap_bytes" : "0x7EB891E6"
+            },
+            {
+               "address" : "0x13",
+               "value" : "0x557ABDF2",
+               "swap_bytes" : "0xF2BD7A55"
+            },
+            {
+               "address" : "0x14",
+               "value" : "0x35B6E0B3",
+               "swap_bytes" : "0xB3E0B635"
+            },
+            {
+               "address" : "0x15",
+               "value" : "0x49D5C4EC",
+               "swap_bytes" : "0xECC4D549"
+            },
+            {
+               "address" : "0x16",
+               "value" : "0x00CC8435",
+               "swap_bytes" : "0x3584CC00"
+            },
+            {
+               "address" : "0x17",
+               "value" : "0x919570A4",
+               "swap_bytes" : "0xA4709591"
+            },
+            {
+               "address" : "0x18",
+               "value" : "0x36E85A62",
+               "swap_bytes" : "0x625AE836"
+            },
+            {
+               "address" : "0x19",
+               "value" : "0x904B7952",
+               "swap_bytes" : "0x52794B90"
+            }
+         ],
+         "NONCE" : [
+            {
+               "address" : "0x1A",
+               "value" : "0x7E7F9C81",
+               "swap_bytes" : "0x819C7F7E"
+            },
+            {
+               "address" : "0x1B",
+               "value" : "0xB15D2DB2",
+               "swap_bytes" : "0xB22D5DB1"
+            }
+         ],
+         "COUNTER" : [
+            {
+               "address" : "0x1C",
+               "value" : "0x00000007",
+               "swap_bytes" : "0x07000000"
+            },
+            {
+               "address" : "0x1D",
+               "value" : "0x00000000",
+               "swap_bytes" : "0x00000000"
+            }
+         ],
+         "HASHING" : [
+            {
+               "address" : "0x1E",
+               "value" : "0xED8E474F",
+               "swap_bytes" : "0x4F478EED"
+            },
+            {
+               "address" : "0x1F",
+               "value" : "0x936F91A3",
+               "swap_bytes" : "0xA3916F93"
+            },
+            {
+               "address" : "0x20",
+               "value" : "0x13C2249F",
+               "swap_bytes" : "0x9F24C213"
+            },
+            {
+               "address" : "0x21",
+               "value" : "0x6E8D9B8C",
+               "swap_bytes" : "0x8C9B8D6E"
+            },
+            {
+               "address" : "0x22",
+               "value" : "0x7B136671",
+               "swap_bytes" : "0x7166137B"
+            },
+            {
+               "address" : "0x23",
+               "value" : "0x324E3445",
+               "swap_bytes" : "0x45344E32"
+            },
+            {
+               "address" : "0x24",
+               "value" : "0xFF2AD994",
+               "swap_bytes" : "0x94D92AFF"
+            },
+            {
+               "address" : "0x25",
+               "value" : "0x84A4C291",
+               "swap_bytes" : "0x91C2A484"
+            },
+            {
+               "address" : "0x26",
+               "value" : "0x8138C4AA",
+               "swap_bytes" : "0xAAC43881"
+            },
+            {
+               "address" : "0x27",
+               "value" : "0x9C4FD9D3",
+               "swap_bytes" : "0xD3D94F9C"
+            },
+            {
+               "address" : "0x28",
+               "value" : "0xFCFA3434",
+               "swap_bytes" : "0x3434FAFC"
+            },
+            {
+               "address" : "0x29",
+               "value" : "0xEDCF4EEF",
+               "swap_bytes" : "0xEF4ECFED"
+            },
+            {
+               "address" : "0x2A",
+               "value" : "0x409B2565",
+               "swap_bytes" : "0x65259B40"
+            },
+            {
+               "address" : "0x2B",
+               "value" : "0x6F04C447",
+               "swap_bytes" : "0x47C4046F"
+            },
+            {
+               "address" : "0x2C",
+               "value" : "0x746C8EEF",
+               "swap_bytes" : "0xEF8E6C74"
+            },
+            {
+               "address" : "0x2D",
+               "value" : "0x05B6AB0E",
+               "swap_bytes" : "0x0EABB605"
+            }
+         ],
+         "CIPHER" : [
+            {
+               "address" : "0x2E",
+               "value" : "0x81E72027",
+               "swap_bytes" : "0x2720E781"
+            },
+            {
+               "address" : "0x2F",
+               "value" : "0xFF4FF4CD",
+               "swap_bytes" : "0xCDF44FFF"
+            },
+            {
+               "address" : "0x30",
+               "value" : "0x33B54DF3",
+               "swap_bytes" : "0xF34DB533"
+            },
+            {
+               "address" : "0x31",
+               "value" : "0x0CE2F4E7",
+               "swap_bytes" : "0xE7F4E20C"
+            },
+            {
+               "address" : "0x32",
+               "value" : "0x137A1551",
+               "swap_bytes" : "0x51157A13"
+            },
+            {
+               "address" : "0x33",
+               "value" : "0x57621431",
+               "swap_bytes" : "0x31146257"
+            },
+            {
+               "address" : "0x34",
+               "value" : "0x8C5EA0F8",
+               "swap_bytes" : "0xF8A05E8C"
+            },
+            {
+               "address" : "0x35",
+               "value" : "0xE7C5AEB1",
+               "swap_bytes" : "0xB1AEC5E7"
+            },
+            {
+               "address" : "0x36",
+               "value" : "0xE957A0C3",
+               "swap_bytes" : "0xC3A057E9"
+            },
+            {
+               "address" : "0x37",
+               "value" : "0xBC22BCA7",
+               "swap_bytes" : "0xA7BC22BC"
+            },
+            {
+               "address" : "0x38",
+               "value" : "0xDC9B5A50",
+               "swap_bytes" : "0x505A9BDC"
+            },
+            {
+               "address" : "0x39",
+               "value" : "0x8EA63D8A",
+               "swap_bytes" : "0x8A3DA68E"
+            },
+            {
+               "address" : "0x3A",
+               "value" : "0x60F84A0B",
+               "swap_bytes" : "0x0B4AF860"
+            },
+            {
+               "address" : "0x3B",
+               "value" : "0x0A65B66B",
+               "swap_bytes" : "0x6BB6650A"
+            },
+            {
+               "address" : "0x3C",
+               "value" : "0x154CED83",
+               "swap_bytes" : "0x83ED4C15"
+            },
+            {
+               "address" : "0x3D",
+               "value" : "0x0FFFC52E",
+               "swap_bytes" : "0x2EC5FF0F"
+            }
+         ]
+      }
+   },
+   {
+      "Test_ID" : "8",
+      "Description" : "Test Number 8",
+      "VECTORS" : {
+         "PLAIN" : [
+            "74656e20",
+            "74686520",
+            "72656164",
+            "65722077",
+            "686f2077",
+            "69736865",
+            "7320746f",
+            "200a6469",
+            "73636f76",
+            "6572206f",
+            "72206465",
+            "6570656e",
+            "20686973",
+            "206b6e6f",
+            "776c6564",
+            "6765206f"
+         ],
+         "KEY" : [
+            "904b7952",
+            "36e85a62",
+            "919570a4",
+            "00cc8435",
+            "49d5c4ec",
+            "35b6e0b3",
+            "557abdf2",
+            "e691b87e"
+         ],
+         "NONCE" : [
+            "b15d2db2",
+            "7e7f9c81"
+         ],
+         "COUNTER" : [
+            "00000000",
+            "00000008"
+         ],
+         "HASH" : [
+            "0389cf24",
+            "5d4c7ed5",
+            "a17f1a56",
+            "2cd73a5b",
+            "3d2750a9",
+            "c869d515",
+            "288ad4a1",
+            "030de272",
+            "28de632f",
+            "ca2fdcd0",
+            "28597bd1",
+            "51c375f4",
+            "2cb3a7fc",
+            "bf42b9a0",
+            "d3934466",
+            "6a508035"
+         ],
+         "CIPHER" : [
+            "77eca104",
+            "29241bf5",
+            "d31a7b32",
+            "49a51a2c",
+            "554870de",
+            "a11abd70",
+            "5baaa0ce",
+            "2307861b",
+            "5bbd0c59",
+            "af5dfcbf",
+            "5a791fb4",
+            "34b3109a",
+            "0cdbce8f",
+            "9f29d7cf",
+            "a4ff2102",
+            "0d35a05a"
+         ],
+         "DECRYPTION" : {
+            "normal" : [
+               "74656e20",
+               "74686520",
+               "72656164",
+               "65722077",
+               "686f2077",
+               "69736865",
+               "7320746f",
+               "200a6469",
+               "73636f76",
+               "6572206f",
+               "72206465",
+               "6570656e",
+               "20686973",
+               "206b6e6f",
+               "776c6564",
+               "6765206f"
+            ],
+            "reversed" : [
+               "6765206f",
+               "776c6564",
+               "206b6e6f",
+               "20686973",
+               "6570656e",
+               "72206465",
+               "6572206f",
+               "73636f76",
+               "200a6469",
+               "7320746f",
+               "69736865",
+               "686f2077",
+               "65722077",
+               "72656164",
+               "74686520",
+               "74656e20"
+            ]
+         }
+      },
+      "REGISTERS" : {
+         "PLAIN_TEXT" : {
+            "encrypt_mode" : [
+               {
+                  "address" : "0x02",
+                  "value" : "0x6765206F",
+                  "swap_bytes" : "0x6F206567"
+               },
+               {
+                  "address" : "0x03",
+                  "value" : "0x776C6564",
+                  "swap_bytes" : "0x64656C77"
+               },
+               {
+                  "address" : "0x04",
+                  "value" : "0x206B6E6F",
+                  "swap_bytes" : "0x6F6E6B20"
+               },
+               {
+                  "address" : "0x05",
+                  "value" : "0x20686973",
+                  "swap_bytes" : "0x73696820"
+               },
+               {
+                  "address" : "0x06",
+                  "value" : "0x6570656E",
+                  "swap_bytes" : "0x6E657065"
+               },
+               {
+                  "address" : "0x07",
+                  "value" : "0x72206465",
+                  "swap_bytes" : "0x65642072"
+               },
+               {
+                  "address" : "0x08",
+                  "value" : "0x6572206F",
+                  "swap_bytes" : "0x6F207265"
+               },
+               {
+                  "address" : "0x09",
+                  "value" : "0x73636F76",
+                  "swap_bytes" : "0x766F6373"
+               },
+               {
+                  "address" : "0x0A",
+                  "value" : "0x200A6469",
+                  "swap_bytes" : "0x69640A20"
+               },
+               {
+                  "address" : "0x0B",
+                  "value" : "0x7320746F",
+                  "swap_bytes" : "0x6F742073"
+               },
+               {
+                  "address" : "0x0C",
+                  "value" : "0x69736865",
+                  "swap_bytes" : "0x65687369"
+               },
+               {
+                  "address" : "0x0D",
+                  "value" : "0x686F2077",
+                  "swap_bytes" : "0x77206F68"
+               },
+               {
+                  "address" : "0x0E",
+                  "value" : "0x65722077",
+                  "swap_bytes" : "0x77207265"
+               },
+               {
+                  "address" : "0x0F",
+                  "value" : "0x72656164",
+                  "swap_bytes" : "0x64616572"
+               },
+               {
+                  "address" : "0x10",
+                  "value" : "0x74686520",
+                  "swap_bytes" : "0x20656874"
+               },
+               {
+                  "address" : "0x11",
+                  "value" : "0x74656E20",
+                  "swap_bytes" : "0x206E6574"
+               }
+            ],
+            "decrypt_mode" : [
+               {
+                  "address" : "0x02",
+                  "value" : "0x0D35A05A",
+                  "swap_bytes" : "0x5AA0350D"
+               },
+               {
+                  "address" : "0x03",
+                  "value" : "0xA4FF2102",
+                  "swap_bytes" : "0x0221FFA4"
+               },
+               {
+                  "address" : "0x04",
+                  "value" : "0x9F29D7CF",
+                  "swap_bytes" : "0xCFD7299F"
+               },
+               {
+                  "address" : "0x05",
+                  "value" : "0x0CDBCE8F",
+                  "swap_bytes" : "0x8FCEDB0C"
+               },
+               {
+                  "address" : "0x06",
+                  "value" : "0x34B3109A",
+                  "swap_bytes" : "0x9A10B334"
+               },
+               {
+                  "address" : "0x07",
+                  "value" : "0x5A791FB4",
+                  "swap_bytes" : "0xB41F795A"
+               },
+               {
+                  "address" : "0x08",
+                  "value" : "0xAF5DFCBF",
+                  "swap_bytes" : "0xBFFC5DAF"
+               },
+               {
+                  "address" : "0x09",
+                  "value" : "0x5BBD0C59",
+                  "swap_bytes" : "0x590CBD5B"
+               },
+               {
+                  "address" : "0x0A",
+                  "value" : "0x2307861B",
+                  "swap_bytes" : "0x1B860723"
+               },
+               {
+                  "address" : "0x0B",
+                  "value" : "0x5BAAA0CE",
+                  "swap_bytes" : "0xCEA0AA5B"
+               },
+               {
+                  "address" : "0x0C",
+                  "value" : "0xA11ABD70",
+                  "swap_bytes" : "0x70BD1AA1"
+               },
+               {
+                  "address" : "0x0D",
+                  "value" : "0x554870DE",
+                  "swap_bytes" : "0xDE704855"
+               },
+               {
+                  "address" : "0x0E",
+                  "value" : "0x49A51A2C",
+                  "swap_bytes" : "0x2C1AA549"
+               },
+               {
+                  "address" : "0x0F",
+                  "value" : "0xD31A7B32",
+                  "swap_bytes" : "0x327B1AD3"
+               },
+               {
+                  "address" : "0x10",
+                  "value" : "0x29241BF5",
+                  "swap_bytes" : "0xF51B2429"
+               },
+               {
+                  "address" : "0x11",
+                  "value" : "0x77ECA104",
+                  "swap_bytes" : "0x04A1EC77"
+               }
+            ]
+         },
+         "KEY" : [
+            {
+               "address" : "0x12",
+               "value" : "0xE691B87E",
+               "swap_bytes" : "0x7EB891E6"
+            },
+            {
+               "address" : "0x13",
+               "value" : "0x557ABDF2",
+               "swap_bytes" : "0xF2BD7A55"
+            },
+            {
+               "address" : "0x14",
+               "value" : "0x35B6E0B3",
+               "swap_bytes" : "0xB3E0B635"
+            },
+            {
+               "address" : "0x15",
+               "value" : "0x49D5C4EC",
+               "swap_bytes" : "0xECC4D549"
+            },
+            {
+               "address" : "0x16",
+               "value" : "0x00CC8435",
+               "swap_bytes" : "0x3584CC00"
+            },
+            {
+               "address" : "0x17",
+               "value" : "0x919570A4",
+               "swap_bytes" : "0xA4709591"
+            },
+            {
+               "address" : "0x18",
+               "value" : "0x36E85A62",
+               "swap_bytes" : "0x625AE836"
+            },
+            {
+               "address" : "0x19",
+               "value" : "0x904B7952",
+               "swap_bytes" : "0x52794B90"
+            }
+         ],
+         "NONCE" : [
+            {
+               "address" : "0x1A",
+               "value" : "0x7E7F9C81",
+               "swap_bytes" : "0x819C7F7E"
+            },
+            {
+               "address" : "0x1B",
+               "value" : "0xB15D2DB2",
+               "swap_bytes" : "0xB22D5DB1"
+            }
+         ],
+         "COUNTER" : [
+            {
+               "address" : "0x1C",
+               "value" : "0x00000008",
+               "swap_bytes" : "0x08000000"
+            },
+            {
+               "address" : "0x1D",
+               "value" : "0x00000000",
+               "swap_bytes" : "0x00000000"
+            }
+         ],
+         "HASHING" : [
+            {
+               "address" : "0x1E",
+               "value" : "0x6A508035",
+               "swap_bytes" : "0x3580506A"
+            },
+            {
+               "address" : "0x1F",
+               "value" : "0xD3934466",
+               "swap_bytes" : "0x664493D3"
+            },
+            {
+               "address" : "0x20",
+               "value" : "0xBF42B9A0",
+               "swap_bytes" : "0xA0B942BF"
+            },
+            {
+               "address" : "0x21",
+               "value" : "0x2CB3A7FC",
+               "swap_bytes" : "0xFCA7B32C"
+            },
+            {
+               "address" : "0x22",
+               "value" : "0x51C375F4",
+               "swap_bytes" : "0xF475C351"
+            },
+            {
+               "address" : "0x23",
+               "value" : "0x28597BD1",
+               "swap_bytes" : "0xD17B5928"
+            },
+            {
+               "address" : "0x24",
+               "value" : "0xCA2FDCD0",
+               "swap_bytes" : "0xD0DC2FCA"
+            },
+            {
+               "address" : "0x25",
+               "value" : "0x28DE632F",
+               "swap_bytes" : "0x2F63DE28"
+            },
+            {
+               "address" : "0x26",
+               "value" : "0x030DE272",
+               "swap_bytes" : "0x72E20D03"
+            },
+            {
+               "address" : "0x27",
+               "value" : "0x288AD4A1",
+               "swap_bytes" : "0xA1D48A28"
+            },
+            {
+               "address" : "0x28",
+               "value" : "0xC869D515",
+               "swap_bytes" : "0x15D569C8"
+            },
+            {
+               "address" : "0x29",
+               "value" : "0x3D2750A9",
+               "swap_bytes" : "0xA950273D"
+            },
+            {
+               "address" : "0x2A",
+               "value" : "0x2CD73A5B",
+               "swap_bytes" : "0x5B3AD72C"
+            },
+            {
+               "address" : "0x2B",
+               "value" : "0xA17F1A56",
+               "swap_bytes" : "0x561A7FA1"
+            },
+            {
+               "address" : "0x2C",
+               "value" : "0x5D4C7ED5",
+               "swap_bytes" : "0xD57E4C5D"
+            },
+            {
+               "address" : "0x2D",
+               "value" : "0x0389CF24",
+               "swap_bytes" : "0x24CF8903"
+            }
+         ],
+         "CIPHER" : [
+            {
+               "address" : "0x2E",
+               "value" : "0x0D35A05A",
+               "swap_bytes" : "0x5AA0350D"
+            },
+            {
+               "address" : "0x2F",
+               "value" : "0xA4FF2102",
+               "swap_bytes" : "0x0221FFA4"
+            },
+            {
+               "address" : "0x30",
+               "value" : "0x9F29D7CF",
+               "swap_bytes" : "0xCFD7299F"
+            },
+            {
+               "address" : "0x31",
+               "value" : "0x0CDBCE8F",
+               "swap_bytes" : "0x8FCEDB0C"
+            },
+            {
+               "address" : "0x32",
+               "value" : "0x34B3109A",
+               "swap_bytes" : "0x9A10B334"
+            },
+            {
+               "address" : "0x33",
+               "value" : "0x5A791FB4",
+               "swap_bytes" : "0xB41F795A"
+            },
+            {
+               "address" : "0x34",
+               "value" : "0xAF5DFCBF",
+               "swap_bytes" : "0xBFFC5DAF"
+            },
+            {
+               "address" : "0x35",
+               "value" : "0x5BBD0C59",
+               "swap_bytes" : "0x590CBD5B"
+            },
+            {
+               "address" : "0x36",
+               "value" : "0x2307861B",
+               "swap_bytes" : "0x1B860723"
+            },
+            {
+               "address" : "0x37",
+               "value" : "0x5BAAA0CE",
+               "swap_bytes" : "0xCEA0AA5B"
+            },
+            {
+               "address" : "0x38",
+               "value" : "0xA11ABD70",
+               "swap_bytes" : "0x70BD1AA1"
+            },
+            {
+               "address" : "0x39",
+               "value" : "0x554870DE",
+               "swap_bytes" : "0xDE704855"
+            },
+            {
+               "address" : "0x3A",
+               "value" : "0x49A51A2C",
+               "swap_bytes" : "0x2C1AA549"
+            },
+            {
+               "address" : "0x3B",
+               "value" : "0xD31A7B32",
+               "swap_bytes" : "0x327B1AD3"
+            },
+            {
+               "address" : "0x3C",
+               "value" : "0x29241BF5",
+               "swap_bytes" : "0xF51B2429"
+            },
+            {
+               "address" : "0x3D",
+               "value" : "0x77ECA104",
+               "swap_bytes" : "0x04A1EC77"
+            }
+         ]
+      }
+   },
+   {
+      "Test_ID" : "9",
+      "Description" : "Test Number 9",
+      "VECTORS" : {
+         "PLAIN" : [
+            "66205368",
+            "61626261",
+            "742e0a49",
+            "6e206164",
+            "64697469",
+            "6f6e2c20",
+            "74686520",
+            "626f6f6b",
+            "20726566",
+            "65727320",
+            "746f2074",
+            "68652064",
+            "69666665",
+            "72656e74",
+            "20637573",
+            "746f6d73"
+         ],
+         "KEY" : [
+            "904b7952",
+            "36e85a62",
+            "919570a4",
+            "00cc8435",
+            "49d5c4ec",
+            "35b6e0b3",
+            "557abdf2",
+            "e691b87e"
+         ],
+         "NONCE" : [
+            "b15d2db2",
+            "7e7f9c81"
+         ],
+         "COUNTER" : [
+            "00000000",
+            "00000009"
+         ],
+         "HASH" : [
+            "3e33000c",
+            "76e61c79",
+            "848016cc",
+            "b605e601",
+            "21f6ce6f",
+            "0ef920fa",
+            "2366889e",
+            "adc68eb1",
+            "15de8726",
+            "483dd75b",
+            "cda2be31",
+            "94636fd0",
+            "af2dface",
+            "fc89ba09",
+            "48851900",
+            "fca8d25e"
+         ],
+         "CIPHER" : [
+            "58135364",
+            "17847e18",
+            "f0ae1c85",
+            "d8258765",
+            "459fba06",
+            "61970cda",
+            "570eedbe",
+            "cfa9e1da",
+            "35ace240",
+            "2d4fa47b",
+            "b9cd9e45",
+            "fc064fb4",
+            "c64b9cab",
+            "8eecd47d",
+            "68e66c73",
+            "88c7bf2d"
+         ],
+         "DECRYPTION" : {
+            "normal" : [
+               "66205368",
+               "61626261",
+               "742e0a49",
+               "6e206164",
+               "64697469",
+               "6f6e2c20",
+               "74686520",
+               "626f6f6b",
+               "20726566",
+               "65727320",
+               "746f2074",
+               "68652064",
+               "69666665",
+               "72656e74",
+               "20637573",
+               "746f6d73"
+            ],
+            "reversed" : [
+               "746f6d73",
+               "20637573",
+               "72656e74",
+               "69666665",
+               "68652064",
+               "746f2074",
+               "65727320",
+               "20726566",
+               "626f6f6b",
+               "74686520",
+               "6f6e2c20",
+               "64697469",
+               "6e206164",
+               "742e0a49",
+               "61626261",
+               "66205368"
+            ]
+         }
+      },
+      "REGISTERS" : {
+         "PLAIN_TEXT" : {
+            "encrypt_mode" : [
+               {
+                  "address" : "0x02",
+                  "value" : "0x746F6D73",
+                  "swap_bytes" : "0x736D6F74"
+               },
+               {
+                  "address" : "0x03",
+                  "value" : "0x20637573",
+                  "swap_bytes" : "0x73756320"
+               },
+               {
+                  "address" : "0x04",
+                  "value" : "0x72656E74",
+                  "swap_bytes" : "0x746E6572"
+               },
+               {
+                  "address" : "0x05",
+                  "value" : "0x69666665",
+                  "swap_bytes" : "0x65666669"
+               },
+               {
+                  "address" : "0x06",
+                  "value" : "0x68652064",
+                  "swap_bytes" : "0x64206568"
+               },
+               {
+                  "address" : "0x07",
+                  "value" : "0x746F2074",
+                  "swap_bytes" : "0x74206F74"
+               },
+               {
+                  "address" : "0x08",
+                  "value" : "0x65727320",
+                  "swap_bytes" : "0x20737265"
+               },
+               {
+                  "address" : "0x09",
+                  "value" : "0x20726566",
+                  "swap_bytes" : "0x66657220"
+               },
+               {
+                  "address" : "0x0A",
+                  "value" : "0x626F6F6B",
+                  "swap_bytes" : "0x6B6F6F62"
+               },
+               {
+                  "address" : "0x0B",
+                  "value" : "0x74686520",
+                  "swap_bytes" : "0x20656874"
+               },
+               {
+                  "address" : "0x0C",
+                  "value" : "0x6F6E2C20",
+                  "swap_bytes" : "0x202C6E6F"
+               },
+               {
+                  "address" : "0x0D",
+                  "value" : "0x64697469",
+                  "swap_bytes" : "0x69746964"
+               },
+               {
+                  "address" : "0x0E",
+                  "value" : "0x6E206164",
+                  "swap_bytes" : "0x6461206E"
+               },
+               {
+                  "address" : "0x0F",
+                  "value" : "0x742E0A49",
+                  "swap_bytes" : "0x490A2E74"
+               },
+               {
+                  "address" : "0x10",
+                  "value" : "0x61626261",
+                  "swap_bytes" : "0x61626261"
+               },
+               {
+                  "address" : "0x11",
+                  "value" : "0x66205368",
+                  "swap_bytes" : "0x68532066"
+               }
+            ],
+            "decrypt_mode" : [
+               {
+                  "address" : "0x02",
+                  "value" : "0x88C7BF2D",
+                  "swap_bytes" : "0x2DBFC788"
+               },
+               {
+                  "address" : "0x03",
+                  "value" : "0x68E66C73",
+                  "swap_bytes" : "0x736CE668"
+               },
+               {
+                  "address" : "0x04",
+                  "value" : "0x8EECD47D",
+                  "swap_bytes" : "0x7DD4EC8E"
+               },
+               {
+                  "address" : "0x05",
+                  "value" : "0xC64B9CAB",
+                  "swap_bytes" : "0xAB9C4BC6"
+               },
+               {
+                  "address" : "0x06",
+                  "value" : "0xFC064FB4",
+                  "swap_bytes" : "0xB44F06FC"
+               },
+               {
+                  "address" : "0x07",
+                  "value" : "0xB9CD9E45",
+                  "swap_bytes" : "0x459ECDB9"
+               },
+               {
+                  "address" : "0x08",
+                  "value" : "0x2D4FA47B",
+                  "swap_bytes" : "0x7BA44F2D"
+               },
+               {
+                  "address" : "0x09",
+                  "value" : "0x35ACE240",
+                  "swap_bytes" : "0x40E2AC35"
+               },
+               {
+                  "address" : "0x0A",
+                  "value" : "0xCFA9E1DA",
+                  "swap_bytes" : "0xDAE1A9CF"
+               },
+               {
+                  "address" : "0x0B",
+                  "value" : "0x570EEDBE",
+                  "swap_bytes" : "0xBEED0E57"
+               },
+               {
+                  "address" : "0x0C",
+                  "value" : "0x61970CDA",
+                  "swap_bytes" : "0xDA0C9761"
+               },
+               {
+                  "address" : "0x0D",
+                  "value" : "0x459FBA06",
+                  "swap_bytes" : "0x06BA9F45"
+               },
+               {
+                  "address" : "0x0E",
+                  "value" : "0xD8258765",
+                  "swap_bytes" : "0x658725D8"
+               },
+               {
+                  "address" : "0x0F",
+                  "value" : "0xF0AE1C85",
+                  "swap_bytes" : "0x851CAEF0"
+               },
+               {
+                  "address" : "0x10",
+                  "value" : "0x17847E18",
+                  "swap_bytes" : "0x187E8417"
+               },
+               {
+                  "address" : "0x11",
+                  "value" : "0x58135364",
+                  "swap_bytes" : "0x64531358"
+               }
+            ]
+         },
+         "KEY" : [
+            {
+               "address" : "0x12",
+               "value" : "0xE691B87E",
+               "swap_bytes" : "0x7EB891E6"
+            },
+            {
+               "address" : "0x13",
+               "value" : "0x557ABDF2",
+               "swap_bytes" : "0xF2BD7A55"
+            },
+            {
+               "address" : "0x14",
+               "value" : "0x35B6E0B3",
+               "swap_bytes" : "0xB3E0B635"
+            },
+            {
+               "address" : "0x15",
+               "value" : "0x49D5C4EC",
+               "swap_bytes" : "0xECC4D549"
+            },
+            {
+               "address" : "0x16",
+               "value" : "0x00CC8435",
+               "swap_bytes" : "0x3584CC00"
+            },
+            {
+               "address" : "0x17",
+               "value" : "0x919570A4",
+               "swap_bytes" : "0xA4709591"
+            },
+            {
+               "address" : "0x18",
+               "value" : "0x36E85A62",
+               "swap_bytes" : "0x625AE836"
+            },
+            {
+               "address" : "0x19",
+               "value" : "0x904B7952",
+               "swap_bytes" : "0x52794B90"
+            }
+         ],
+         "NONCE" : [
+            {
+               "address" : "0x1A",
+               "value" : "0x7E7F9C81",
+               "swap_bytes" : "0x819C7F7E"
+            },
+            {
+               "address" : "0x1B",
+               "value" : "0xB15D2DB2",
+               "swap_bytes" : "0xB22D5DB1"
+            }
+         ],
+         "COUNTER" : [
+            {
+               "address" : "0x1C",
+               "value" : "0x00000009",
+               "swap_bytes" : "0x09000000"
+            },
+            {
+               "address" : "0x1D",
+               "value" : "0x00000000",
+               "swap_bytes" : "0x00000000"
+            }
+         ],
+         "HASHING" : [
+            {
+               "address" : "0x1E",
+               "value" : "0xFCA8D25E",
+               "swap_bytes" : "0x5ED2A8FC"
+            },
+            {
+               "address" : "0x1F",
+               "value" : "0x48851900",
+               "swap_bytes" : "0x00198548"
+            },
+            {
+               "address" : "0x20",
+               "value" : "0xFC89BA09",
+               "swap_bytes" : "0x09BA89FC"
+            },
+            {
+               "address" : "0x21",
+               "value" : "0xAF2DFACE",
+               "swap_bytes" : "0xCEFA2DAF"
+            },
+            {
+               "address" : "0x22",
+               "value" : "0x94636FD0",
+               "swap_bytes" : "0xD06F6394"
+            },
+            {
+               "address" : "0x23",
+               "value" : "0xCDA2BE31",
+               "swap_bytes" : "0x31BEA2CD"
+            },
+            {
+               "address" : "0x24",
+               "value" : "0x483DD75B",
+               "swap_bytes" : "0x5BD73D48"
+            },
+            {
+               "address" : "0x25",
+               "value" : "0x15DE8726",
+               "swap_bytes" : "0x2687DE15"
+            },
+            {
+               "address" : "0x26",
+               "value" : "0xADC68EB1",
+               "swap_bytes" : "0xB18EC6AD"
+            },
+            {
+               "address" : "0x27",
+               "value" : "0x2366889E",
+               "swap_bytes" : "0x9E886623"
+            },
+            {
+               "address" : "0x28",
+               "value" : "0x0EF920FA",
+               "swap_bytes" : "0xFA20F90E"
+            },
+            {
+               "address" : "0x29",
+               "value" : "0x21F6CE6F",
+               "swap_bytes" : "0x6FCEF621"
+            },
+            {
+               "address" : "0x2A",
+               "value" : "0xB605E601",
+               "swap_bytes" : "0x01E605B6"
+            },
+            {
+               "address" : "0x2B",
+               "value" : "0x848016CC",
+               "swap_bytes" : "0xCC168084"
+            },
+            {
+               "address" : "0x2C",
+               "value" : "0x76E61C79",
+               "swap_bytes" : "0x791CE676"
+            },
+            {
+               "address" : "0x2D",
+               "value" : "0x3E33000C",
+               "swap_bytes" : "0x0C00333E"
+            }
+         ],
+         "CIPHER" : [
+            {
+               "address" : "0x2E",
+               "value" : "0x88C7BF2D",
+               "swap_bytes" : "0x2DBFC788"
+            },
+            {
+               "address" : "0x2F",
+               "value" : "0x68E66C73",
+               "swap_bytes" : "0x736CE668"
+            },
+            {
+               "address" : "0x30",
+               "value" : "0x8EECD47D",
+               "swap_bytes" : "0x7DD4EC8E"
+            },
+            {
+               "address" : "0x31",
+               "value" : "0xC64B9CAB",
+               "swap_bytes" : "0xAB9C4BC6"
+            },
+            {
+               "address" : "0x32",
+               "value" : "0xFC064FB4",
+               "swap_bytes" : "0xB44F06FC"
+            },
+            {
+               "address" : "0x33",
+               "value" : "0xB9CD9E45",
+               "swap_bytes" : "0x459ECDB9"
+            },
+            {
+               "address" : "0x34",
+               "value" : "0x2D4FA47B",
+               "swap_bytes" : "0x7BA44F2D"
+            },
+            {
+               "address" : "0x35",
+               "value" : "0x35ACE240",
+               "swap_bytes" : "0x40E2AC35"
+            },
+            {
+               "address" : "0x36",
+               "value" : "0xCFA9E1DA",
+               "swap_bytes" : "0xDAE1A9CF"
+            },
+            {
+               "address" : "0x37",
+               "value" : "0x570EEDBE",
+               "swap_bytes" : "0xBEED0E57"
+            },
+            {
+               "address" : "0x38",
+               "value" : "0x61970CDA",
+               "swap_bytes" : "0xDA0C9761"
+            },
+            {
+               "address" : "0x39",
+               "value" : "0x459FBA06",
+               "swap_bytes" : "0x06BA9F45"
+            },
+            {
+               "address" : "0x3A",
+               "value" : "0xD8258765",
+               "swap_bytes" : "0x658725D8"
+            },
+            {
+               "address" : "0x3B",
+               "value" : "0xF0AE1C85",
+               "swap_bytes" : "0x851CAEF0"
+            },
+            {
+               "address" : "0x3C",
+               "value" : "0x17847E18",
+               "swap_bytes" : "0x187E8417"
+            },
+            {
+               "address" : "0x3D",
+               "value" : "0x58135364",
+               "swap_bytes" : "0x64531358"
+            }
+         ]
+      }
+   },
+   {
+      "Test_ID" : "10",
+      "Description" : "Test Number 10",
+      "VECTORS" : {
+         "PLAIN" : [
+            "20616d6f",
+            "6e672074",
+            "68652070",
+            "656f706c",
+            "65206f66",
+            "20497372",
+            "61656c2c",
+            "200a616e",
+            "6420616c",
+            "736f2066",
+            "6f637573",
+            "6573206f",
+            "6e20616c",
+            "6c207468",
+            "6520636f",
+            "6e74656d"
+         ],
+         "KEY" : [
+            "904b7952",
+            "36e85a62",
+            "919570a4",
+            "00cc8435",
+            "49d5c4ec",
+            "35b6e0b3",
+            "557abdf2",
+            "e691b87e"
+         ],
+         "NONCE" : [
+            "b15d2db2",
+            "7e7f9c81"
+         ],
+         "COUNTER" : [
+            "00000000",
+            "0000000a"
+         ],
+         "HASH" : [
+            "a66ceb20",
+            "865d1a83",
+            "0416989e",
+            "8126a9f9",
+            "d0a9c295",
+            "224aadc1",
+            "2425417b",
+            "4b290324",
+            "0f591f29",
+            "0229af67",
+            "ee1faff2",
+            "80d1939e",
+            "b7cfb62f",
+            "a81fcdcb",
+            "b572ddb9",
+            "d2e88746"
+         ],
+         "CIPHER" : [
+            "860d864f",
+            "e83a3af7",
+            "6c73b8ee",
+            "e449d995",
+            "b589adf3",
+            "0203deb3",
+            "45402d57",
+            "6b23624a",
+            "6b797e45",
+            "71468f01",
+            "817cda81",
+            "e5a2b3f1",
+            "d9efd743",
+            "c43fb9a3",
+            "d052bed6",
+            "bc9ce22b"
+         ],
+         "DECRYPTION" : {
+            "normal" : [
+               "20616d6f",
+               "6e672074",
+               "68652070",
+               "656f706c",
+               "65206f66",
+               "20497372",
+               "61656c2c",
+               "200a616e",
+               "6420616c",
+               "736f2066",
+               "6f637573",
+               "6573206f",
+               "6e20616c",
+               "6c207468",
+               "6520636f",
+               "6e74656d"
+            ],
+            "reversed" : [
+               "6e74656d",
+               "6520636f",
+               "6c207468",
+               "6e20616c",
+               "6573206f",
+               "6f637573",
+               "736f2066",
+               "6420616c",
+               "200a616e",
+               "61656c2c",
+               "20497372",
+               "65206f66",
+               "656f706c",
+               "68652070",
+               "6e672074",
+               "20616d6f"
+            ]
+         }
+      },
+      "REGISTERS" : {
+         "PLAIN_TEXT" : {
+            "encrypt_mode" : [
+               {
+                  "address" : "0x02",
+                  "value" : "0x6E74656D",
+                  "swap_bytes" : "0x6D65746E"
+               },
+               {
+                  "address" : "0x03",
+                  "value" : "0x6520636F",
+                  "swap_bytes" : "0x6F632065"
+               },
+               {
+                  "address" : "0x04",
+                  "value" : "0x6C207468",
+                  "swap_bytes" : "0x6874206C"
+               },
+               {
+                  "address" : "0x05",
+                  "value" : "0x6E20616C",
+                  "swap_bytes" : "0x6C61206E"
+               },
+               {
+                  "address" : "0x06",
+                  "value" : "0x6573206F",
+                  "swap_bytes" : "0x6F207365"
+               },
+               {
+                  "address" : "0x07",
+                  "value" : "0x6F637573",
+                  "swap_bytes" : "0x7375636F"
+               },
+               {
+                  "address" : "0x08",
+                  "value" : "0x736F2066",
+                  "swap_bytes" : "0x66206F73"
+               },
+               {
+                  "address" : "0x09",
+                  "value" : "0x6420616C",
+                  "swap_bytes" : "0x6C612064"
+               },
+               {
+                  "address" : "0x0A",
+                  "value" : "0x200A616E",
+                  "swap_bytes" : "0x6E610A20"
+               },
+               {
+                  "address" : "0x0B",
+                  "value" : "0x61656C2C",
+                  "swap_bytes" : "0x2C6C6561"
+               },
+               {
+                  "address" : "0x0C",
+                  "value" : "0x20497372",
+                  "swap_bytes" : "0x72734920"
+               },
+               {
+                  "address" : "0x0D",
+                  "value" : "0x65206F66",
+                  "swap_bytes" : "0x666F2065"
+               },
+               {
+                  "address" : "0x0E",
+                  "value" : "0x656F706C",
+                  "swap_bytes" : "0x6C706F65"
+               },
+               {
+                  "address" : "0x0F",
+                  "value" : "0x68652070",
+                  "swap_bytes" : "0x70206568"
+               },
+               {
+                  "address" : "0x10",
+                  "value" : "0x6E672074",
+                  "swap_bytes" : "0x7420676E"
+               },
+               {
+                  "address" : "0x11",
+                  "value" : "0x20616D6F",
+                  "swap_bytes" : "0x6F6D6120"
+               }
+            ],
+            "decrypt_mode" : [
+               {
+                  "address" : "0x02",
+                  "value" : "0xBC9CE22B",
+                  "swap_bytes" : "0x2BE29CBC"
+               },
+               {
+                  "address" : "0x03",
+                  "value" : "0xD052BED6",
+                  "swap_bytes" : "0xD6BE52D0"
+               },
+               {
+                  "address" : "0x04",
+                  "value" : "0xC43FB9A3",
+                  "swap_bytes" : "0xA3B93FC4"
+               },
+               {
+                  "address" : "0x05",
+                  "value" : "0xD9EFD743",
+                  "swap_bytes" : "0x43D7EFD9"
+               },
+               {
+                  "address" : "0x06",
+                  "value" : "0xE5A2B3F1",
+                  "swap_bytes" : "0xF1B3A2E5"
+               },
+               {
+                  "address" : "0x07",
+                  "value" : "0x817CDA81",
+                  "swap_bytes" : "0x81DA7C81"
+               },
+               {
+                  "address" : "0x08",
+                  "value" : "0x71468F01",
+                  "swap_bytes" : "0x018F4671"
+               },
+               {
+                  "address" : "0x09",
+                  "value" : "0x6B797E45",
+                  "swap_bytes" : "0x457E796B"
+               },
+               {
+                  "address" : "0x0A",
+                  "value" : "0x6B23624A",
+                  "swap_bytes" : "0x4A62236B"
+               },
+               {
+                  "address" : "0x0B",
+                  "value" : "0x45402D57",
+                  "swap_bytes" : "0x572D4045"
+               },
+               {
+                  "address" : "0x0C",
+                  "value" : "0x0203DEB3",
+                  "swap_bytes" : "0xB3DE0302"
+               },
+               {
+                  "address" : "0x0D",
+                  "value" : "0xB589ADF3",
+                  "swap_bytes" : "0xF3AD89B5"
+               },
+               {
+                  "address" : "0x0E",
+                  "value" : "0xE449D995",
+                  "swap_bytes" : "0x95D949E4"
+               },
+               {
+                  "address" : "0x0F",
+                  "value" : "0x6C73B8EE",
+                  "swap_bytes" : "0xEEB8736C"
+               },
+               {
+                  "address" : "0x10",
+                  "value" : "0xE83A3AF7",
+                  "swap_bytes" : "0xF73A3AE8"
+               },
+               {
+                  "address" : "0x11",
+                  "value" : "0x860D864F",
+                  "swap_bytes" : "0x4F860D86"
+               }
+            ]
+         },
+         "KEY" : [
+            {
+               "address" : "0x12",
+               "value" : "0xE691B87E",
+               "swap_bytes" : "0x7EB891E6"
+            },
+            {
+               "address" : "0x13",
+               "value" : "0x557ABDF2",
+               "swap_bytes" : "0xF2BD7A55"
+            },
+            {
+               "address" : "0x14",
+               "value" : "0x35B6E0B3",
+               "swap_bytes" : "0xB3E0B635"
+            },
+            {
+               "address" : "0x15",
+               "value" : "0x49D5C4EC",
+               "swap_bytes" : "0xECC4D549"
+            },
+            {
+               "address" : "0x16",
+               "value" : "0x00CC8435",
+               "swap_bytes" : "0x3584CC00"
+            },
+            {
+               "address" : "0x17",
+               "value" : "0x919570A4",
+               "swap_bytes" : "0xA4709591"
+            },
+            {
+               "address" : "0x18",
+               "value" : "0x36E85A62",
+               "swap_bytes" : "0x625AE836"
+            },
+            {
+               "address" : "0x19",
+               "value" : "0x904B7952",
+               "swap_bytes" : "0x52794B90"
+            }
+         ],
+         "NONCE" : [
+            {
+               "address" : "0x1A",
+               "value" : "0x7E7F9C81",
+               "swap_bytes" : "0x819C7F7E"
+            },
+            {
+               "address" : "0x1B",
+               "value" : "0xB15D2DB2",
+               "swap_bytes" : "0xB22D5DB1"
+            }
+         ],
+         "COUNTER" : [
+            {
+               "address" : "0x1C",
+               "value" : "0x0000000A",
+               "swap_bytes" : "0x0A000000"
+            },
+            {
+               "address" : "0x1D",
+               "value" : "0x00000000",
+               "swap_bytes" : "0x00000000"
+            }
+         ],
+         "HASHING" : [
+            {
+               "address" : "0x1E",
+               "value" : "0xD2E88746",
+               "swap_bytes" : "0x4687E8D2"
+            },
+            {
+               "address" : "0x1F",
+               "value" : "0xB572DDB9",
+               "swap_bytes" : "0xB9DD72B5"
+            },
+            {
+               "address" : "0x20",
+               "value" : "0xA81FCDCB",
+               "swap_bytes" : "0xCBCD1FA8"
+            },
+            {
+               "address" : "0x21",
+               "value" : "0xB7CFB62F",
+               "swap_bytes" : "0x2FB6CFB7"
+            },
+            {
+               "address" : "0x22",
+               "value" : "0x80D1939E",
+               "swap_bytes" : "0x9E93D180"
+            },
+            {
+               "address" : "0x23",
+               "value" : "0xEE1FAFF2",
+               "swap_bytes" : "0xF2AF1FEE"
+            },
+            {
+               "address" : "0x24",
+               "value" : "0x0229AF67",
+               "swap_bytes" : "0x67AF2902"
+            },
+            {
+               "address" : "0x25",
+               "value" : "0x0F591F29",
+               "swap_bytes" : "0x291F590F"
+            },
+            {
+               "address" : "0x26",
+               "value" : "0x4B290324",
+               "swap_bytes" : "0x2403294B"
+            },
+            {
+               "address" : "0x27",
+               "value" : "0x2425417B",
+               "swap_bytes" : "0x7B412524"
+            },
+            {
+               "address" : "0x28",
+               "value" : "0x224AADC1",
+               "swap_bytes" : "0xC1AD4A22"
+            },
+            {
+               "address" : "0x29",
+               "value" : "0xD0A9C295",
+               "swap_bytes" : "0x95C2A9D0"
+            },
+            {
+               "address" : "0x2A",
+               "value" : "0x8126A9F9",
+               "swap_bytes" : "0xF9A92681"
+            },
+            {
+               "address" : "0x2B",
+               "value" : "0x0416989E",
+               "swap_bytes" : "0x9E981604"
+            },
+            {
+               "address" : "0x2C",
+               "value" : "0x865D1A83",
+               "swap_bytes" : "0x831A5D86"
+            },
+            {
+               "address" : "0x2D",
+               "value" : "0xA66CEB20",
+               "swap_bytes" : "0x20EB6CA6"
+            }
+         ],
+         "CIPHER" : [
+            {
+               "address" : "0x2E",
+               "value" : "0xBC9CE22B",
+               "swap_bytes" : "0x2BE29CBC"
+            },
+            {
+               "address" : "0x2F",
+               "value" : "0xD052BED6",
+               "swap_bytes" : "0xD6BE52D0"
+            },
+            {
+               "address" : "0x30",
+               "value" : "0xC43FB9A3",
+               "swap_bytes" : "0xA3B93FC4"
+            },
+            {
+               "address" : "0x31",
+               "value" : "0xD9EFD743",
+               "swap_bytes" : "0x43D7EFD9"
+            },
+            {
+               "address" : "0x32",
+               "value" : "0xE5A2B3F1",
+               "swap_bytes" : "0xF1B3A2E5"
+            },
+            {
+               "address" : "0x33",
+               "value" : "0x817CDA81",
+               "swap_bytes" : "0x81DA7C81"
+            },
+            {
+               "address" : "0x34",
+               "value" : "0x71468F01",
+               "swap_bytes" : "0x018F4671"
+            },
+            {
+               "address" : "0x35",
+               "value" : "0x6B797E45",
+               "swap_bytes" : "0x457E796B"
+            },
+            {
+               "address" : "0x36",
+               "value" : "0x6B23624A",
+               "swap_bytes" : "0x4A62236B"
+            },
+            {
+               "address" : "0x37",
+               "value" : "0x45402D57",
+               "swap_bytes" : "0x572D4045"
+            },
+            {
+               "address" : "0x38",
+               "value" : "0x0203DEB3",
+               "swap_bytes" : "0xB3DE0302"
+            },
+            {
+               "address" : "0x39",
+               "value" : "0xB589ADF3",
+               "swap_bytes" : "0xF3AD89B5"
+            },
+            {
+               "address" : "0x3A",
+               "value" : "0xE449D995",
+               "swap_bytes" : "0x95D949E4"
+            },
+            {
+               "address" : "0x3B",
+               "value" : "0x6C73B8EE",
+               "swap_bytes" : "0xEEB8736C"
+            },
+            {
+               "address" : "0x3C",
+               "value" : "0xE83A3AF7",
+               "swap_bytes" : "0xF73A3AE8"
+            },
+            {
+               "address" : "0x3D",
+               "value" : "0x860D864F",
+               "swap_bytes" : "0x4F860D86"
+            }
+         ]
+      }
+   },
+   {
+      "Test_ID" : "11",
+      "Description" : "Test Number 11",
+      "VECTORS" : {
+         "PLAIN" : [
+            "706f7261",
+            "72792071",
+            "75657374",
+            "696f6e73",
+            "2061626f",
+            "75742053",
+            "68616262",
+            "61742069",
+            "6e20636f",
+            "6e6e6563",
+            "74696f6e",
+            "20776974",
+            "68206e65",
+            "77207465",
+            "63686e6f",
+            "6c6f6769"
+         ],
+         "KEY" : [
+            "904b7952",
+            "36e85a62",
+            "919570a4",
+            "00cc8435",
+            "49d5c4ec",
+            "35b6e0b3",
+            "557abdf2",
+            "e691b87e"
+         ],
+         "NONCE" : [
+            "b15d2db2",
+            "7e7f9c81"
+         ],
+         "COUNTER" : [
+            "00000000",
+            "0000000b"
+         ],
+         "HASH" : [
+            "7c1900d9",
+            "68e80964",
+            "9f3d6f87",
+            "435382a2",
+            "8e894814",
+            "922d4d16",
+            "f7f43146",
+            "08572567",
+            "11c72327",
+            "e77fff0b",
+            "7bc9e479",
+            "497d0423",
+            "8931c0e5",
+            "fb83ef4e",
+            "fdb98f01",
+            "a6c1c764"
+         ],
+         "CIPHER" : [
+            "0c7672b8",
+            "1a912915",
+            "ea581cf3",
+            "2a3cecd1",
+            "aee82a7b",
+            "e7596d45",
+            "9f955324",
+            "6923050e",
+            "7fe74048",
+            "89119a68",
+            "0fa08b17",
+            "690a6d57",
+            "e111ae80",
+            "8ca39b2b",
+            "9ed1e16e",
+            "caaea00d"
+         ],
+         "DECRYPTION" : {
+            "normal" : [
+               "706f7261",
+               "72792071",
+               "75657374",
+               "696f6e73",
+               "2061626f",
+               "75742053",
+               "68616262",
+               "61742069",
+               "6e20636f",
+               "6e6e6563",
+               "74696f6e",
+               "20776974",
+               "68206e65",
+               "77207465",
+               "63686e6f",
+               "6c6f6769"
+            ],
+            "reversed" : [
+               "6c6f6769",
+               "63686e6f",
+               "77207465",
+               "68206e65",
+               "20776974",
+               "74696f6e",
+               "6e6e6563",
+               "6e20636f",
+               "61742069",
+               "68616262",
+               "75742053",
+               "2061626f",
+               "696f6e73",
+               "75657374",
+               "72792071",
+               "706f7261"
+            ]
+         }
+      },
+      "REGISTERS" : {
+         "PLAIN_TEXT" : {
+            "encrypt_mode" : [
+               {
+                  "address" : "0x02",
+                  "value" : "0x6C6F6769",
+                  "swap_bytes" : "0x69676F6C"
+               },
+               {
+                  "address" : "0x03",
+                  "value" : "0x63686E6F",
+                  "swap_bytes" : "0x6F6E6863"
+               },
+               {
+                  "address" : "0x04",
+                  "value" : "0x77207465",
+                  "swap_bytes" : "0x65742077"
+               },
+               {
+                  "address" : "0x05",
+                  "value" : "0x68206E65",
+                  "swap_bytes" : "0x656E2068"
+               },
+               {
+                  "address" : "0x06",
+                  "value" : "0x20776974",
+                  "swap_bytes" : "0x74697720"
+               },
+               {
+                  "address" : "0x07",
+                  "value" : "0x74696F6E",
+                  "swap_bytes" : "0x6E6F6974"
+               },
+               {
+                  "address" : "0x08",
+                  "value" : "0x6E6E6563",
+                  "swap_bytes" : "0x63656E6E"
+               },
+               {
+                  "address" : "0x09",
+                  "value" : "0x6E20636F",
+                  "swap_bytes" : "0x6F63206E"
+               },
+               {
+                  "address" : "0x0A",
+                  "value" : "0x61742069",
+                  "swap_bytes" : "0x69207461"
+               },
+               {
+                  "address" : "0x0B",
+                  "value" : "0x68616262",
+                  "swap_bytes" : "0x62626168"
+               },
+               {
+                  "address" : "0x0C",
+                  "value" : "0x75742053",
+                  "swap_bytes" : "0x53207475"
+               },
+               {
+                  "address" : "0x0D",
+                  "value" : "0x2061626F",
+                  "swap_bytes" : "0x6F626120"
+               },
+               {
+                  "address" : "0x0E",
+                  "value" : "0x696F6E73",
+                  "swap_bytes" : "0x736E6F69"
+               },
+               {
+                  "address" : "0x0F",
+                  "value" : "0x75657374",
+                  "swap_bytes" : "0x74736575"
+               },
+               {
+                  "address" : "0x10",
+                  "value" : "0x72792071",
+                  "swap_bytes" : "0x71207972"
+               },
+               {
+                  "address" : "0x11",
+                  "value" : "0x706F7261",
+                  "swap_bytes" : "0x61726F70"
+               }
+            ],
+            "decrypt_mode" : [
+               {
+                  "address" : "0x02",
+                  "value" : "0xCAAEA00D",
+                  "swap_bytes" : "0x0DA0AECA"
+               },
+               {
+                  "address" : "0x03",
+                  "value" : "0x9ED1E16E",
+                  "swap_bytes" : "0x6EE1D19E"
+               },
+               {
+                  "address" : "0x04",
+                  "value" : "0x8CA39B2B",
+                  "swap_bytes" : "0x2B9BA38C"
+               },
+               {
+                  "address" : "0x05",
+                  "value" : "0xE111AE80",
+                  "swap_bytes" : "0x80AE11E1"
+               },
+               {
+                  "address" : "0x06",
+                  "value" : "0x690A6D57",
+                  "swap_bytes" : "0x576D0A69"
+               },
+               {
+                  "address" : "0x07",
+                  "value" : "0x0FA08B17",
+                  "swap_bytes" : "0x178BA00F"
+               },
+               {
+                  "address" : "0x08",
+                  "value" : "0x89119A68",
+                  "swap_bytes" : "0x689A1189"
+               },
+               {
+                  "address" : "0x09",
+                  "value" : "0x7FE74048",
+                  "swap_bytes" : "0x4840E77F"
+               },
+               {
+                  "address" : "0x0A",
+                  "value" : "0x6923050E",
+                  "swap_bytes" : "0x0E052369"
+               },
+               {
+                  "address" : "0x0B",
+                  "value" : "0x9F955324",
+                  "swap_bytes" : "0x2453959F"
+               },
+               {
+                  "address" : "0x0C",
+                  "value" : "0xE7596D45",
+                  "swap_bytes" : "0x456D59E7"
+               },
+               {
+                  "address" : "0x0D",
+                  "value" : "0xAEE82A7B",
+                  "swap_bytes" : "0x7B2AE8AE"
+               },
+               {
+                  "address" : "0x0E",
+                  "value" : "0x2A3CECD1",
+                  "swap_bytes" : "0xD1EC3C2A"
+               },
+               {
+                  "address" : "0x0F",
+                  "value" : "0xEA581CF3",
+                  "swap_bytes" : "0xF31C58EA"
+               },
+               {
+                  "address" : "0x10",
+                  "value" : "0x1A912915",
+                  "swap_bytes" : "0x1529911A"
+               },
+               {
+                  "address" : "0x11",
+                  "value" : "0x0C7672B8",
+                  "swap_bytes" : "0xB872760C"
+               }
+            ]
+         },
+         "KEY" : [
+            {
+               "address" : "0x12",
+               "value" : "0xE691B87E",
+               "swap_bytes" : "0x7EB891E6"
+            },
+            {
+               "address" : "0x13",
+               "value" : "0x557ABDF2",
+               "swap_bytes" : "0xF2BD7A55"
+            },
+            {
+               "address" : "0x14",
+               "value" : "0x35B6E0B3",
+               "swap_bytes" : "0xB3E0B635"
+            },
+            {
+               "address" : "0x15",
+               "value" : "0x49D5C4EC",
+               "swap_bytes" : "0xECC4D549"
+            },
+            {
+               "address" : "0x16",
+               "value" : "0x00CC8435",
+               "swap_bytes" : "0x3584CC00"
+            },
+            {
+               "address" : "0x17",
+               "value" : "0x919570A4",
+               "swap_bytes" : "0xA4709591"
+            },
+            {
+               "address" : "0x18",
+               "value" : "0x36E85A62",
+               "swap_bytes" : "0x625AE836"
+            },
+            {
+               "address" : "0x19",
+               "value" : "0x904B7952",
+               "swap_bytes" : "0x52794B90"
+            }
+         ],
+         "NONCE" : [
+            {
+               "address" : "0x1A",
+               "value" : "0x7E7F9C81",
+               "swap_bytes" : "0x819C7F7E"
+            },
+            {
+               "address" : "0x1B",
+               "value" : "0xB15D2DB2",
+               "swap_bytes" : "0xB22D5DB1"
+            }
+         ],
+         "COUNTER" : [
+            {
+               "address" : "0x1C",
+               "value" : "0x0000000B",
+               "swap_bytes" : "0x0B000000"
+            },
+            {
+               "address" : "0x1D",
+               "value" : "0x00000000",
+               "swap_bytes" : "0x00000000"
+            }
+         ],
+         "HASHING" : [
+            {
+               "address" : "0x1E",
+               "value" : "0xA6C1C764",
+               "swap_bytes" : "0x64C7C1A6"
+            },
+            {
+               "address" : "0x1F",
+               "value" : "0xFDB98F01",
+               "swap_bytes" : "0x018FB9FD"
+            },
+            {
+               "address" : "0x20",
+               "value" : "0xFB83EF4E",
+               "swap_bytes" : "0x4EEF83FB"
+            },
+            {
+               "address" : "0x21",
+               "value" : "0x8931C0E5",
+               "swap_bytes" : "0xE5C03189"
+            },
+            {
+               "address" : "0x22",
+               "value" : "0x497D0423",
+               "swap_bytes" : "0x23047D49"
+            },
+            {
+               "address" : "0x23",
+               "value" : "0x7BC9E479",
+               "swap_bytes" : "0x79E4C97B"
+            },
+            {
+               "address" : "0x24",
+               "value" : "0xE77FFF0B",
+               "swap_bytes" : "0x0BFF7FE7"
+            },
+            {
+               "address" : "0x25",
+               "value" : "0x11C72327",
+               "swap_bytes" : "0x2723C711"
+            },
+            {
+               "address" : "0x26",
+               "value" : "0x08572567",
+               "swap_bytes" : "0x67255708"
+            },
+            {
+               "address" : "0x27",
+               "value" : "0xF7F43146",
+               "swap_bytes" : "0x4631F4F7"
+            },
+            {
+               "address" : "0x28",
+               "value" : "0x922D4D16",
+               "swap_bytes" : "0x164D2D92"
+            },
+            {
+               "address" : "0x29",
+               "value" : "0x8E894814",
+               "swap_bytes" : "0x1448898E"
+            },
+            {
+               "address" : "0x2A",
+               "value" : "0x435382A2",
+               "swap_bytes" : "0xA2825343"
+            },
+            {
+               "address" : "0x2B",
+               "value" : "0x9F3D6F87",
+               "swap_bytes" : "0x876F3D9F"
+            },
+            {
+               "address" : "0x2C",
+               "value" : "0x68E80964",
+               "swap_bytes" : "0x6409E868"
+            },
+            {
+               "address" : "0x2D",
+               "value" : "0x7C1900D9",
+               "swap_bytes" : "0xD900197C"
+            }
+         ],
+         "CIPHER" : [
+            {
+               "address" : "0x2E",
+               "value" : "0xCAAEA00D",
+               "swap_bytes" : "0x0DA0AECA"
+            },
+            {
+               "address" : "0x2F",
+               "value" : "0x9ED1E16E",
+               "swap_bytes" : "0x6EE1D19E"
+            },
+            {
+               "address" : "0x30",
+               "value" : "0x8CA39B2B",
+               "swap_bytes" : "0x2B9BA38C"
+            },
+            {
+               "address" : "0x31",
+               "value" : "0xE111AE80",
+               "swap_bytes" : "0x80AE11E1"
+            },
+            {
+               "address" : "0x32",
+               "value" : "0x690A6D57",
+               "swap_bytes" : "0x576D0A69"
+            },
+            {
+               "address" : "0x33",
+               "value" : "0x0FA08B17",
+               "swap_bytes" : "0x178BA00F"
+            },
+            {
+               "address" : "0x34",
+               "value" : "0x89119A68",
+               "swap_bytes" : "0x689A1189"
+            },
+            {
+               "address" : "0x35",
+               "value" : "0x7FE74048",
+               "swap_bytes" : "0x4840E77F"
+            },
+            {
+               "address" : "0x36",
+               "value" : "0x6923050E",
+               "swap_bytes" : "0x0E052369"
+            },
+            {
+               "address" : "0x37",
+               "value" : "0x9F955324",
+               "swap_bytes" : "0x2453959F"
+            },
+            {
+               "address" : "0x38",
+               "value" : "0xE7596D45",
+               "swap_bytes" : "0x456D59E7"
+            },
+            {
+               "address" : "0x39",
+               "value" : "0xAEE82A7B",
+               "swap_bytes" : "0x7B2AE8AE"
+            },
+            {
+               "address" : "0x3A",
+               "value" : "0x2A3CECD1",
+               "swap_bytes" : "0xD1EC3C2A"
+            },
+            {
+               "address" : "0x3B",
+               "value" : "0xEA581CF3",
+               "swap_bytes" : "0xF31C58EA"
+            },
+            {
+               "address" : "0x3C",
+               "value" : "0x1A912915",
+               "swap_bytes" : "0x1529911A"
+            },
+            {
+               "address" : "0x3D",
+               "value" : "0x0C7672B8",
+               "swap_bytes" : "0xB872760C"
+            }
+         ]
+      }
+   },
+   {
+      "Test_ID" : "12",
+      "Description" : "Test Number 12",
+      "VECTORS" : {
+         "PLAIN" : [
+            "65732e00",
+            "00000000",
+            "00000000",
+            "00000000",
+            "00000000",
+            "00000000",
+            "00000000",
+            "00000000",
+            "00000000",
+            "00000000",
+            "00000000",
+            "00000000",
+            "00000000",
+            "00000000",
+            "00000000",
+            "00000000"
+         ],
+         "KEY" : [
+            "904b7952",
+            "36e85a62",
+            "919570a4",
+            "00cc8435",
+            "49d5c4ec",
+            "35b6e0b3",
+            "557abdf2",
+            "e691b87e"
+         ],
+         "NONCE" : [
+            "b15d2db2",
+            "7e7f9c81"
+         ],
+         "COUNTER" : [
+            "00000000",
+            "0000000c"
+         ],
+         "HASH" : [
+            "3efa75a7",
+            "d8e1eb17",
+            "b24d34f2",
+            "a15efb1f",
+            "9e80e8a1",
+            "ee0f24fd",
+            "a1e73e04",
+            "23bb44d6",
+            "1e03f8cb",
+            "a4344b14",
+            "b9e678d1",
+            "1c854eed",
+            "d41b32ec",
+            "0e75b352",
+            "eb1c94f6",
+            "f73b33fc"
+         ],
+         "CIPHER" : [
+            "5b895ba7",
+            "d8e1eb17",
+            "b24d34f2",
+            "a15efb1f",
+            "9e80e8a1",
+            "ee0f24fd",
+            "a1e73e04",
+            "23bb44d6",
+            "1e03f8cb",
+            "a4344b14",
+            "b9e678d1",
+            "1c854eed",
+            "d41b32ec",
+            "0e75b352",
+            "eb1c94f6",
+            "f73b33fc"
+         ],
+         "DECRYPTION" : {
+            "normal" : [
+               "65732e00",
+               "00000000",
+               "00000000",
+               "00000000",
+               "00000000",
+               "00000000",
+               "00000000",
+               "00000000",
+               "00000000",
+               "00000000",
+               "00000000",
+               "00000000",
+               "00000000",
+               "00000000",
+               "00000000",
+               "00000000"
+            ],
+            "reversed" : [
+               "00000000",
+               "00000000",
+               "00000000",
+               "00000000",
+               "00000000",
+               "00000000",
+               "00000000",
+               "00000000",
+               "00000000",
+               "00000000",
+               "00000000",
+               "00000000",
+               "00000000",
+               "00000000",
+               "00000000",
+               "65732e00"
+            ]
+         }
+      },
+      "REGISTERS" : {
+         "PLAIN_TEXT" : {
+            "encrypt_mode" : [
+               {
+                  "address" : "0x02",
+                  "value" : "0x00000000",
+                  "swap_bytes" : "0x00000000"
+               },
+               {
+                  "address" : "0x03",
+                  "value" : "0x00000000",
+                  "swap_bytes" : "0x00000000"
+               },
+               {
+                  "address" : "0x04",
+                  "value" : "0x00000000",
+                  "swap_bytes" : "0x00000000"
+               },
+               {
+                  "address" : "0x05",
+                  "value" : "0x00000000",
+                  "swap_bytes" : "0x00000000"
+               },
+               {
+                  "address" : "0x06",
+                  "value" : "0x00000000",
+                  "swap_bytes" : "0x00000000"
+               },
+               {
+                  "address" : "0x07",
+                  "value" : "0x00000000",
+                  "swap_bytes" : "0x00000000"
+               },
+               {
+                  "address" : "0x08",
+                  "value" : "0x00000000",
+                  "swap_bytes" : "0x00000000"
+               },
+               {
+                  "address" : "0x09",
+                  "value" : "0x00000000",
+                  "swap_bytes" : "0x00000000"
+               },
+               {
+                  "address" : "0x0A",
+                  "value" : "0x00000000",
+                  "swap_bytes" : "0x00000000"
+               },
+               {
+                  "address" : "0x0B",
+                  "value" : "0x00000000",
+                  "swap_bytes" : "0x00000000"
+               },
+               {
+                  "address" : "0x0C",
+                  "value" : "0x00000000",
+                  "swap_bytes" : "0x00000000"
+               },
+               {
+                  "address" : "0x0D",
+                  "value" : "0x00000000",
+                  "swap_bytes" : "0x00000000"
+               },
+               {
+                  "address" : "0x0E",
+                  "value" : "0x00000000",
+                  "swap_bytes" : "0x00000000"
+               },
+               {
+                  "address" : "0x0F",
+                  "value" : "0x00000000",
+                  "swap_bytes" : "0x00000000"
+               },
+               {
+                  "address" : "0x10",
+                  "value" : "0x00000000",
+                  "swap_bytes" : "0x00000000"
+               },
+               {
+                  "address" : "0x11",
+                  "value" : "0x65732E00",
+                  "swap_bytes" : "0x002E7365"
+               }
+            ],
+            "decrypt_mode" : [
+               {
+                  "address" : "0x02",
+                  "value" : "0xF73B33FC",
+                  "swap_bytes" : "0xFC333BF7"
+               },
+               {
+                  "address" : "0x03",
+                  "value" : "0xEB1C94F6",
+                  "swap_bytes" : "0xF6941CEB"
+               },
+               {
+                  "address" : "0x04",
+                  "value" : "0x0E75B352",
+                  "swap_bytes" : "0x52B3750E"
+               },
+               {
+                  "address" : "0x05",
+                  "value" : "0xD41B32EC",
+                  "swap_bytes" : "0xEC321BD4"
+               },
+               {
+                  "address" : "0x06",
+                  "value" : "0x1C854EED",
+                  "swap_bytes" : "0xED4E851C"
+               },
+               {
+                  "address" : "0x07",
+                  "value" : "0xB9E678D1",
+                  "swap_bytes" : "0xD178E6B9"
+               },
+               {
+                  "address" : "0x08",
+                  "value" : "0xA4344B14",
+                  "swap_bytes" : "0x144B34A4"
+               },
+               {
+                  "address" : "0x09",
+                  "value" : "0x1E03F8CB",
+                  "swap_bytes" : "0xCBF8031E"
+               },
+               {
+                  "address" : "0x0A",
+                  "value" : "0x23BB44D6",
+                  "swap_bytes" : "0xD644BB23"
+               },
+               {
+                  "address" : "0x0B",
+                  "value" : "0xA1E73E04",
+                  "swap_bytes" : "0x043EE7A1"
+               },
+               {
+                  "address" : "0x0C",
+                  "value" : "0xEE0F24FD",
+                  "swap_bytes" : "0xFD240FEE"
+               },
+               {
+                  "address" : "0x0D",
+                  "value" : "0x9E80E8A1",
+                  "swap_bytes" : "0xA1E8809E"
+               },
+               {
+                  "address" : "0x0E",
+                  "value" : "0xA15EFB1F",
+                  "swap_bytes" : "0x1FFB5EA1"
+               },
+               {
+                  "address" : "0x0F",
+                  "value" : "0xB24D34F2",
+                  "swap_bytes" : "0xF2344DB2"
+               },
+               {
+                  "address" : "0x10",
+                  "value" : "0xD8E1EB17",
+                  "swap_bytes" : "0x17EBE1D8"
+               },
+               {
+                  "address" : "0x11",
+                  "value" : "0x5B895BA7",
+                  "swap_bytes" : "0xA75B895B"
+               }
+            ]
+         },
+         "KEY" : [
+            {
+               "address" : "0x12",
+               "value" : "0xE691B87E",
+               "swap_bytes" : "0x7EB891E6"
+            },
+            {
+               "address" : "0x13",
+               "value" : "0x557ABDF2",
+               "swap_bytes" : "0xF2BD7A55"
+            },
+            {
+               "address" : "0x14",
+               "value" : "0x35B6E0B3",
+               "swap_bytes" : "0xB3E0B635"
+            },
+            {
+               "address" : "0x15",
+               "value" : "0x49D5C4EC",
+               "swap_bytes" : "0xECC4D549"
+            },
+            {
+               "address" : "0x16",
+               "value" : "0x00CC8435",
+               "swap_bytes" : "0x3584CC00"
+            },
+            {
+               "address" : "0x17",
+               "value" : "0x919570A4",
+               "swap_bytes" : "0xA4709591"
+            },
+            {
+               "address" : "0x18",
+               "value" : "0x36E85A62",
+               "swap_bytes" : "0x625AE836"
+            },
+            {
+               "address" : "0x19",
+               "value" : "0x904B7952",
+               "swap_bytes" : "0x52794B90"
+            }
+         ],
+         "NONCE" : [
+            {
+               "address" : "0x1A",
+               "value" : "0x7E7F9C81",
+               "swap_bytes" : "0x819C7F7E"
+            },
+            {
+               "address" : "0x1B",
+               "value" : "0xB15D2DB2",
+               "swap_bytes" : "0xB22D5DB1"
+            }
+         ],
+         "COUNTER" : [
+            {
+               "address" : "0x1C",
+               "value" : "0x0000000C",
+               "swap_bytes" : "0x0C000000"
+            },
+            {
+               "address" : "0x1D",
+               "value" : "0x00000000",
+               "swap_bytes" : "0x00000000"
+            }
+         ],
+         "HASHING" : [
+            {
+               "address" : "0x1E",
+               "value" : "0xF73B33FC",
+               "swap_bytes" : "0xFC333BF7"
+            },
+            {
+               "address" : "0x1F",
+               "value" : "0xEB1C94F6",
+               "swap_bytes" : "0xF6941CEB"
+            },
+            {
+               "address" : "0x20",
+               "value" : "0x0E75B352",
+               "swap_bytes" : "0x52B3750E"
+            },
+            {
+               "address" : "0x21",
+               "value" : "0xD41B32EC",
+               "swap_bytes" : "0xEC321BD4"
+            },
+            {
+               "address" : "0x22",
+               "value" : "0x1C854EED",
+               "swap_bytes" : "0xED4E851C"
+            },
+            {
+               "address" : "0x23",
+               "value" : "0xB9E678D1",
+               "swap_bytes" : "0xD178E6B9"
+            },
+            {
+               "address" : "0x24",
+               "value" : "0xA4344B14",
+               "swap_bytes" : "0x144B34A4"
+            },
+            {
+               "address" : "0x25",
+               "value" : "0x1E03F8CB",
+               "swap_bytes" : "0xCBF8031E"
+            },
+            {
+               "address" : "0x26",
+               "value" : "0x23BB44D6",
+               "swap_bytes" : "0xD644BB23"
+            },
+            {
+               "address" : "0x27",
+               "value" : "0xA1E73E04",
+               "swap_bytes" : "0x043EE7A1"
+            },
+            {
+               "address" : "0x28",
+               "value" : "0xEE0F24FD",
+               "swap_bytes" : "0xFD240FEE"
+            },
+            {
+               "address" : "0x29",
+               "value" : "0x9E80E8A1",
+               "swap_bytes" : "0xA1E8809E"
+            },
+            {
+               "address" : "0x2A",
+               "value" : "0xA15EFB1F",
+               "swap_bytes" : "0x1FFB5EA1"
+            },
+            {
+               "address" : "0x2B",
+               "value" : "0xB24D34F2",
+               "swap_bytes" : "0xF2344DB2"
+            },
+            {
+               "address" : "0x2C",
+               "value" : "0xD8E1EB17",
+               "swap_bytes" : "0x17EBE1D8"
+            },
+            {
+               "address" : "0x2D",
+               "value" : "0x3EFA75A7",
+               "swap_bytes" : "0xA775FA3E"
+            }
+         ],
+         "CIPHER" : [
+            {
+               "address" : "0x2E",
+               "value" : "0xF73B33FC",
+               "swap_bytes" : "0xFC333BF7"
+            },
+            {
+               "address" : "0x2F",
+               "value" : "0xEB1C94F6",
+               "swap_bytes" : "0xF6941CEB"
+            },
+            {
+               "address" : "0x30",
+               "value" : "0x0E75B352",
+               "swap_bytes" : "0x52B3750E"
+            },
+            {
+               "address" : "0x31",
+               "value" : "0xD41B32EC",
+               "swap_bytes" : "0xEC321BD4"
+            },
+            {
+               "address" : "0x32",
+               "value" : "0x1C854EED",
+               "swap_bytes" : "0xED4E851C"
+            },
+            {
+               "address" : "0x33",
+               "value" : "0xB9E678D1",
+               "swap_bytes" : "0xD178E6B9"
+            },
+            {
+               "address" : "0x34",
+               "value" : "0xA4344B14",
+               "swap_bytes" : "0x144B34A4"
+            },
+            {
+               "address" : "0x35",
+               "value" : "0x1E03F8CB",
+               "swap_bytes" : "0xCBF8031E"
+            },
+            {
+               "address" : "0x36",
+               "value" : "0x23BB44D6",
+               "swap_bytes" : "0xD644BB23"
+            },
+            {
+               "address" : "0x37",
+               "value" : "0xA1E73E04",
+               "swap_bytes" : "0x043EE7A1"
+            },
+            {
+               "address" : "0x38",
+               "value" : "0xEE0F24FD",
+               "swap_bytes" : "0xFD240FEE"
+            },
+            {
+               "address" : "0x39",
+               "value" : "0x9E80E8A1",
+               "swap_bytes" : "0xA1E8809E"
+            },
+            {
+               "address" : "0x3A",
+               "value" : "0xA15EFB1F",
+               "swap_bytes" : "0x1FFB5EA1"
+            },
+            {
+               "address" : "0x3B",
+               "value" : "0xB24D34F2",
+               "swap_bytes" : "0xF2344DB2"
+            },
+            {
+               "address" : "0x3C",
+               "value" : "0xD8E1EB17",
+               "swap_bytes" : "0x17EBE1D8"
+            },
+            {
+               "address" : "0x3D",
+               "value" : "0x5B895BA7",
+               "swap_bytes" : "0xA75B895B"
+            }
+         ]
+      }
+   }
+]

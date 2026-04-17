@@ -1,0 +1,61 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "rs_232_tx_top",
+					"strict" : false
+				},
+				{
+					"name" : "hash_done_sticky_top",
+					"strict" : false
+				},
+				{
+					"name" : "xor_valid_sticky_top",
+					"strict" : false
+				},
+				{
+					"name" : "seven_seg_top[0]",
+					"strict" : false
+				},
+				{
+					"name" : "seven_seg_top[1]",
+					"strict" : false
+				},
+				{
+					"name" : "seven_seg_top[2]",
+					"strict" : false
+				},
+				{
+					"name" : "seven_seg_top[3]",
+					"strict" : false
+				},
+				{
+					"name" : "seven_seg_top[4]",
+					"strict" : false
+				},
+				{
+					"name" : "seven_seg_top[5]",
+					"strict" : false
+				},
+				{
+					"name" : "seven_seg_top[6]",
+					"strict" : false
+				},
+				{
+					"name" : "salsa_top_50mhz_clk",
+					"strict" : false
+				},
+				{
+					"name" : "salsa_top_rst_n",
+					"strict" : false
+				},
+				{
+					"name" : "rs232_rx_top",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

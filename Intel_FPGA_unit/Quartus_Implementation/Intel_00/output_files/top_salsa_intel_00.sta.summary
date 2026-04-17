@@ -1,0 +1,65 @@
+------------------------------------------------------------
+Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1200mV 85C Model Setup 'salsa_top_50mhz_clk'
+Slack : 1.426
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'salsa_top_50mhz_clk'
+Slack : 0.341
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Recovery 'salsa_top_50mhz_clk'
+Slack : 14.817
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Removal 'salsa_top_50mhz_clk'
+Slack : 1.670
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'salsa_top_50mhz_clk'
+Slack : 9.627
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Setup 'salsa_top_50mhz_clk'
+Slack : 3.076
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'salsa_top_50mhz_clk'
+Slack : 0.306
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Recovery 'salsa_top_50mhz_clk'
+Slack : 15.328
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Removal 'salsa_top_50mhz_clk'
+Slack : 1.565
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'salsa_top_50mhz_clk'
+Slack : 9.654
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'salsa_top_50mhz_clk'
+Slack : 12.345
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'salsa_top_50mhz_clk'
+Slack : 0.148
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Recovery 'salsa_top_50mhz_clk'
+Slack : 17.137
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Removal 'salsa_top_50mhz_clk'
+Slack : 0.552
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'salsa_top_50mhz_clk'
+Slack : 9.297
+TNS   : 0.000
+
+------------------------------------------------------------

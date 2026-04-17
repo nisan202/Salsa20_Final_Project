@@ -1,0 +1,702 @@
+Analysis & Synthesis report for top_salsa_intel_00
+Sat Dec 13 19:50:11 2025
+Quartus Prime Version 23.1std.1 Build 993 05/14/2024 SC Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. State Machine - |top_salsa_intel|salsa_hash_interative_wrapper:u_salsa_hash_interative_wrapper|hash_interative_with_d_r_c:u_hash_interative_with_d_r_c|fsm_ps
+  9. State Machine - |top_salsa_intel|salsa_hash_interative_wrapper:u_salsa_hash_interative_wrapper|hash_interative_with_d_r_c:u_hash_interative_with_d_r_c|d_r_c_round_interative:u_d_r_c_round_interative|d_r_c_fsm_ps
+ 10. Registers Removed During Synthesis
+ 11. General Register Statistics
+ 12. Inverted Register Statistics
+ 13. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 14. Parameter Settings for User Entity Instance: Top-level Entity: |top_salsa_intel
+ 15. Parameter Settings for User Entity Instance: salsa_hash_interative_wrapper:u_salsa_hash_interative_wrapper|hash_interative_with_d_r_c:u_hash_interative_with_d_r_c|d_r_c_round_interative:u_d_r_c_round_interative|quarter_round:u_quarter_round
+ 16. Parameter Settings for User Entity Instance: salsa_registers:u_salsa_registers
+ 17. Parameter Settings for User Entity Instance: salsa_rx:u_salsa_rx
+ 18. Parameter Settings for User Entity Instance: salsa_uart_tx:u_salsa_uart_tx
+ 19. Parameter Settings for User Entity Instance: salsa_fsm:u_salsa_fsm
+ 20. Port Connectivity Checks: "hex_to_SSD_Intel:u_hex_to_SSD_Intel"
+ 21. Post-Synthesis Netlist Statistics for Top Partition
+ 22. Elapsed Time Per Partition
+ 23. Analysis & Synthesis Messages
+ 24. Analysis & Synthesis Suppressed Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2024  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and any partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details, at
+https://fpgasoftware.intel.com/eula.
+
+
+
++-------------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                        ;
++------------------------------------+------------------------------------------------+
+; Analysis & Synthesis Status        ; Successful - Sat Dec 13 19:50:11 2025          ;
+; Quartus Prime Version              ; 23.1std.1 Build 993 05/14/2024 SC Lite Edition ;
+; Revision Name                      ; top_salsa_intel_00                             ;
+; Top-level Entity Name              ; top_salsa_intel                                ;
+; Family                             ; MAX 10                                         ;
+; Total logic elements               ; 10,045                                         ;
+;     Total combinational functions  ; 4,257                                          ;
+;     Dedicated logic registers      ; 7,202                                          ;
+; Total registers                    ; 7202                                           ;
+; Total pins                         ; 14                                             ;
+; Total virtual pins                 ; 0                                              ;
+; Total memory bits                  ; 0                                              ;
+; Embedded Multiplier 9-bit elements ; 0                                              ;
+; Total PLLs                         ; 0                                              ;
+; UFM blocks                         ; 0                                              ;
+; ADC blocks                         ; 0                                              ;
++------------------------------------+------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                              ;
++------------------------------------------------------------------+--------------------+--------------------+
+; Option                                                           ; Setting            ; Default Value      ;
++------------------------------------------------------------------+--------------------+--------------------+
+; Device                                                           ; 10M50DAF484C7G     ;                    ;
+; Top-level entity name                                            ; top_salsa_intel    ; top_salsa_intel_00 ;
+; Family name                                                      ; MAX 10             ; Cyclone V          ;
+; Use smart compilation                                            ; Off                ; Off                ;
+; Enable parallel Assembler and Timing Analyzer during compilation ; On                 ; On                 ;
+; Enable compact report table                                      ; Off                ; Off                ;
+; Restructure Multiplexers                                         ; Auto               ; Auto               ;
+; Create Debugging Nodes for IP Cores                              ; Off                ; Off                ;
+; Preserve fewer node names                                        ; On                 ; On                 ;
+; Intel FPGA IP Evaluation Mode                                    ; Enable             ; Enable             ;
+; Verilog Version                                                  ; Verilog_2001       ; Verilog_2001       ;
+; VHDL Version                                                     ; VHDL_1993          ; VHDL_1993          ;
+; State Machine Processing                                         ; Auto               ; Auto               ;
+; Safe State Machine                                               ; Off                ; Off                ;
+; Extract Verilog State Machines                                   ; On                 ; On                 ;
+; Extract VHDL State Machines                                      ; On                 ; On                 ;
+; Ignore Verilog initial constructs                                ; Off                ; Off                ;
+; Iteration limit for constant Verilog loops                       ; 5000               ; 5000               ;
+; Iteration limit for non-constant Verilog loops                   ; 250                ; 250                ;
+; Add Pass-Through Logic to Inferred RAMs                          ; On                 ; On                 ;
+; Infer RAMs from Raw Logic                                        ; On                 ; On                 ;
+; Parallel Synthesis                                               ; On                 ; On                 ;
+; DSP Block Balancing                                              ; Auto               ; Auto               ;
+; NOT Gate Push-Back                                               ; On                 ; On                 ;
+; Power-Up Don't Care                                              ; On                 ; On                 ;
+; Remove Redundant Logic Cells                                     ; Off                ; Off                ;
+; Remove Duplicate Registers                                       ; On                 ; On                 ;
+; Ignore CARRY Buffers                                             ; Off                ; Off                ;
+; Ignore CASCADE Buffers                                           ; Off                ; Off                ;
+; Ignore GLOBAL Buffers                                            ; Off                ; Off                ;
+; Ignore ROW GLOBAL Buffers                                        ; Off                ; Off                ;
+; Ignore LCELL Buffers                                             ; Off                ; Off                ;
+; Ignore SOFT Buffers                                              ; On                 ; On                 ;
+; Limit AHDL Integers to 32 Bits                                   ; Off                ; Off                ;
+; Optimization Technique                                           ; Balanced           ; Balanced           ;
+; Carry Chain Length                                               ; 70                 ; 70                 ;
+; Auto Carry Chains                                                ; On                 ; On                 ;
+; Auto Open-Drain Pins                                             ; On                 ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                            ; Off                ; Off                ;
+; Auto ROM Replacement                                             ; On                 ; On                 ;
+; Auto RAM Replacement                                             ; On                 ; On                 ;
+; Auto DSP Block Replacement                                       ; On                 ; On                 ;
+; Auto Shift Register Replacement                                  ; Auto               ; Auto               ;
+; Allow Shift Register Merging across Hierarchies                  ; Auto               ; Auto               ;
+; Auto Clock Enable Replacement                                    ; On                 ; On                 ;
+; Strict RAM Replacement                                           ; Off                ; Off                ;
+; Allow Synchronous Control Signals                                ; On                 ; On                 ;
+; Force Use of Synchronous Clear Signals                           ; Off                ; Off                ;
+; Auto RAM Block Balancing                                         ; On                 ; On                 ;
+; Auto RAM to Logic Cell Conversion                                ; Off                ; Off                ;
+; Auto Resource Sharing                                            ; Off                ; Off                ;
+; Allow Any RAM Size For Recognition                               ; Off                ; Off                ;
+; Allow Any ROM Size For Recognition                               ; Off                ; Off                ;
+; Allow Any Shift Register Size For Recognition                    ; Off                ; Off                ;
+; Use LogicLock Constraints during Resource Balancing              ; On                 ; On                 ;
+; Ignore translate_off and synthesis_off directives                ; Off                ; Off                ;
+; Timing-Driven Synthesis                                          ; On                 ; On                 ;
+; Report Parameter Settings                                        ; On                 ; On                 ;
+; Report Source Assignments                                        ; On                 ; On                 ;
+; Report Connectivity Checks                                       ; On                 ; On                 ;
+; Ignore Maximum Fan-Out Assignments                               ; Off                ; Off                ;
+; Synchronization Register Chain Length                            ; 2                  ; 2                  ;
+; Power Optimization During Synthesis                              ; Normal compilation ; Normal compilation ;
+; HDL message level                                                ; Level2             ; Level2             ;
+; Suppress Register Optimization Related Messages                  ; Off                ; Off                ;
+; Number of Removed Registers Reported in Synthesis Report         ; 5000               ; 5000               ;
+; Number of Swept Nodes Reported in Synthesis Report               ; 5000               ; 5000               ;
+; Number of Inverted Registers Reported in Synthesis Report        ; 100                ; 100                ;
+; Clock MUX Protection                                             ; On                 ; On                 ;
+; Auto Gated Clock Conversion                                      ; Off                ; Off                ;
+; Block Design Naming                                              ; Auto               ; Auto               ;
+; SDC constraint protection                                        ; Off                ; Off                ;
+; Synthesis Effort                                                 ; Auto               ; Auto               ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal     ; On                 ; On                 ;
+; Pre-Mapping Resynthesis Optimization                             ; Off                ; Off                ;
+; Analysis & Synthesis Message Level                               ; Medium             ; Medium             ;
+; Disable Register Merging Across Hierarchies                      ; Auto               ; Auto               ;
+; Resource Aware Inference For Block RAM                           ; On                 ; On                 ;
++------------------------------------------------------------------+--------------------+--------------------+
+
+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 8           ;
+; Maximum allowed            ; 4           ;
+;                            ;             ;
+; Average used               ; 1.01        ;
+; Maximum used               ; 4           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
+;     Processor 2            ;   0.5%      ;
+;     Processor 3            ;   0.3%      ;
+;     Processor 4            ;   0.2%      ;
++----------------------------+-------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                                                                             ;
++----------------------------------------------------------------------+-----------------+------------------------------+------------------------------------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path                                     ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                                                                     ; Library ;
++----------------------------------------------------------------------+-----------------+------------------------------+------------------------------------------------------------------------------------------------------------------+---------+
+; ../Code_files/3.Defines_file/salsa_defines.vh                        ; yes             ; User Unspecified File        ; C:/Users/HP/Desktop/Degree/Nisan_final_project/Code_files/3.Defines_file/salsa_defines.vh                        ;         ;
+; ../Code_files/1.Verilog_Design_Code/quarter_round.sv                 ; yes             ; User SystemVerilog HDL File  ; C:/Users/HP/Desktop/Degree/Nisan_final_project/Code_files/1.Verilog_Design_Code/quarter_round.sv                 ;         ;
+; ../Code_files/1.Verilog_Design_Code/hash_interative_with_d_r_c.sv    ; yes             ; User SystemVerilog HDL File  ; C:/Users/HP/Desktop/Degree/Nisan_final_project/Code_files/1.Verilog_Design_Code/hash_interative_with_d_r_c.sv    ;         ;
+; ../Code_files/1.Verilog_Design_Code/d_r_c_round_interative.sv        ; yes             ; User SystemVerilog HDL File  ; C:/Users/HP/Desktop/Degree/Nisan_final_project/Code_files/1.Verilog_Design_Code/d_r_c_round_interative.sv        ;         ;
+; ../Code_files/1.Verilog_Design_Code/constant_select.sv               ; yes             ; User SystemVerilog HDL File  ; C:/Users/HP/Desktop/Degree/Nisan_final_project/Code_files/1.Verilog_Design_Code/constant_select.sv               ;         ;
+; ../Code_files/1.Verilog_Design_Code/top_salsa_intel.sv               ; yes             ; User SystemVerilog HDL File  ; C:/Users/HP/Desktop/Degree/Nisan_final_project/Code_files/1.Verilog_Design_Code/top_salsa_intel.sv               ;         ;
+; ../Code_files/1.Verilog_Design_Code/salsa_xor_regs.sv                ; yes             ; User SystemVerilog HDL File  ; C:/Users/HP/Desktop/Degree/Nisan_final_project/Code_files/1.Verilog_Design_Code/salsa_xor_regs.sv                ;         ;
+; ../Code_files/1.Verilog_Design_Code/salsa_uart_tx.sv                 ; yes             ; User SystemVerilog HDL File  ; C:/Users/HP/Desktop/Degree/Nisan_final_project/Code_files/1.Verilog_Design_Code/salsa_uart_tx.sv                 ;         ;
+; ../Code_files/1.Verilog_Design_Code/salsa_rx.sv                      ; yes             ; User SystemVerilog HDL File  ; C:/Users/HP/Desktop/Degree/Nisan_final_project/Code_files/1.Verilog_Design_Code/salsa_rx.sv                      ;         ;
+; ../Code_files/1.Verilog_Design_Code/salsa_registers.sv               ; yes             ; User SystemVerilog HDL File  ; C:/Users/HP/Desktop/Degree/Nisan_final_project/Code_files/1.Verilog_Design_Code/salsa_registers.sv               ;         ;
+; ../Code_files/1.Verilog_Design_Code/salsa_hash_interative_wrapper.sv ; yes             ; User SystemVerilog HDL File  ; C:/Users/HP/Desktop/Degree/Nisan_final_project/Code_files/1.Verilog_Design_Code/salsa_hash_interative_wrapper.sv ;         ;
+; ../Code_files/1.Verilog_Design_Code/salsa_fsm.sv                     ; yes             ; User SystemVerilog HDL File  ; C:/Users/HP/Desktop/Degree/Nisan_final_project/Code_files/1.Verilog_Design_Code/salsa_fsm.sv                     ;         ;
+; ../Code_files/1.Verilog_Design_Code/hex_to_SSD_Intel.sv              ; yes             ; User SystemVerilog HDL File  ; C:/Users/HP/Desktop/Degree/Nisan_final_project/Code_files/1.Verilog_Design_Code/hex_to_SSD_Intel.sv              ;         ;
++----------------------------------------------------------------------+-----------------+------------------------------+------------------------------------------------------------------------------------------------------------------+---------+
+
+
++-------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                             ;
++---------------------------------------------+---------------------------+
+; Resource                                    ; Usage                     ;
++---------------------------------------------+---------------------------+
+; Estimated Total logic elements              ; 10,045                    ;
+;                                             ;                           ;
+; Total combinational functions               ; 4257                      ;
+; Logic element usage by number of LUT inputs ;                           ;
+;     -- 4 input functions                    ; 3128                      ;
+;     -- 3 input functions                    ; 832                       ;
+;     -- <=2 input functions                  ; 297                       ;
+;                                             ;                           ;
+; Logic elements by mode                      ;                           ;
+;     -- normal mode                          ; 3625                      ;
+;     -- arithmetic mode                      ; 632                       ;
+;                                             ;                           ;
+; Total registers                             ; 7202                      ;
+;     -- Dedicated logic registers            ; 7202                      ;
+;     -- I/O registers                        ; 0                         ;
+;                                             ;                           ;
+; I/O pins                                    ; 14                        ;
+;                                             ;                           ;
+; Embedded Multiplier 9-bit elements          ; 0                         ;
+;                                             ;                           ;
+; Maximum fan-out node                        ; salsa_top_50mhz_clk~input ;
+; Maximum fan-out                             ; 7202                      ;
+; Total fan-out                               ; 44363                     ;
+; Average fan-out                             ; 3.86                      ;
++---------------------------------------------+---------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                                                                                                                                                                                                                                           ;
++--------------------------------------------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------+--------------+
+; Compilation Hierarchy Node                                         ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; UFM Blocks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; ADC blocks ; Full Hierarchy Name                                                                                                                                                                                                  ; Entity Name                   ; Library Name ;
++--------------------------------------------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------+--------------+
+; |top_salsa_intel                                                   ; 4257 (0)            ; 7202 (0)                  ; 0           ; 0          ; 0            ; 0       ; 0         ; 14   ; 0            ; 0          ; |top_salsa_intel                                                                                                                                                                                                     ; top_salsa_intel               ; work         ;
+;    |hex_to_SSD_Intel:u_hex_to_SSD_Intel|                           ; 17 (17)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |top_salsa_intel|hex_to_SSD_Intel:u_hex_to_SSD_Intel                                                                                                                                                                 ; hex_to_SSD_Intel              ; work         ;
+;    |salsa_fsm:u_salsa_fsm|                                         ; 1330 (1330)         ; 64 (64)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |top_salsa_intel|salsa_fsm:u_salsa_fsm                                                                                                                                                                               ; salsa_fsm                     ; work         ;
+;    |salsa_hash_interative_wrapper:u_salsa_hash_interative_wrapper| ; 1949 (0)            ; 4637 (513)                ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |top_salsa_intel|salsa_hash_interative_wrapper:u_salsa_hash_interative_wrapper                                                                                                                                       ; salsa_hash_interative_wrapper ; work         ;
+;       |hash_interative_with_d_r_c:u_hash_interative_with_d_r_c|    ; 1949 (1037)         ; 4124 (1937)               ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |top_salsa_intel|salsa_hash_interative_wrapper:u_salsa_hash_interative_wrapper|hash_interative_with_d_r_c:u_hash_interative_with_d_r_c                                                                               ; hash_interative_with_d_r_c    ; work         ;
+;          |d_r_c_round_interative:u_d_r_c_round_interative|         ; 912 (656)           ; 2187 (2187)               ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |top_salsa_intel|salsa_hash_interative_wrapper:u_salsa_hash_interative_wrapper|hash_interative_with_d_r_c:u_hash_interative_with_d_r_c|d_r_c_round_interative:u_d_r_c_round_interative                               ; d_r_c_round_interative        ; work         ;
+;             |quarter_round:u_quarter_round|                        ; 256 (256)           ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |top_salsa_intel|salsa_hash_interative_wrapper:u_salsa_hash_interative_wrapper|hash_interative_with_d_r_c:u_hash_interative_with_d_r_c|d_r_c_round_interative:u_d_r_c_round_interative|quarter_round:u_quarter_round ; quarter_round                 ; work         ;
+;    |salsa_registers:u_salsa_registers|                             ; 144 (144)           ; 1417 (1417)               ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |top_salsa_intel|salsa_registers:u_salsa_registers                                                                                                                                                                   ; salsa_registers               ; work         ;
+;    |salsa_rx:u_salsa_rx|                                           ; 41 (41)             ; 27 (27)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |top_salsa_intel|salsa_rx:u_salsa_rx                                                                                                                                                                                 ; salsa_rx                      ; work         ;
+;    |salsa_uart_tx:u_salsa_uart_tx|                                 ; 31 (31)             ; 25 (25)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |top_salsa_intel|salsa_uart_tx:u_salsa_uart_tx                                                                                                                                                                       ; salsa_uart_tx                 ; work         ;
+;    |salsa_xor_regs:u_salsa_xor_regs|                               ; 745 (745)           ; 1032 (1032)               ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |top_salsa_intel|salsa_xor_regs:u_salsa_xor_regs                                                                                                                                                                     ; salsa_xor_regs                ; work         ;
++--------------------------------------------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
+Encoding Type:  One-Hot
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; State Machine - |top_salsa_intel|salsa_hash_interative_wrapper:u_salsa_hash_interative_wrapper|hash_interative_with_d_r_c:u_hash_interative_with_d_r_c|fsm_ps                           ;
++-------------------------+-------------+-------------------+-----------------------+-------------------------+--------------------+----------------+-----------------------+-------------+
+; Name                    ; fsm_ps.DONE ; fsm_ps.ROUND_CNTR ; fsm_ps.SAMPLE_DOB_OUT ; fsm_ps.WAIT2DOUBLE_DONE ; fsm_ps.COMBO_CYCLE ; fsm_ps.SET_MTX ; fsm_ps.SAMPLE_INITIAL ; fsm_ps.IDLE ;
++-------------------------+-------------+-------------------+-----------------------+-------------------------+--------------------+----------------+-----------------------+-------------+
+; fsm_ps.IDLE             ; 0           ; 0                 ; 0                     ; 0                       ; 0                  ; 0              ; 0                     ; 0           ;
+; fsm_ps.SAMPLE_INITIAL   ; 0           ; 0                 ; 0                     ; 0                       ; 0                  ; 0              ; 1                     ; 1           ;
+; fsm_ps.SET_MTX          ; 0           ; 0                 ; 0                     ; 0                       ; 0                  ; 1              ; 0                     ; 1           ;
+; fsm_ps.COMBO_CYCLE      ; 0           ; 0                 ; 0                     ; 0                       ; 1                  ; 0              ; 0                     ; 1           ;
+; fsm_ps.WAIT2DOUBLE_DONE ; 0           ; 0                 ; 0                     ; 1                       ; 0                  ; 0              ; 0                     ; 1           ;
+; fsm_ps.SAMPLE_DOB_OUT   ; 0           ; 0                 ; 1                     ; 0                       ; 0                  ; 0              ; 0                     ; 1           ;
+; fsm_ps.ROUND_CNTR       ; 0           ; 1                 ; 0                     ; 0                       ; 0                  ; 0              ; 0                     ; 1           ;
+; fsm_ps.DONE             ; 1           ; 0                 ; 0                     ; 0                       ; 0                  ; 0              ; 0                     ; 1           ;
++-------------------------+-------------+-------------------+-----------------------+-------------------------+--------------------+----------------+-----------------------+-------------+
+
+
+Encoding Type:  One-Hot
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; State Machine - |top_salsa_intel|salsa_hash_interative_wrapper:u_salsa_hash_interative_wrapper|hash_interative_with_d_r_c:u_hash_interative_with_d_r_c|d_r_c_round_interative:u_d_r_c_round_interative|d_r_c_fsm_ps     ;
++----------------------------+-------------------+----------------------------+-------------------------+--------------------+----------------------+---------------------+---------------------------+-------------------+
+; Name                       ; d_r_c_fsm_ps.DONE ; d_r_c_fsm_ps.SAMPLE_OUTPUT ; d_r_c_fsm_ps.QR_COUNTER ; d_r_c_fsm_ps.DELAY ; d_r_c_fsm_ps.SET_MTX ; d_r_c_fsm_ps.QR_SET ; d_r_c_fsm_ps.SAMPLE_INPUT ; d_r_c_fsm_ps.IDLE ;
++----------------------------+-------------------+----------------------------+-------------------------+--------------------+----------------------+---------------------+---------------------------+-------------------+
+; d_r_c_fsm_ps.IDLE          ; 0                 ; 0                          ; 0                       ; 0                  ; 0                    ; 0                   ; 0                         ; 0                 ;
+; d_r_c_fsm_ps.SAMPLE_INPUT  ; 0                 ; 0                          ; 0                       ; 0                  ; 0                    ; 0                   ; 1                         ; 1                 ;
+; d_r_c_fsm_ps.QR_SET        ; 0                 ; 0                          ; 0                       ; 0                  ; 0                    ; 1                   ; 0                         ; 1                 ;
+; d_r_c_fsm_ps.SET_MTX       ; 0                 ; 0                          ; 0                       ; 0                  ; 1                    ; 0                   ; 0                         ; 1                 ;
+; d_r_c_fsm_ps.DELAY         ; 0                 ; 0                          ; 0                       ; 1                  ; 0                    ; 0                   ; 0                         ; 1                 ;
+; d_r_c_fsm_ps.QR_COUNTER    ; 0                 ; 0                          ; 1                       ; 0                  ; 0                    ; 0                   ; 0                         ; 1                 ;
+; d_r_c_fsm_ps.SAMPLE_OUTPUT ; 0                 ; 1                          ; 0                       ; 0                  ; 0                    ; 0                   ; 0                         ; 1                 ;
+; d_r_c_fsm_ps.DONE          ; 1                 ; 0                          ; 0                       ; 0                  ; 0                    ; 0                   ; 0                         ; 1                 ;
++----------------------------+-------------------+----------------------------+-------------------------+--------------------+----------------------+---------------------+---------------------------+-------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                                                                                                                                                                                                                                                                                                    ;
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Register name                                                                                                                                                                        ; Reason for Removal                                                                                                                                             ;
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; salsa_hash_interative_wrapper:u_salsa_hash_interative_wrapper|hash_interative_with_d_r_c:u_hash_interative_with_d_r_c|initial_mtx_sample[1][1][0]                                    ; Stuck at GND due to stuck port data_in                                                                                                                         ;
+; salsa_hash_interative_wrapper:u_salsa_hash_interative_wrapper|hash_interative_with_d_r_c:u_hash_interative_with_d_r_c|initial_mtx_sample[2][2][0]                                    ; Stuck at GND due to stuck port data_in                                                                                                                         ;
+; salsa_hash_interative_wrapper:u_salsa_hash_interative_wrapper|hash_interative_with_d_r_c:u_hash_interative_with_d_r_c|initial_mtx_sample[0][0][31]                                   ; Stuck at GND due to stuck port data_in                                                                                                                         ;
+; salsa_hash_interative_wrapper:u_salsa_hash_interative_wrapper|hash_interative_with_d_r_c:u_hash_interative_with_d_r_c|initial_mtx_sample[0][0][28]                                   ; Stuck at GND due to stuck port data_in                                                                                                                         ;
+; salsa_hash_interative_wrapper:u_salsa_hash_interative_wrapper|hash_interative_with_d_r_c:u_hash_interative_with_d_r_c|initial_mtx_sample[0][0][27]                                   ; Stuck at GND due to stuck port data_in                                                                                                                         ;
+; salsa_hash_interative_wrapper:u_salsa_hash_interative_wrapper|hash_interative_with_d_r_c:u_hash_interative_with_d_r_c|initial_mtx_sample[0][0][26]                                   ; Stuck at GND due to stuck port data_in                                                                                                                         ;
+; salsa_hash_interative_wrapper:u_salsa_hash_interative_wrapper|hash_interative_with_d_r_c:u_hash_interative_with_d_r_c|initial_mtx_sample[0][0][25]                                   ; Stuck at GND due to stuck port data_in                                                                                                                         ;
+; salsa_hash_interative_wrapper:u_salsa_hash_interative_wrapper|hash_interative_with_d_r_c:u_hash_interative_with_d_r_c|initial_mtx_sample[0][0][23]                                   ; Stuck at GND due to stuck port data_in                                                                                                                         ;
+; salsa_hash_interative_wrapper:u_salsa_hash_interative_wrapper|hash_interative_with_d_r_c:u_hash_interative_with_d_r_c|initial_mtx_sample[0][0][19]                                   ; Stuck at GND due to stuck port data_in                                                                                                                         ;
+; salsa_hash_interative_wrapper:u_salsa_hash_interative_wrapper|hash_interative_with_d_r_c:u_hash_interative_with_d_r_c|initial_mtx_sample[0][0][18]                                   ; Stuck at GND due to stuck port data_in                                                                                                                         ;
+; salsa_hash_interative_wrapper:u_salsa_hash_interative_wrapper|hash_interative_with_d_r_c:u_hash_interative_with_d_r_c|initial_mtx_sample[0][0][17]                                   ; Stuck at GND due to stuck port data_in                                                                                                                         ;
+; salsa_hash_interative_wrapper:u_salsa_hash_interative_wrapper|hash_interative_with_d_r_c:u_hash_interative_with_d_r_c|initial_mtx_sample[0][0][16]                                   ; Stuck at GND due to stuck port data_in                                                                                                                         ;
+; salsa_hash_interative_wrapper:u_salsa_hash_interative_wrapper|hash_interative_with_d_r_c:u_hash_interative_with_d_r_c|initial_mtx_sample[0][0][15]                                   ; Stuck at GND due to stuck port data_in                                                                                                                         ;
+; salsa_hash_interative_wrapper:u_salsa_hash_interative_wrapper|hash_interative_with_d_r_c:u_hash_interative_with_d_r_c|initial_mtx_sample[0][0][10]                                   ; Stuck at GND due to stuck port data_in                                                                                                                         ;
+; salsa_hash_interative_wrapper:u_salsa_hash_interative_wrapper|hash_interative_with_d_r_c:u_hash_interative_with_d_r_c|initial_mtx_sample[0][0][9]                                    ; Stuck at GND due to stuck port data_in                                                                                                                         ;
+; salsa_hash_interative_wrapper:u_salsa_hash_interative_wrapper|hash_interative_with_d_r_c:u_hash_interative_with_d_r_c|initial_mtx_sample[0][0][8]                                    ; Stuck at GND due to stuck port data_in                                                                                                                         ;
+; salsa_hash_interative_wrapper:u_salsa_hash_interative_wrapper|hash_interative_with_d_r_c:u_hash_interative_with_d_r_c|initial_mtx_sample[0][0][7]                                    ; Stuck at GND due to stuck port data_in                                                                                                                         ;
+; salsa_hash_interative_wrapper:u_salsa_hash_interative_wrapper|hash_interative_with_d_r_c:u_hash_interative_with_d_r_c|initial_mtx_sample[0][0][4]                                    ; Stuck at GND due to stuck port data_in                                                                                                                         ;
+; salsa_hash_interative_wrapper:u_salsa_hash_interative_wrapper|hash_interative_with_d_r_c:u_hash_interative_with_d_r_c|initial_mtx_sample[0][0][3]                                    ; Stuck at GND due to stuck port data_in                                                                                                                         ;
+; salsa_hash_interative_wrapper:u_salsa_hash_interative_wrapper|hash_interative_with_d_r_c:u_hash_interative_with_d_r_c|initial_mtx_sample[0][0][1]                                    ; Stuck at GND due to stuck port data_in                                                                                                                         ;
+; salsa_hash_interative_wrapper:u_salsa_hash_interative_wrapper|hash_interative_with_d_r_c:u_hash_interative_with_d_r_c|initial_mtx_sample[1][1][31]                                   ; Stuck at GND due to stuck port data_in                                                                                                                         ;
+; salsa_hash_interative_wrapper:u_salsa_hash_interative_wrapper|hash_interative_with_d_r_c:u_hash_interative_with_d_r_c|initial_mtx_sample[1][1][30]                                   ; Stuck at GND due to stuck port data_in                                                                                                                         ;
+; salsa_hash_interative_wrapper:u_salsa_hash_interative_wrapper|hash_interative_with_d_r_c:u_hash_interative_with_d_r_c|initial_mtx_sample[1][1][27]                                   ; Stuck at GND due to stuck port data_in                                                                                                                         ;
+; salsa_hash_interative_wrapper:u_salsa_hash_interative_wrapper|hash_interative_with_d_r_c:u_hash_interative_with_d_r_c|initial_mtx_sample[1][1][26]                                   ; Stuck at GND due to stuck port data_in                                                                                                                         ;
+; salsa_hash_interative_wrapper:u_salsa_hash_interative_wrapper|hash_interative_with_d_r_c:u_hash_interative_with_d_r_c|initial_mtx_sample[1][1][23]                                   ; Stuck at GND due to stuck port data_in                                                                                                                         ;
+; salsa_hash_interative_wrapper:u_salsa_hash_interative_wrapper|hash_interative_with_d_r_c:u_hash_interative_with_d_r_c|initial_mtx_sample[1][1][22]                                   ; Stuck at GND due to stuck port data_in                                                                                                                         ;
+; salsa_hash_interative_wrapper:u_salsa_hash_interative_wrapper|hash_interative_with_d_r_c:u_hash_interative_with_d_r_c|initial_mtx_sample[1][1][20]                                   ; Stuck at GND due to stuck port data_in                                                                                                                         ;
+; salsa_hash_interative_wrapper:u_salsa_hash_interative_wrapper|hash_interative_with_d_r_c:u_hash_interative_with_d_r_c|initial_mtx_sample[1][1][19]                                   ; Stuck at GND due to stuck port data_in                                                                                                                         ;
+; salsa_hash_interative_wrapper:u_salsa_hash_interative_wrapper|hash_interative_with_d_r_c:u_hash_interative_with_d_r_c|initial_mtx_sample[1][1][18]                                   ; Stuck at GND due to stuck port data_in                                                                                                                         ;
+; salsa_hash_interative_wrapper:u_salsa_hash_interative_wrapper|hash_interative_with_d_r_c:u_hash_interative_with_d_r_c|initial_mtx_sample[1][1][17]                                   ; Stuck at GND due to stuck port data_in                                                                                                                         ;
+; salsa_hash_interative_wrapper:u_salsa_hash_interative_wrapper|hash_interative_with_d_r_c:u_hash_interative_with_d_r_c|initial_mtx_sample[1][1][16]                                   ; Stuck at GND due to stuck port data_in                                                                                                                         ;
+; salsa_hash_interative_wrapper:u_salsa_hash_interative_wrapper|hash_interative_with_d_r_c:u_hash_interative_with_d_r_c|initial_mtx_sample[1][1][15]                                   ; Stuck at GND due to stuck port data_in                                                                                                                         ;
+; salsa_hash_interative_wrapper:u_salsa_hash_interative_wrapper|hash_interative_with_d_r_c:u_hash_interative_with_d_r_c|initial_mtx_sample[1][1][12]                                   ; Stuck at GND due to stuck port data_in                                                                                                                         ;
+; salsa_hash_interative_wrapper:u_salsa_hash_interative_wrapper|hash_interative_with_d_r_c:u_hash_interative_with_d_r_c|initial_mtx_sample[1][1][11]                                   ; Stuck at GND due to stuck port data_in                                                                                                                         ;
+; salsa_hash_interative_wrapper:u_salsa_hash_interative_wrapper|hash_interative_with_d_r_c:u_hash_interative_with_d_r_c|initial_mtx_sample[1][1][9]                                    ; Stuck at GND due to stuck port data_in                                                                                                                         ;
+; salsa_hash_interative_wrapper:u_salsa_hash_interative_wrapper|hash_interative_with_d_r_c:u_hash_interative_with_d_r_c|initial_mtx_sample[1][1][8]                                    ; Stuck at GND due to stuck port data_in                                                                                                                         ;
+; salsa_hash_interative_wrapper:u_salsa_hash_interative_wrapper|hash_interative_with_d_r_c:u_hash_interative_with_d_r_c|initial_mtx_sample[1][1][7]                                    ; Stuck at GND due to stuck port data_in                                                                                                                         ;
+; salsa_hash_interative_wrapper:u_salsa_hash_interative_wrapper|hash_interative_with_d_r_c:u_hash_interative_with_d_r_c|initial_mtx_sample[1][1][4]                                    ; Stuck at GND due to stuck port data_in                                                                                                                         ;
+; salsa_hash_interative_wrapper:u_salsa_hash_interative_wrapper|hash_interative_with_d_r_c:u_hash_interative_with_d_r_c|initial_mtx_sample[2][2][31]                                   ; Stuck at GND due to stuck port data_in                                                                                                                         ;
+; salsa_hash_interative_wrapper:u_salsa_hash_interative_wrapper|hash_interative_with_d_r_c:u_hash_interative_with_d_r_c|initial_mtx_sample[2][2][26]                                   ; Stuck at GND due to stuck port data_in                                                                                                                         ;
+; salsa_hash_interative_wrapper:u_salsa_hash_interative_wrapper|hash_interative_with_d_r_c:u_hash_interative_with_d_r_c|initial_mtx_sample[2][2][25]                                   ; Stuck at GND due to stuck port data_in                                                                                                                         ;
+; salsa_hash_interative_wrapper:u_salsa_hash_interative_wrapper|hash_interative_with_d_r_c:u_hash_interative_with_d_r_c|initial_mtx_sample[2][2][23]                                   ; Stuck at GND due to stuck port data_in                                                                                                                         ;
+; salsa_hash_interative_wrapper:u_salsa_hash_interative_wrapper|hash_interative_with_d_r_c:u_hash_interative_with_d_r_c|initial_mtx_sample[2][2][20]                                   ; Stuck at GND due to stuck port data_in                                                                                                                         ;
+; salsa_hash_interative_wrapper:u_salsa_hash_interative_wrapper|hash_interative_with_d_r_c:u_hash_interative_with_d_r_c|initial_mtx_sample[2][2][19]                                   ; Stuck at GND due to stuck port data_in                                                                                                                         ;
+; salsa_hash_interative_wrapper:u_salsa_hash_interative_wrapper|hash_interative_with_d_r_c:u_hash_interative_with_d_r_c|initial_mtx_sample[2][2][18]                                   ; Stuck at GND due to stuck port data_in                                                                                                                         ;
+; salsa_hash_interative_wrapper:u_salsa_hash_interative_wrapper|hash_interative_with_d_r_c:u_hash_interative_with_d_r_c|initial_mtx_sample[2][2][16]                                   ; Stuck at GND due to stuck port data_in                                                                                                                         ;
+; salsa_hash_interative_wrapper:u_salsa_hash_interative_wrapper|hash_interative_with_d_r_c:u_hash_interative_with_d_r_c|initial_mtx_sample[2][2][15]                                   ; Stuck at GND due to stuck port data_in                                                                                                                         ;
+; salsa_hash_interative_wrapper:u_salsa_hash_interative_wrapper|hash_interative_with_d_r_c:u_hash_interative_with_d_r_c|initial_mtx_sample[2][2][14]                                   ; Stuck at GND due to stuck port data_in                                                                                                                         ;
+; salsa_hash_interative_wrapper:u_salsa_hash_interative_wrapper|hash_interative_with_d_r_c:u_hash_interative_with_d_r_c|initial_mtx_sample[2][2][12]                                   ; Stuck at GND due to stuck port data_in                                                                                                                         ;
+; salsa_hash_interative_wrapper:u_salsa_hash_interative_wrapper|hash_interative_with_d_r_c:u_hash_interative_with_d_r_c|initial_mtx_sample[2][2][9]                                    ; Stuck at GND due to stuck port data_in                                                                                                                         ;
+; salsa_hash_interative_wrapper:u_salsa_hash_interative_wrapper|hash_interative_with_d_r_c:u_hash_interative_with_d_r_c|initial_mtx_sample[2][2][7]                                    ; Stuck at GND due to stuck port data_in                                                                                                                         ;
+; salsa_hash_interative_wrapper:u_salsa_hash_interative_wrapper|hash_interative_with_d_r_c:u_hash_interative_with_d_r_c|initial_mtx_sample[2][2][6]                                    ; Stuck at GND due to stuck port data_in                                                                                                                         ;
+; salsa_hash_interative_wrapper:u_salsa_hash_interative_wrapper|hash_interative_with_d_r_c:u_hash_interative_with_d_r_c|initial_mtx_sample[2][2][3]                                    ; Stuck at GND due to stuck port data_in                                                                                                                         ;
+; salsa_hash_interative_wrapper:u_salsa_hash_interative_wrapper|hash_interative_with_d_r_c:u_hash_interative_with_d_r_c|initial_mtx_sample[3][3][31]                                   ; Stuck at GND due to stuck port data_in                                                                                                                         ;
+; salsa_hash_interative_wrapper:u_salsa_hash_interative_wrapper|hash_interative_with_d_r_c:u_hash_interative_with_d_r_c|initial_mtx_sample[3][3][28]                                   ; Stuck at GND due to stuck port data_in                                                                                                                         ;
+; salsa_hash_interative_wrapper:u_salsa_hash_interative_wrapper|hash_interative_with_d_r_c:u_hash_interative_with_d_r_c|initial_mtx_sample[3][3][26]                                   ; Stuck at GND due to stuck port data_in                                                                                                                         ;
+; salsa_hash_interative_wrapper:u_salsa_hash_interative_wrapper|hash_interative_with_d_r_c:u_hash_interative_with_d_r_c|initial_mtx_sample[3][3][23]                                   ; Stuck at GND due to stuck port data_in                                                                                                                         ;
+; salsa_hash_interative_wrapper:u_salsa_hash_interative_wrapper|hash_interative_with_d_r_c:u_hash_interative_with_d_r_c|initial_mtx_sample[3][3][22]                                   ; Stuck at GND due to stuck port data_in                                                                                                                         ;
+; salsa_hash_interative_wrapper:u_salsa_hash_interative_wrapper|hash_interative_with_d_r_c:u_hash_interative_with_d_r_c|initial_mtx_sample[3][3][20]                                   ; Stuck at GND due to stuck port data_in                                                                                                                         ;
+; salsa_hash_interative_wrapper:u_salsa_hash_interative_wrapper|hash_interative_with_d_r_c:u_hash_interative_with_d_r_c|initial_mtx_sample[3][3][19]                                   ; Stuck at GND due to stuck port data_in                                                                                                                         ;
+; salsa_hash_interative_wrapper:u_salsa_hash_interative_wrapper|hash_interative_with_d_r_c:u_hash_interative_with_d_r_c|initial_mtx_sample[3][3][18]                                   ; Stuck at GND due to stuck port data_in                                                                                                                         ;
+; salsa_hash_interative_wrapper:u_salsa_hash_interative_wrapper|hash_interative_with_d_r_c:u_hash_interative_with_d_r_c|initial_mtx_sample[3][3][17]                                   ; Stuck at GND due to stuck port data_in                                                                                                                         ;
+; salsa_hash_interative_wrapper:u_salsa_hash_interative_wrapper|hash_interative_with_d_r_c:u_hash_interative_with_d_r_c|initial_mtx_sample[3][3][16]                                   ; Stuck at GND due to stuck port data_in                                                                                                                         ;
+; salsa_hash_interative_wrapper:u_salsa_hash_interative_wrapper|hash_interative_with_d_r_c:u_hash_interative_with_d_r_c|initial_mtx_sample[3][3][15]                                   ; Stuck at GND due to stuck port data_in                                                                                                                         ;
+; salsa_hash_interative_wrapper:u_salsa_hash_interative_wrapper|hash_interative_with_d_r_c:u_hash_interative_with_d_r_c|initial_mtx_sample[3][3][12]                                   ; Stuck at GND due to stuck port data_in                                                                                                                         ;
+; salsa_hash_interative_wrapper:u_salsa_hash_interative_wrapper|hash_interative_with_d_r_c:u_hash_interative_with_d_r_c|initial_mtx_sample[3][3][11]                                   ; Stuck at GND due to stuck port data_in                                                                                                                         ;
+; salsa_hash_interative_wrapper:u_salsa_hash_interative_wrapper|hash_interative_with_d_r_c:u_hash_interative_with_d_r_c|initial_mtx_sample[3][3][9]                                    ; Stuck at GND due to stuck port data_in                                                                                                                         ;
+; salsa_hash_interative_wrapper:u_salsa_hash_interative_wrapper|hash_interative_with_d_r_c:u_hash_interative_with_d_r_c|initial_mtx_sample[3][3][7]                                    ; Stuck at GND due to stuck port data_in                                                                                                                         ;
+; salsa_hash_interative_wrapper:u_salsa_hash_interative_wrapper|hash_interative_with_d_r_c:u_hash_interative_with_d_r_c|initial_mtx_sample[3][3][3]                                    ; Stuck at GND due to stuck port data_in                                                                                                                         ;
+; salsa_hash_interative_wrapper:u_salsa_hash_interative_wrapper|hash_interative_with_d_r_c:u_hash_interative_with_d_r_c|initial_mtx_sample[3][3][1]                                    ; Stuck at GND due to stuck port data_in                                                                                                                         ;
+; salsa_hash_interative_wrapper:u_salsa_hash_interative_wrapper|hash_interative_with_d_r_c:u_hash_interative_with_d_r_c|initial_mtx_sample[3][3][0]                                    ; Stuck at GND due to stuck port data_in                                                                                                                         ;
+; salsa_hash_interative_wrapper:u_salsa_hash_interative_wrapper|hash_interative_with_d_r_c:u_hash_interative_with_d_r_c|initial_mtx_sample[3][3][2]                                    ; Merged with salsa_hash_interative_wrapper:u_salsa_hash_interative_wrapper|hash_interative_with_d_r_c:u_hash_interative_with_d_r_c|initial_mtx_sample[3][3][4]  ;
+; salsa_hash_interative_wrapper:u_salsa_hash_interative_wrapper|hash_interative_with_d_r_c:u_hash_interative_with_d_r_c|initial_mtx_sample[3][3][4]                                    ; Merged with salsa_hash_interative_wrapper:u_salsa_hash_interative_wrapper|hash_interative_with_d_r_c:u_hash_interative_with_d_r_c|initial_mtx_sample[3][3][5]  ;
+; salsa_hash_interative_wrapper:u_salsa_hash_interative_wrapper|hash_interative_with_d_r_c:u_hash_interative_with_d_r_c|initial_mtx_sample[3][3][5]                                    ; Merged with salsa_hash_interative_wrapper:u_salsa_hash_interative_wrapper|hash_interative_with_d_r_c:u_hash_interative_with_d_r_c|initial_mtx_sample[3][3][6]  ;
+; salsa_hash_interative_wrapper:u_salsa_hash_interative_wrapper|hash_interative_with_d_r_c:u_hash_interative_with_d_r_c|initial_mtx_sample[3][3][6]                                    ; Merged with salsa_hash_interative_wrapper:u_salsa_hash_interative_wrapper|hash_interative_with_d_r_c:u_hash_interative_with_d_r_c|initial_mtx_sample[3][3][8]  ;
+; salsa_hash_interative_wrapper:u_salsa_hash_interative_wrapper|hash_interative_with_d_r_c:u_hash_interative_with_d_r_c|initial_mtx_sample[3][3][8]                                    ; Merged with salsa_hash_interative_wrapper:u_salsa_hash_interative_wrapper|hash_interative_with_d_r_c:u_hash_interative_with_d_r_c|initial_mtx_sample[3][3][10] ;
+; salsa_hash_interative_wrapper:u_salsa_hash_interative_wrapper|hash_interative_with_d_r_c:u_hash_interative_with_d_r_c|initial_mtx_sample[3][3][10]                                   ; Merged with salsa_hash_interative_wrapper:u_salsa_hash_interative_wrapper|hash_interative_with_d_r_c:u_hash_interative_with_d_r_c|initial_mtx_sample[3][3][13] ;
+; salsa_hash_interative_wrapper:u_salsa_hash_interative_wrapper|hash_interative_with_d_r_c:u_hash_interative_with_d_r_c|initial_mtx_sample[3][3][13]                                   ; Merged with salsa_hash_interative_wrapper:u_salsa_hash_interative_wrapper|hash_interative_with_d_r_c:u_hash_interative_with_d_r_c|initial_mtx_sample[3][3][14] ;
+; salsa_hash_interative_wrapper:u_salsa_hash_interative_wrapper|hash_interative_with_d_r_c:u_hash_interative_with_d_r_c|initial_mtx_sample[3][3][14]                                   ; Merged with salsa_hash_interative_wrapper:u_salsa_hash_interative_wrapper|hash_interative_with_d_r_c:u_hash_interative_with_d_r_c|initial_mtx_sample[3][3][21] ;
+; salsa_hash_interative_wrapper:u_salsa_hash_interative_wrapper|hash_interative_with_d_r_c:u_hash_interative_with_d_r_c|initial_mtx_sample[3][3][21]                                   ; Merged with salsa_hash_interative_wrapper:u_salsa_hash_interative_wrapper|hash_interative_with_d_r_c:u_hash_interative_with_d_r_c|initial_mtx_sample[3][3][24] ;
+; salsa_hash_interative_wrapper:u_salsa_hash_interative_wrapper|hash_interative_with_d_r_c:u_hash_interative_with_d_r_c|initial_mtx_sample[3][3][24]                                   ; Merged with salsa_hash_interative_wrapper:u_salsa_hash_interative_wrapper|hash_interative_with_d_r_c:u_hash_interative_with_d_r_c|initial_mtx_sample[3][3][25] ;
+; salsa_hash_interative_wrapper:u_salsa_hash_interative_wrapper|hash_interative_with_d_r_c:u_hash_interative_with_d_r_c|initial_mtx_sample[3][3][25]                                   ; Merged with salsa_hash_interative_wrapper:u_salsa_hash_interative_wrapper|hash_interative_with_d_r_c:u_hash_interative_with_d_r_c|initial_mtx_sample[3][3][27] ;
+; salsa_hash_interative_wrapper:u_salsa_hash_interative_wrapper|hash_interative_with_d_r_c:u_hash_interative_with_d_r_c|initial_mtx_sample[3][3][27]                                   ; Merged with salsa_hash_interative_wrapper:u_salsa_hash_interative_wrapper|hash_interative_with_d_r_c:u_hash_interative_with_d_r_c|initial_mtx_sample[3][3][29] ;
+; salsa_hash_interative_wrapper:u_salsa_hash_interative_wrapper|hash_interative_with_d_r_c:u_hash_interative_with_d_r_c|initial_mtx_sample[3][3][29]                                   ; Merged with salsa_hash_interative_wrapper:u_salsa_hash_interative_wrapper|hash_interative_with_d_r_c:u_hash_interative_with_d_r_c|initial_mtx_sample[3][3][30] ;
+; salsa_hash_interative_wrapper:u_salsa_hash_interative_wrapper|hash_interative_with_d_r_c:u_hash_interative_with_d_r_c|initial_mtx_sample[3][3][30]                                   ; Merged with salsa_hash_interative_wrapper:u_salsa_hash_interative_wrapper|hash_interative_with_d_r_c:u_hash_interative_with_d_r_c|initial_mtx_sample[2][2][1]  ;
+; salsa_hash_interative_wrapper:u_salsa_hash_interative_wrapper|hash_interative_with_d_r_c:u_hash_interative_with_d_r_c|initial_mtx_sample[2][2][1]                                    ; Merged with salsa_hash_interative_wrapper:u_salsa_hash_interative_wrapper|hash_interative_with_d_r_c:u_hash_interative_with_d_r_c|initial_mtx_sample[2][2][4]  ;
+; salsa_hash_interative_wrapper:u_salsa_hash_interative_wrapper|hash_interative_with_d_r_c:u_hash_interative_with_d_r_c|initial_mtx_sample[2][2][4]                                    ; Merged with salsa_hash_interative_wrapper:u_salsa_hash_interative_wrapper|hash_interative_with_d_r_c:u_hash_interative_with_d_r_c|initial_mtx_sample[2][2][5]  ;
+; salsa_hash_interative_wrapper:u_salsa_hash_interative_wrapper|hash_interative_with_d_r_c:u_hash_interative_with_d_r_c|initial_mtx_sample[2][2][5]                                    ; Merged with salsa_hash_interative_wrapper:u_salsa_hash_interative_wrapper|hash_interative_with_d_r_c:u_hash_interative_with_d_r_c|initial_mtx_sample[2][2][8]  ;
+; salsa_hash_interative_wrapper:u_salsa_hash_interative_wrapper|hash_interative_with_d_r_c:u_hash_interative_with_d_r_c|initial_mtx_sample[2][2][8]                                    ; Merged with salsa_hash_interative_wrapper:u_salsa_hash_interative_wrapper|hash_interative_with_d_r_c:u_hash_interative_with_d_r_c|initial_mtx_sample[2][2][10] ;
+; salsa_hash_interative_wrapper:u_salsa_hash_interative_wrapper|hash_interative_with_d_r_c:u_hash_interative_with_d_r_c|initial_mtx_sample[2][2][10]                                   ; Merged with salsa_hash_interative_wrapper:u_salsa_hash_interative_wrapper|hash_interative_with_d_r_c:u_hash_interative_with_d_r_c|initial_mtx_sample[2][2][11] ;
+; salsa_hash_interative_wrapper:u_salsa_hash_interative_wrapper|hash_interative_with_d_r_c:u_hash_interative_with_d_r_c|initial_mtx_sample[2][2][11]                                   ; Merged with salsa_hash_interative_wrapper:u_salsa_hash_interative_wrapper|hash_interative_with_d_r_c:u_hash_interative_with_d_r_c|initial_mtx_sample[2][2][13] ;
+; salsa_hash_interative_wrapper:u_salsa_hash_interative_wrapper|hash_interative_with_d_r_c:u_hash_interative_with_d_r_c|initial_mtx_sample[2][2][13]                                   ; Merged with salsa_hash_interative_wrapper:u_salsa_hash_interative_wrapper|hash_interative_with_d_r_c:u_hash_interative_with_d_r_c|initial_mtx_sample[2][2][17] ;
+; salsa_hash_interative_wrapper:u_salsa_hash_interative_wrapper|hash_interative_with_d_r_c:u_hash_interative_with_d_r_c|initial_mtx_sample[2][2][17]                                   ; Merged with salsa_hash_interative_wrapper:u_salsa_hash_interative_wrapper|hash_interative_with_d_r_c:u_hash_interative_with_d_r_c|initial_mtx_sample[2][2][21] ;
+; salsa_hash_interative_wrapper:u_salsa_hash_interative_wrapper|hash_interative_with_d_r_c:u_hash_interative_with_d_r_c|initial_mtx_sample[2][2][21]                                   ; Merged with salsa_hash_interative_wrapper:u_salsa_hash_interative_wrapper|hash_interative_with_d_r_c:u_hash_interative_with_d_r_c|initial_mtx_sample[2][2][22] ;
+; salsa_hash_interative_wrapper:u_salsa_hash_interative_wrapper|hash_interative_with_d_r_c:u_hash_interative_with_d_r_c|initial_mtx_sample[2][2][22]                                   ; Merged with salsa_hash_interative_wrapper:u_salsa_hash_interative_wrapper|hash_interative_with_d_r_c:u_hash_interative_with_d_r_c|initial_mtx_sample[2][2][24] ;
+; salsa_hash_interative_wrapper:u_salsa_hash_interative_wrapper|hash_interative_with_d_r_c:u_hash_interative_with_d_r_c|initial_mtx_sample[2][2][24]                                   ; Merged with salsa_hash_interative_wrapper:u_salsa_hash_interative_wrapper|hash_interative_with_d_r_c:u_hash_interative_with_d_r_c|initial_mtx_sample[2][2][27] ;
+; salsa_hash_interative_wrapper:u_salsa_hash_interative_wrapper|hash_interative_with_d_r_c:u_hash_interative_with_d_r_c|initial_mtx_sample[2][2][27]                                   ; Merged with salsa_hash_interative_wrapper:u_salsa_hash_interative_wrapper|hash_interative_with_d_r_c:u_hash_interative_with_d_r_c|initial_mtx_sample[2][2][28] ;
+; salsa_hash_interative_wrapper:u_salsa_hash_interative_wrapper|hash_interative_with_d_r_c:u_hash_interative_with_d_r_c|initial_mtx_sample[2][2][28]                                   ; Merged with salsa_hash_interative_wrapper:u_salsa_hash_interative_wrapper|hash_interative_with_d_r_c:u_hash_interative_with_d_r_c|initial_mtx_sample[2][2][29] ;
+; salsa_hash_interative_wrapper:u_salsa_hash_interative_wrapper|hash_interative_with_d_r_c:u_hash_interative_with_d_r_c|initial_mtx_sample[2][2][29]                                   ; Merged with salsa_hash_interative_wrapper:u_salsa_hash_interative_wrapper|hash_interative_with_d_r_c:u_hash_interative_with_d_r_c|initial_mtx_sample[2][2][30] ;
+; salsa_hash_interative_wrapper:u_salsa_hash_interative_wrapper|hash_interative_with_d_r_c:u_hash_interative_with_d_r_c|initial_mtx_sample[2][2][30]                                   ; Merged with salsa_hash_interative_wrapper:u_salsa_hash_interative_wrapper|hash_interative_with_d_r_c:u_hash_interative_with_d_r_c|initial_mtx_sample[1][1][1]  ;
+; salsa_hash_interative_wrapper:u_salsa_hash_interative_wrapper|hash_interative_with_d_r_c:u_hash_interative_with_d_r_c|initial_mtx_sample[1][1][1]                                    ; Merged with salsa_hash_interative_wrapper:u_salsa_hash_interative_wrapper|hash_interative_with_d_r_c:u_hash_interative_with_d_r_c|initial_mtx_sample[1][1][2]  ;
+; salsa_hash_interative_wrapper:u_salsa_hash_interative_wrapper|hash_interative_with_d_r_c:u_hash_interative_with_d_r_c|initial_mtx_sample[1][1][2]                                    ; Merged with salsa_hash_interative_wrapper:u_salsa_hash_interative_wrapper|hash_interative_with_d_r_c:u_hash_interative_with_d_r_c|initial_mtx_sample[1][1][3]  ;
+; salsa_hash_interative_wrapper:u_salsa_hash_interative_wrapper|hash_interative_with_d_r_c:u_hash_interative_with_d_r_c|initial_mtx_sample[1][1][3]                                    ; Merged with salsa_hash_interative_wrapper:u_salsa_hash_interative_wrapper|hash_interative_with_d_r_c:u_hash_interative_with_d_r_c|initial_mtx_sample[1][1][5]  ;
+; salsa_hash_interative_wrapper:u_salsa_hash_interative_wrapper|hash_interative_with_d_r_c:u_hash_interative_with_d_r_c|initial_mtx_sample[1][1][5]                                    ; Merged with salsa_hash_interative_wrapper:u_salsa_hash_interative_wrapper|hash_interative_with_d_r_c:u_hash_interative_with_d_r_c|initial_mtx_sample[1][1][6]  ;
+; salsa_hash_interative_wrapper:u_salsa_hash_interative_wrapper|hash_interative_with_d_r_c:u_hash_interative_with_d_r_c|initial_mtx_sample[1][1][6]                                    ; Merged with salsa_hash_interative_wrapper:u_salsa_hash_interative_wrapper|hash_interative_with_d_r_c:u_hash_interative_with_d_r_c|initial_mtx_sample[1][1][10] ;
+; salsa_hash_interative_wrapper:u_salsa_hash_interative_wrapper|hash_interative_with_d_r_c:u_hash_interative_with_d_r_c|initial_mtx_sample[1][1][10]                                   ; Merged with salsa_hash_interative_wrapper:u_salsa_hash_interative_wrapper|hash_interative_with_d_r_c:u_hash_interative_with_d_r_c|initial_mtx_sample[1][1][13] ;
+; salsa_hash_interative_wrapper:u_salsa_hash_interative_wrapper|hash_interative_with_d_r_c:u_hash_interative_with_d_r_c|initial_mtx_sample[1][1][13]                                   ; Merged with salsa_hash_interative_wrapper:u_salsa_hash_interative_wrapper|hash_interative_with_d_r_c:u_hash_interative_with_d_r_c|initial_mtx_sample[1][1][14] ;
+; salsa_hash_interative_wrapper:u_salsa_hash_interative_wrapper|hash_interative_with_d_r_c:u_hash_interative_with_d_r_c|initial_mtx_sample[1][1][14]                                   ; Merged with salsa_hash_interative_wrapper:u_salsa_hash_interative_wrapper|hash_interative_with_d_r_c:u_hash_interative_with_d_r_c|initial_mtx_sample[1][1][21] ;
+; salsa_hash_interative_wrapper:u_salsa_hash_interative_wrapper|hash_interative_with_d_r_c:u_hash_interative_with_d_r_c|initial_mtx_sample[1][1][21]                                   ; Merged with salsa_hash_interative_wrapper:u_salsa_hash_interative_wrapper|hash_interative_with_d_r_c:u_hash_interative_with_d_r_c|initial_mtx_sample[1][1][24] ;
+; salsa_hash_interative_wrapper:u_salsa_hash_interative_wrapper|hash_interative_with_d_r_c:u_hash_interative_with_d_r_c|initial_mtx_sample[1][1][24]                                   ; Merged with salsa_hash_interative_wrapper:u_salsa_hash_interative_wrapper|hash_interative_with_d_r_c:u_hash_interative_with_d_r_c|initial_mtx_sample[1][1][28] ;
+; salsa_hash_interative_wrapper:u_salsa_hash_interative_wrapper|hash_interative_with_d_r_c:u_hash_interative_with_d_r_c|initial_mtx_sample[1][1][28]                                   ; Merged with salsa_hash_interative_wrapper:u_salsa_hash_interative_wrapper|hash_interative_with_d_r_c:u_hash_interative_with_d_r_c|initial_mtx_sample[1][1][29] ;
+; salsa_hash_interative_wrapper:u_salsa_hash_interative_wrapper|hash_interative_with_d_r_c:u_hash_interative_with_d_r_c|initial_mtx_sample[1][1][29]                                   ; Merged with salsa_hash_interative_wrapper:u_salsa_hash_interative_wrapper|hash_interative_with_d_r_c:u_hash_interative_with_d_r_c|initial_mtx_sample[0][0][2]  ;
+; salsa_hash_interative_wrapper:u_salsa_hash_interative_wrapper|hash_interative_with_d_r_c:u_hash_interative_with_d_r_c|initial_mtx_sample[0][0][2]                                    ; Merged with salsa_hash_interative_wrapper:u_salsa_hash_interative_wrapper|hash_interative_with_d_r_c:u_hash_interative_with_d_r_c|initial_mtx_sample[0][0][5]  ;
+; salsa_hash_interative_wrapper:u_salsa_hash_interative_wrapper|hash_interative_with_d_r_c:u_hash_interative_with_d_r_c|initial_mtx_sample[0][0][5]                                    ; Merged with salsa_hash_interative_wrapper:u_salsa_hash_interative_wrapper|hash_interative_with_d_r_c:u_hash_interative_with_d_r_c|initial_mtx_sample[0][0][6]  ;
+; salsa_hash_interative_wrapper:u_salsa_hash_interative_wrapper|hash_interative_with_d_r_c:u_hash_interative_with_d_r_c|initial_mtx_sample[0][0][6]                                    ; Merged with salsa_hash_interative_wrapper:u_salsa_hash_interative_wrapper|hash_interative_with_d_r_c:u_hash_interative_with_d_r_c|initial_mtx_sample[0][0][11] ;
+; salsa_hash_interative_wrapper:u_salsa_hash_interative_wrapper|hash_interative_with_d_r_c:u_hash_interative_with_d_r_c|initial_mtx_sample[0][0][11]                                   ; Merged with salsa_hash_interative_wrapper:u_salsa_hash_interative_wrapper|hash_interative_with_d_r_c:u_hash_interative_with_d_r_c|initial_mtx_sample[0][0][12] ;
+; salsa_hash_interative_wrapper:u_salsa_hash_interative_wrapper|hash_interative_with_d_r_c:u_hash_interative_with_d_r_c|initial_mtx_sample[0][0][12]                                   ; Merged with salsa_hash_interative_wrapper:u_salsa_hash_interative_wrapper|hash_interative_with_d_r_c:u_hash_interative_with_d_r_c|initial_mtx_sample[0][0][13] ;
+; salsa_hash_interative_wrapper:u_salsa_hash_interative_wrapper|hash_interative_with_d_r_c:u_hash_interative_with_d_r_c|initial_mtx_sample[0][0][13]                                   ; Merged with salsa_hash_interative_wrapper:u_salsa_hash_interative_wrapper|hash_interative_with_d_r_c:u_hash_interative_with_d_r_c|initial_mtx_sample[0][0][14] ;
+; salsa_hash_interative_wrapper:u_salsa_hash_interative_wrapper|hash_interative_with_d_r_c:u_hash_interative_with_d_r_c|initial_mtx_sample[0][0][14]                                   ; Merged with salsa_hash_interative_wrapper:u_salsa_hash_interative_wrapper|hash_interative_with_d_r_c:u_hash_interative_with_d_r_c|initial_mtx_sample[0][0][20] ;
+; salsa_hash_interative_wrapper:u_salsa_hash_interative_wrapper|hash_interative_with_d_r_c:u_hash_interative_with_d_r_c|initial_mtx_sample[0][0][20]                                   ; Merged with salsa_hash_interative_wrapper:u_salsa_hash_interative_wrapper|hash_interative_with_d_r_c:u_hash_interative_with_d_r_c|initial_mtx_sample[0][0][21] ;
+; salsa_hash_interative_wrapper:u_salsa_hash_interative_wrapper|hash_interative_with_d_r_c:u_hash_interative_with_d_r_c|initial_mtx_sample[0][0][21]                                   ; Merged with salsa_hash_interative_wrapper:u_salsa_hash_interative_wrapper|hash_interative_with_d_r_c:u_hash_interative_with_d_r_c|initial_mtx_sample[0][0][22] ;
+; salsa_hash_interative_wrapper:u_salsa_hash_interative_wrapper|hash_interative_with_d_r_c:u_hash_interative_with_d_r_c|initial_mtx_sample[0][0][22]                                   ; Merged with salsa_hash_interative_wrapper:u_salsa_hash_interative_wrapper|hash_interative_with_d_r_c:u_hash_interative_with_d_r_c|initial_mtx_sample[0][0][24] ;
+; salsa_hash_interative_wrapper:u_salsa_hash_interative_wrapper|hash_interative_with_d_r_c:u_hash_interative_with_d_r_c|initial_mtx_sample[0][0][24]                                   ; Merged with salsa_hash_interative_wrapper:u_salsa_hash_interative_wrapper|hash_interative_with_d_r_c:u_hash_interative_with_d_r_c|initial_mtx_sample[0][0][29] ;
+; salsa_hash_interative_wrapper:u_salsa_hash_interative_wrapper|hash_interative_with_d_r_c:u_hash_interative_with_d_r_c|initial_mtx_sample[0][0][29]                                   ; Merged with salsa_hash_interative_wrapper:u_salsa_hash_interative_wrapper|hash_interative_with_d_r_c:u_hash_interative_with_d_r_c|initial_mtx_sample[0][0][30] ;
+; salsa_hash_interative_wrapper:u_salsa_hash_interative_wrapper|hash_interative_with_d_r_c:u_hash_interative_with_d_r_c|initial_mtx_sample[0][0][30]                                   ; Merged with salsa_hash_interative_wrapper:u_salsa_hash_interative_wrapper|hash_interative_with_d_r_c:u_hash_interative_with_d_r_c|initial_mtx_sample[0][0][0]  ;
+; salsa_hash_interative_wrapper:u_salsa_hash_interative_wrapper|hash_interative_with_d_r_c:u_hash_interative_with_d_r_c|fsm_ps~4                                                       ; Lost fanout                                                                                                                                                    ;
+; salsa_hash_interative_wrapper:u_salsa_hash_interative_wrapper|hash_interative_with_d_r_c:u_hash_interative_with_d_r_c|fsm_ps~5                                                       ; Lost fanout                                                                                                                                                    ;
+; salsa_hash_interative_wrapper:u_salsa_hash_interative_wrapper|hash_interative_with_d_r_c:u_hash_interative_with_d_r_c|fsm_ps~6                                                       ; Lost fanout                                                                                                                                                    ;
+; salsa_hash_interative_wrapper:u_salsa_hash_interative_wrapper|hash_interative_with_d_r_c:u_hash_interative_with_d_r_c|fsm_ps~7                                                       ; Lost fanout                                                                                                                                                    ;
+; salsa_hash_interative_wrapper:u_salsa_hash_interative_wrapper|hash_interative_with_d_r_c:u_hash_interative_with_d_r_c|d_r_c_round_interative:u_d_r_c_round_interative|d_r_c_fsm_ps~4 ; Lost fanout                                                                                                                                                    ;
+; salsa_hash_interative_wrapper:u_salsa_hash_interative_wrapper|hash_interative_with_d_r_c:u_hash_interative_with_d_r_c|d_r_c_round_interative:u_d_r_c_round_interative|d_r_c_fsm_ps~5 ; Lost fanout                                                                                                                                                    ;
+; salsa_hash_interative_wrapper:u_salsa_hash_interative_wrapper|hash_interative_with_d_r_c:u_hash_interative_with_d_r_c|d_r_c_round_interative:u_d_r_c_round_interative|d_r_c_fsm_ps~6 ; Lost fanout                                                                                                                                                    ;
+; Total Number of Removed Registers = 132                                                                                                                                              ;                                                                                                                                                                ;
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 7202  ;
+; Number of registers using Synchronous Clear  ; 24    ;
+; Number of registers using Synchronous Load   ; 6     ;
+; Number of registers using Asynchronous Clear ; 7194  ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 7113  ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++--------------------------------------------------+
+; Inverted Register Statistics                     ;
++----------------------------------------+---------+
+; Inverted Register                      ; Fan out ;
++----------------------------------------+---------+
+; salsa_uart_tx:u_salsa_uart_tx|rs232_tx ; 1       ;
+; salsa_rx:u_salsa_rx|rs232_sync[1]      ; 6       ;
+; salsa_rx:u_salsa_rx|rs232_sync[2]      ; 13      ;
+; salsa_rx:u_salsa_rx|rs232_sync[0]      ; 1       ;
+; Total number of inverted registers = 4 ;         ;
++----------------------------------------+---------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                                                                                                                                                                   ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                                                                                                                                                         ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; 3:1                ; 71 bits   ; 142 LEs       ; 71 LEs               ; 71 LEs                 ; Yes        ; |top_salsa_intel|salsa_hash_interative_wrapper:u_salsa_hash_interative_wrapper|hash_interative_with_d_r_c:u_hash_interative_with_d_r_c|matrix_in2_duouble[1][1][20]                                ;
+; 3:1                ; 441 bits  ; 882 LEs       ; 441 LEs              ; 441 LEs                ; Yes        ; |top_salsa_intel|salsa_hash_interative_wrapper:u_salsa_hash_interative_wrapper|hash_interative_with_d_r_c:u_hash_interative_with_d_r_c|matrix_in2_duouble[1][2][24]                                ;
+; 3:1                ; 5 bits    ; 10 LEs        ; 5 LEs                ; 5 LEs                  ; Yes        ; |top_salsa_intel|salsa_uart_tx:u_salsa_uart_tx|done                                                                                                                                                ;
+; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |top_salsa_intel|salsa_fsm:u_salsa_fsm|byte_counter[0]                                                                                                                                             ;
+; 3:1                ; 5 bits    ; 10 LEs        ; 5 LEs                ; 5 LEs                  ; Yes        ; |top_salsa_intel|salsa_rx:u_salsa_rx|done                                                                                                                                                          ;
+; 3:1                ; 9 bits    ; 18 LEs        ; 9 LEs                ; 9 LEs                  ; Yes        ; |top_salsa_intel|salsa_uart_tx:u_salsa_uart_tx|baud_cnt[8]                                                                                                                                         ;
+; 3:1                ; 9 bits    ; 18 LEs        ; 9 LEs                ; 9 LEs                  ; Yes        ; |top_salsa_intel|salsa_rx:u_salsa_rx|baud_cnt[6]                                                                                                                                                   ;
+; 8:1                ; 128 bits  ; 640 LEs       ; 640 LEs              ; 0 LEs                  ; Yes        ; |top_salsa_intel|salsa_hash_interative_wrapper:u_salsa_hash_interative_wrapper|hash_interative_with_d_r_c:u_hash_interative_with_d_r_c|d_r_c_round_interative:u_d_r_c_round_interative|qr_2_in[16] ;
+; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |top_salsa_intel|salsa_hash_interative_wrapper:u_salsa_hash_interative_wrapper|hash_interative_with_d_r_c:u_hash_interative_with_d_r_c|round_cntr[3]                                               ;
+; 3:1                ; 3 bits    ; 6 LEs         ; 3 LEs                ; 3 LEs                  ; Yes        ; |top_salsa_intel|salsa_hash_interative_wrapper:u_salsa_hash_interative_wrapper|hash_interative_with_d_r_c:u_hash_interative_with_d_r_c|d_r_c_round_interative:u_d_r_c_round_interative|qr_cntr[2]  ;
+; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; Yes        ; |top_salsa_intel|salsa_xor_regs:u_salsa_xor_regs|valid                                                                                                                                             ;
+; 4:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |top_salsa_intel|salsa_xor_regs:u_salsa_xor_regs|xor_cntr[3]                                                                                                                                       ;
+; 4:1                ; 31 bits   ; 62 LEs        ; 31 LEs               ; 31 LEs                 ; Yes        ; |top_salsa_intel|salsa_xor_regs:u_salsa_xor_regs|result[55]                                                                                                                                        ;
+; 4:1                ; 31 bits   ; 62 LEs        ; 31 LEs               ; 31 LEs                 ; Yes        ; |top_salsa_intel|salsa_xor_regs:u_salsa_xor_regs|result[84]                                                                                                                                        ;
+; 4:1                ; 31 bits   ; 62 LEs        ; 31 LEs               ; 31 LEs                 ; Yes        ; |top_salsa_intel|salsa_xor_regs:u_salsa_xor_regs|result[98]                                                                                                                                        ;
+; 4:1                ; 31 bits   ; 62 LEs        ; 31 LEs               ; 31 LEs                 ; Yes        ; |top_salsa_intel|salsa_xor_regs:u_salsa_xor_regs|result[149]                                                                                                                                       ;
+; 4:1                ; 31 bits   ; 62 LEs        ; 31 LEs               ; 31 LEs                 ; Yes        ; |top_salsa_intel|salsa_xor_regs:u_salsa_xor_regs|result[178]                                                                                                                                       ;
+; 4:1                ; 31 bits   ; 62 LEs        ; 31 LEs               ; 31 LEs                 ; Yes        ; |top_salsa_intel|salsa_xor_regs:u_salsa_xor_regs|result[209]                                                                                                                                       ;
+; 4:1                ; 31 bits   ; 62 LEs        ; 31 LEs               ; 31 LEs                 ; Yes        ; |top_salsa_intel|salsa_xor_regs:u_salsa_xor_regs|result[241]                                                                                                                                       ;
+; 4:1                ; 31 bits   ; 62 LEs        ; 31 LEs               ; 31 LEs                 ; Yes        ; |top_salsa_intel|salsa_xor_regs:u_salsa_xor_regs|result[278]                                                                                                                                       ;
+; 4:1                ; 31 bits   ; 62 LEs        ; 31 LEs               ; 31 LEs                 ; Yes        ; |top_salsa_intel|salsa_xor_regs:u_salsa_xor_regs|result[293]                                                                                                                                       ;
+; 4:1                ; 31 bits   ; 62 LEs        ; 31 LEs               ; 31 LEs                 ; Yes        ; |top_salsa_intel|salsa_xor_regs:u_salsa_xor_regs|result[342]                                                                                                                                       ;
+; 4:1                ; 31 bits   ; 62 LEs        ; 31 LEs               ; 31 LEs                 ; Yes        ; |top_salsa_intel|salsa_xor_regs:u_salsa_xor_regs|result[370]                                                                                                                                       ;
+; 4:1                ; 31 bits   ; 62 LEs        ; 31 LEs               ; 31 LEs                 ; Yes        ; |top_salsa_intel|salsa_xor_regs:u_salsa_xor_regs|result[396]                                                                                                                                       ;
+; 4:1                ; 31 bits   ; 62 LEs        ; 31 LEs               ; 31 LEs                 ; Yes        ; |top_salsa_intel|salsa_xor_regs:u_salsa_xor_regs|result[424]                                                                                                                                       ;
+; 4:1                ; 31 bits   ; 62 LEs        ; 31 LEs               ; 31 LEs                 ; Yes        ; |top_salsa_intel|salsa_xor_regs:u_salsa_xor_regs|result[461]                                                                                                                                       ;
+; 4:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |top_salsa_intel|salsa_xor_regs:u_salsa_xor_regs|result[482]                                                                                                                                       ;
+; 4:1                ; 31 bits   ; 62 LEs        ; 31 LEs               ; 31 LEs                 ; Yes        ; |top_salsa_intel|salsa_xor_regs:u_salsa_xor_regs|result[4]                                                                                                                                         ;
+; 256:1              ; 5 bits    ; 850 LEs       ; 800 LEs              ; 50 LEs                 ; Yes        ; |top_salsa_intel|salsa_fsm:u_salsa_fsm|fsm2tx_data[3]                                                                                                                                              ;
+; 16:1               ; 64 bits   ; 640 LEs       ; 640 LEs              ; 0 LEs                  ; No         ; |top_salsa_intel|salsa_xor_regs:u_salsa_xor_regs|Mux49                                                                                                                                             ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++---------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Top-level Entity: |top_salsa_intel ;
++----------------+-------+--------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                   ;
++----------------+-------+--------------------------------------------------------+
+; ADDR_WIDTH     ; 6     ; Signed Integer                                         ;
++----------------+-------+--------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: salsa_hash_interative_wrapper:u_salsa_hash_interative_wrapper|hash_interative_with_d_r_c:u_hash_interative_with_d_r_c|d_r_c_round_interative:u_d_r_c_round_interative|quarter_round:u_quarter_round ;
++----------------+-------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                                                                                                                                    ;
++----------------+-------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; ROTATE1        ; 7     ; Signed Integer                                                                                                                                                                                                          ;
+; ROTATE2        ; 9     ; Signed Integer                                                                                                                                                                                                          ;
+; ROTATE3        ; 13    ; Signed Integer                                                                                                                                                                                                          ;
+; ROTATE4        ; 18    ; Signed Integer                                                                                                                                                                                                          ;
++----------------+-------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: salsa_registers:u_salsa_registers ;
++----------------+-------+-------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                  ;
++----------------+-------+-------------------------------------------------------+
+; ADDR_WIDTH     ; 6     ; Signed Integer                                        ;
++----------------+-------+-------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: salsa_rx:u_salsa_rx ;
++----------------+-------+-----------------------------------------+
+; Parameter Name ; Value ; Type                                    ;
++----------------+-------+-----------------------------------------+
+; BIT_RATE       ; 500   ; Signed Integer                          ;
+; RATE_WIDTH     ; 9     ; Signed Integer                          ;
++----------------+-------+-----------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: salsa_uart_tx:u_salsa_uart_tx ;
++----------------+-------+---------------------------------------------------+
+; Parameter Name ; Value ; Type                                              ;
++----------------+-------+---------------------------------------------------+
+; BIT_RATE       ; 500   ; Signed Integer                                    ;
+; RATE_WIDTH     ; 9     ; Signed Integer                                    ;
++----------------+-------+---------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: salsa_fsm:u_salsa_fsm ;
++----------------+----------+----------------------------------------+
+; Parameter Name ; Value    ; Type                                   ;
++----------------+----------+----------------------------------------+
+; ADDR_WIDTH     ; 6        ; Signed Integer                         ;
+; HEAD_MESSAGE   ; 10101010 ; Unsigned Binary                        ;
+; WRITE_CMD      ; 01       ; Unsigned Binary                        ;
+; READ_CMD       ; 11       ; Unsigned Binary                        ;
++----------------+----------+----------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------+
+; Port Connectivity Checks: "hex_to_SSD_Intel:u_hex_to_SSD_Intel" ;
++------+-------+----------+---------------------------------------+
+; Port ; Type  ; Severity ; Details                               ;
++------+-------+----------+---------------------------------------+
+; dp   ; Input ; Info     ; Stuck at VCC                          ;
++------+-------+----------+---------------------------------------+
+
+
++-----------------------------------------------------+
+; Post-Synthesis Netlist Statistics for Top Partition ;
++-----------------------+-----------------------------+
+; Type                  ; Count                       ;
++-----------------------+-----------------------------+
+; boundary_port         ; 14                          ;
+; cycloneiii_ff         ; 7202                        ;
+;     CLR               ; 69                          ;
+;     CLR SCLR          ; 19                          ;
+;     CLR SLD           ; 1                           ;
+;     ENA               ; 8                           ;
+;     ENA CLR           ; 7100                        ;
+;     ENA CLR SCLR SLD  ; 5                           ;
+; cycloneiii_lcell_comb ; 4260                        ;
+;     arith             ; 632                         ;
+;         2 data inputs ; 79                          ;
+;         3 data inputs ; 553                         ;
+;     normal            ; 3628                        ;
+;         0 data inputs ; 1                           ;
+;         1 data inputs ; 10                          ;
+;         2 data inputs ; 210                         ;
+;         3 data inputs ; 279                         ;
+;         4 data inputs ; 3128                        ;
+;                       ;                             ;
+; Max LUT depth         ; 17.80                       ;
+; Average LUT depth     ; 3.93                        ;
++-----------------------+-----------------------------+
+
+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:22     ;
++----------------+--------------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
+Info: *******************************************************************
+Info: Running Quartus Prime Analysis & Synthesis
+    Info: Version 23.1std.1 Build 993 05/14/2024 SC Lite Edition
+    Info: Processing started: Sat Dec 13 19:49:15 2025
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off top_salsa_intel_00 -c top_salsa_intel_00
+Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
+Info (12021): Found 1 design units, including 1 entities, in source file /users/hp/desktop/degree/nisan_final_project/code_files/1.verilog_design_code/quarter_round.sv
+    Info (12023): Found entity 1: quarter_round File: C:/Users/HP/Desktop/Degree/Nisan_final_project/Code_files/1.Verilog_Design_Code/quarter_round.sv Line: 21
+Info (12021): Found 1 design units, including 1 entities, in source file /users/hp/desktop/degree/nisan_final_project/code_files/1.verilog_design_code/hash_interative_with_d_r_c.sv
+    Info (12023): Found entity 1: hash_interative_with_d_r_c File: C:/Users/HP/Desktop/Degree/Nisan_final_project/Code_files/1.Verilog_Design_Code/hash_interative_with_d_r_c.sv Line: 32
+Info (12021): Found 1 design units, including 1 entities, in source file /users/hp/desktop/degree/nisan_final_project/code_files/1.verilog_design_code/d_r_c_round_interative.sv
+    Info (12023): Found entity 1: d_r_c_round_interative File: C:/Users/HP/Desktop/Degree/Nisan_final_project/Code_files/1.Verilog_Design_Code/d_r_c_round_interative.sv Line: 51
+Info (12021): Found 1 design units, including 1 entities, in source file /users/hp/desktop/degree/nisan_final_project/code_files/1.verilog_design_code/constant_select.sv
+    Info (12023): Found entity 1: constant_select File: C:/Users/HP/Desktop/Degree/Nisan_final_project/Code_files/1.Verilog_Design_Code/constant_select.sv Line: 29
+Info (12021): Found 1 design units, including 1 entities, in source file /users/hp/desktop/degree/nisan_final_project/code_files/1.verilog_design_code/top_salsa_intel.sv
+    Info (12023): Found entity 1: top_salsa_intel File: C:/Users/HP/Desktop/Degree/Nisan_final_project/Code_files/1.Verilog_Design_Code/top_salsa_intel.sv Line: 17
+Info (12021): Found 1 design units, including 1 entities, in source file /users/hp/desktop/degree/nisan_final_project/code_files/1.verilog_design_code/salsa_xor_regs.sv
+    Info (12023): Found entity 1: salsa_xor_regs File: C:/Users/HP/Desktop/Degree/Nisan_final_project/Code_files/1.Verilog_Design_Code/salsa_xor_regs.sv Line: 16
+Info (12021): Found 1 design units, including 1 entities, in source file /users/hp/desktop/degree/nisan_final_project/code_files/1.verilog_design_code/salsa_uart_tx.sv
+    Info (12023): Found entity 1: salsa_uart_tx File: C:/Users/HP/Desktop/Degree/Nisan_final_project/Code_files/1.Verilog_Design_Code/salsa_uart_tx.sv Line: 19
+Info (12021): Found 1 design units, including 1 entities, in source file /users/hp/desktop/degree/nisan_final_project/code_files/1.verilog_design_code/salsa_rx.sv
+    Info (12023): Found entity 1: salsa_rx File: C:/Users/HP/Desktop/Degree/Nisan_final_project/Code_files/1.Verilog_Design_Code/salsa_rx.sv Line: 19
+Info (12021): Found 1 design units, including 1 entities, in source file /users/hp/desktop/degree/nisan_final_project/code_files/1.verilog_design_code/salsa_registers.sv
+    Info (12023): Found entity 1: salsa_registers File: C:/Users/HP/Desktop/Degree/Nisan_final_project/Code_files/1.Verilog_Design_Code/salsa_registers.sv Line: 18
+Info (12021): Found 1 design units, including 1 entities, in source file /users/hp/desktop/degree/nisan_final_project/code_files/1.verilog_design_code/salsa_hash_interative_wrapper.sv
+    Info (12023): Found entity 1: salsa_hash_interative_wrapper File: C:/Users/HP/Desktop/Degree/Nisan_final_project/Code_files/1.Verilog_Design_Code/salsa_hash_interative_wrapper.sv Line: 28
+Info (12021): Found 1 design units, including 1 entities, in source file /users/hp/desktop/degree/nisan_final_project/code_files/1.verilog_design_code/salsa_fsm.sv
+    Info (12023): Found entity 1: salsa_fsm File: C:/Users/HP/Desktop/Degree/Nisan_final_project/Code_files/1.Verilog_Design_Code/salsa_fsm.sv Line: 18
+Info (12021): Found 1 design units, including 1 entities, in source file /users/hp/desktop/degree/nisan_final_project/code_files/1.verilog_design_code/hex_to_ssd_intel.sv
+    Info (12023): Found entity 1: hex_to_SSD_Intel File: C:/Users/HP/Desktop/Degree/Nisan_final_project/Code_files/1.Verilog_Design_Code/hex_to_SSD_Intel.sv Line: 14
+Info (12127): Elaborating entity "top_salsa_intel" for the top level hierarchy
+Info (12128): Elaborating entity "salsa_hash_interative_wrapper" for hierarchy "salsa_hash_interative_wrapper:u_salsa_hash_interative_wrapper" File: C:/Users/HP/Desktop/Degree/Nisan_final_project/Code_files/1.Verilog_Design_Code/top_salsa_intel.sv Line: 80
+Info (10008): Verilog HDL or VHDL information: EDA Netlist Writer cannot regroup multidimensional array "initial_matrix_in" into its bus
+Info (10008): Verilog HDL or VHDL information: EDA Netlist Writer cannot regroup multidimensional array "initial_hashing_out" into its bus
+Info (12128): Elaborating entity "constant_select" for hierarchy "salsa_hash_interative_wrapper:u_salsa_hash_interative_wrapper|constant_select:u_constant_select" File: C:/Users/HP/Desktop/Degree/Nisan_final_project/Code_files/1.Verilog_Design_Code/salsa_hash_interative_wrapper.sv Line: 113
+Info (12128): Elaborating entity "hash_interative_with_d_r_c" for hierarchy "salsa_hash_interative_wrapper:u_salsa_hash_interative_wrapper|hash_interative_with_d_r_c:u_hash_interative_with_d_r_c" File: C:/Users/HP/Desktop/Degree/Nisan_final_project/Code_files/1.Verilog_Design_Code/salsa_hash_interative_wrapper.sv Line: 129
+Info (10008): Verilog HDL or VHDL information: EDA Netlist Writer cannot regroup multidimensional array "salsa_dw_matrix_in" into its bus
+Info (10008): Verilog HDL or VHDL information: EDA Netlist Writer cannot regroup multidimensional array "salsa_dw_matrix_out" into its bus
+Info (10008): Verilog HDL or VHDL information: EDA Netlist Writer cannot regroup multidimensional array "initial_mtx_sample" into its bus
+Info (10008): Verilog HDL or VHDL information: EDA Netlist Writer cannot regroup multidimensional array "matrix_in2_duouble" into its bus
+Info (10008): Verilog HDL or VHDL information: EDA Netlist Writer cannot regroup multidimensional array "matrix_out_of_duouble" into its bus
+Info (10008): Verilog HDL or VHDL information: EDA Netlist Writer cannot regroup multidimensional array "matrix_out_of_duouble_sample" into its bus
+Info (10008): Verilog HDL or VHDL information: EDA Netlist Writer cannot regroup multidimensional array "salsa_dw_matrix_in" into its bus
+Info (10008): Verilog HDL or VHDL information: EDA Netlist Writer cannot regroup multidimensional array "salsa_dw_matrix_out" into its bus
+Info (12128): Elaborating entity "d_r_c_round_interative" for hierarchy "salsa_hash_interative_wrapper:u_salsa_hash_interative_wrapper|hash_interative_with_d_r_c:u_hash_interative_with_d_r_c|d_r_c_round_interative:u_d_r_c_round_interative" File: C:/Users/HP/Desktop/Degree/Nisan_final_project/Code_files/1.Verilog_Design_Code/hash_interative_with_d_r_c.sv Line: 289
+Info (10008): Verilog HDL or VHDL information: EDA Netlist Writer cannot regroup multidimensional array "double_dw_matrix_in" into its bus
+Info (10008): Verilog HDL or VHDL information: EDA Netlist Writer cannot regroup multidimensional array "double_dw_matrix_out" into its bus
+Info (10008): Verilog HDL or VHDL information: EDA Netlist Writer cannot regroup multidimensional array "matrix_in_sample" into its bus
+Info (10008): Verilog HDL or VHDL information: EDA Netlist Writer cannot regroup multidimensional array "matrix_after_col" into its bus
+Info (10008): Verilog HDL or VHDL information: EDA Netlist Writer cannot regroup multidimensional array "matrix_after_row" into its bus
+Info (10008): Verilog HDL or VHDL information: EDA Netlist Writer cannot regroup multidimensional array "double_dw_matrix_in" into its bus
+Info (10008): Verilog HDL or VHDL information: EDA Netlist Writer cannot regroup multidimensional array "double_dw_matrix_out" into its bus
+Info (12128): Elaborating entity "quarter_round" for hierarchy "salsa_hash_interative_wrapper:u_salsa_hash_interative_wrapper|hash_interative_with_d_r_c:u_hash_interative_with_d_r_c|d_r_c_round_interative:u_d_r_c_round_interative|quarter_round:u_quarter_round" File: C:/Users/HP/Desktop/Degree/Nisan_final_project/Code_files/1.Verilog_Design_Code/d_r_c_round_interative.sv Line: 404
+Info (12128): Elaborating entity "salsa_registers" for hierarchy "salsa_registers:u_salsa_registers" File: C:/Users/HP/Desktop/Degree/Nisan_final_project/Code_files/1.Verilog_Design_Code/top_salsa_intel.sv Line: 109
+Info (12128): Elaborating entity "salsa_xor_regs" for hierarchy "salsa_xor_regs:u_salsa_xor_regs" File: C:/Users/HP/Desktop/Degree/Nisan_final_project/Code_files/1.Verilog_Design_Code/top_salsa_intel.sv Line: 124
+Warning (10230): Verilog HDL assignment warning at salsa_xor_regs.sv(69): truncated value with size 32 to match size of target (4) File: C:/Users/HP/Desktop/Degree/Nisan_final_project/Code_files/1.Verilog_Design_Code/salsa_xor_regs.sv Line: 69
+Info (12128): Elaborating entity "salsa_rx" for hierarchy "salsa_rx:u_salsa_rx" File: C:/Users/HP/Desktop/Degree/Nisan_final_project/Code_files/1.Verilog_Design_Code/top_salsa_intel.sv Line: 137
+Info (12128): Elaborating entity "salsa_uart_tx" for hierarchy "salsa_uart_tx:u_salsa_uart_tx" File: C:/Users/HP/Desktop/Degree/Nisan_final_project/Code_files/1.Verilog_Design_Code/top_salsa_intel.sv Line: 151
+Info (12128): Elaborating entity "salsa_fsm" for hierarchy "salsa_fsm:u_salsa_fsm" File: C:/Users/HP/Desktop/Degree/Nisan_final_project/Code_files/1.Verilog_Design_Code/top_salsa_intel.sv Line: 173
+Warning (10230): Verilog HDL assignment warning at salsa_fsm.sv(375): truncated value with size 32 to match size of target (2) File: C:/Users/HP/Desktop/Degree/Nisan_final_project/Code_files/1.Verilog_Design_Code/salsa_fsm.sv Line: 375
+Info (12128): Elaborating entity "hex_to_SSD_Intel" for hierarchy "hex_to_SSD_Intel:u_hex_to_SSD_Intel" File: C:/Users/HP/Desktop/Degree/Nisan_final_project/Code_files/1.Verilog_Design_Code/top_salsa_intel.sv Line: 185
+Info (13000): Registers with preset signals will power-up high File: C:/Users/HP/Desktop/Degree/Nisan_final_project/Code_files/1.Verilog_Design_Code/salsa_uart_tx.sv Line: 27
+Info (13003): DEV_CLRn pin will set, and not reset, register with preset signal due to NOT Gate Push-Back
+Warning (13024): Output pins are stuck at VCC or GND
+    Warning (13410): Pin "dp_set_top" is stuck at GND File: C:/Users/HP/Desktop/Degree/Nisan_final_project/Code_files/1.Verilog_Design_Code/top_salsa_intel.sv Line: 30
+Info (286030): Timing-Driven Synthesis is running
+Info (17049): 7 registers lost all their fanouts during netlist optimizations.
+Info (144001): Generated suppressed messages file C:/Users/HP/Desktop/Degree/Nisan_final_project/Intel_implementation/output_files/top_salsa_intel_00.map.smsg
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Info (21057): Implemented 10229 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 3 input pins
+    Info (21059): Implemented 11 output pins
+    Info (21061): Implemented 10215 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 5 warnings
+    Info: Peak virtual memory: 4904 megabytes
+    Info: Processing ended: Sat Dec 13 19:50:11 2025
+    Info: Elapsed time: 00:00:56
+    Info: Total CPU time (on all processors): 00:00:54
+
+
++------------------------------------------+
+; Analysis & Synthesis Suppressed Messages ;
++------------------------------------------+
+The suppressed messages can be found in C:/Users/HP/Desktop/Degree/Nisan_final_project/Intel_implementation/output_files/top_salsa_intel_00.map.smsg.
+
+
