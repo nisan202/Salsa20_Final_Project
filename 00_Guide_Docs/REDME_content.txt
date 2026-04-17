@@ -4,6 +4,7 @@ Name: Nisan Moshe Shlomov
 I.D Number: 207957499
 
 Overview:
+(Video Link to Xilinx Implemenetation at the end of the page).
 Electrical and Electronics Engineering Final Project,
 Hardware implementation of the SALSA20 encryption algorithm.
 The implementation was done on a number of FPGAs.
@@ -82,3 +83,6 @@ From the text file to the final comparison including a high-quality log file des
 communication between the computer and the FPGA.
 To better understand the flow of the scripts and what each one does,
 you can look at the "Scripts_Guide.docx" file in the "00_Guide_Docs" Folder.
+
+The implementation video on Xilinx is available on Google Drive at the following link:
+https://drive.google.com/file/d/1u9qBgY37mgmlgSJcKttMFOYEu06ENfQ1/view?usp=sharing
