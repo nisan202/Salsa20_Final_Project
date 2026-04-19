@@ -17,6 +17,7 @@ In order to put the entire system into operation.
 * **[00_Guide_Docs](./00_Guide_Docs)**
     * 1.1 Scripts_Guide.docx
     * 1.2 REDME_content.txt
+	* 1.3 script_flow.png
 
 * **[Block_diagram](./Block_diagram)**
     * 2.1 Pic Folder
@@ -28,7 +29,9 @@ In order to put the entire system into operation.
     * 3.3 Verilog_HDL Folder
 
 * **[Docs](./Docs)**
-    * 4.1 nisan_final_project_report.docx
+    * 4.1 nisan_final_project_report_submit.docx
+	* 4.2 nisan_final_project_report_submit.pdf
+	* 4.3 final_project_presentation.pptx
 
 * **[Final_Scripts](./Final_Scripts)**
     * 5.1 Python_Scripts Folder
@@ -88,6 +91,7 @@ you can look at the "Scripts_Guide.docx" file in the "00_Guide_Docs" Folder.
 ## Block Diagram
 The folder contains a folder of images and a drawio file. In order to see the file,
 you need to download it to your PC and open it.
+
 ## Video Link
 The implementation video on Xilinx is available on Google Drive at the following link:
 https://drive.google.com/file/d/1u9qBgY37mgmlgSJcKttMFOYEu06ENfQ1/view?usp=sharing
